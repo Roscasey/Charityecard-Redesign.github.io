@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+    --font-heading: 'Josefin Sans', sans-serif;
+    --font-body: 'Lato', sans-serif;
+    --text-base-size: 1.25em;
+    --text-scale-ratio: 1.25;
+    /* Text */
+    --text-xxs: 12px;
+    --text-xs: 14px;
+
+    --text-sm: 16px;
+    --text-md: 20px;
+
+    --text-lg: 24px;
+    --text-xl: 30px;
+
+    --text-display: 100px;
+    /* Weight */
+    --font-weight-xxxs: 100;
+    --font-weight-xxs: 200;
+    --font-weight-xs: 300;
+
+    --font-weight-s: 400;
+    --font-weight-sm: 500;
+
+    --font-weight-md: 600;
+    --font-weight-lg: 700;
+
+    --font-weight-xl: 800;
+    --font-weight-xxl: 900;
+}
+body {
+    font-size: var(--text-sm);
+    font-family: var(--font-body);
+}
+/* Links & Labels*/
+a {
+    text-decoration: none;
+}
+.progress_bar a {
+    text-decoration: underline;
+}
+/* Titles*/
+.heading {
+    font-family: var(--font-heading);
+}
+.heading--page-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-sm);
+}
+.progress_bar > a , p {
+    font-family: var(--font-body);
+}
+#display_text {
+    font-size: var(--text-display);
+    font-weight: var(--font-weight-s);
+}
+#display_sub {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-sm);
+}
+/* Nav Bar */
+nav {
+    list-style-type: none;
+}
+.nav_logo_container > h1 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-sm);
+}
+nav > div > li > p , a {
+    font-size: var(--text-md);
+}
+/* Progress Bar */
+.progress_bar a {
+    font-size: var(--text-sm);
+}
+/* Footer */
+footer > p {
+    font-size: var(--text-xs);
+}
+footer h3 {
+    font-size: var(--text-md);
+    font-weight: var(--font-weight-s);
+}
+footer, .footer_section > p {
+    font-weight: var(--font-weight-s);
+    font-size: var(--text-xs);
+}
+#enter_your_email {
+    font-size: var(--text-xxl);
+}
+#copyright {
+    font-size: var(--text-xxs);
+}
+/* Buttons */
+.red_button--lg {
+    text-align: center;
+}
+/* Images & Icons */
+
+/* Promo Message */
+.promo_img_heading {
+    font-size: var(--text-lg);
+}
+.promo_img_subtext {
+    font-size: var(--text-md);
+    font-weight: var(--font-weight-xs);
+}
+/* Total Box */

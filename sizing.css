@@ -1,0 +1,113 @@
+:root {
+    /* Em */
+    --size-none: 0em;
+    --size-xxxs: 0.5em;
+    --size-xxs: 0.75em;
+    --size-xs: 1em;
+
+    --size-s: 1.5em;
+    --size-sm: 2em;
+    --size-smm: 2.5em;
+    --size-md: 4em;
+    --size-ml: 6em;
+
+    --size-lg: 8em;
+    --size-g: 9em;
+    --size-lx: 10em;
+    --size-xl: 12em;
+    --size-xxl: 14em;
+    --size-l: 15em;
+
+    --size-xxl: 16em;
+    --size-xxxl: 18em;
+    --size-mega: 20em;
+    /* Pixels */
+    --size-px-mini: 1.5px;
+    --size-px-xxxs: 2px;
+    --size-px-xxs: 5px;
+    --size-px-xs: 10px;
+
+    --size-px-s: 15px;
+    --size-px-sm: 20px;
+    --size-px-md: 25px;
+    --size-px-ml: 30px;
+
+    --size-px-lg: 35px;
+    --size-px-xl: 40px;
+
+    --size-px-xxl: 45px;
+    --size-px-xxl: 50px; 
+    --size-px-xxxl: 60px; 
+    /* Specific sizing */
+    --size-footer: 22.5em;
+}
+/* Links */
+/* Titles */
+#display_text {
+    width: var(--size-ml);
+}
+/* Nav Bar */
+nav img {
+    width: var(--size-px-xl);
+    height: var(--size-px-ml);
+    padding: var(--size-xxxs);
+    margin: var(--size-none);
+}
+.nav_icons > li > img {
+    width: var(--size-px-sm);
+    height: var(--size-px-sm);
+}
+/* Footer */
+.payment_icon {
+    height: var(--size-px-sm);
+}
+#visa, #masterc_f, #amex_f {
+    width: var(--size-px-lg);
+}
+#amex_f {
+    border-radius: var(--size-px-xxxs);
+}
+#enter_your_email {
+    height: var(--size-smm);
+    width: var(--size-footer);
+    border-width: var(--size-px-xxxs);
+    border-radius: var(--size-px-xs);
+}
+footer hr {
+    width: var(--size-footer);
+}
+/* Buttons */
+.red_button {
+    border-radius: var(--size-xxs);
+    width: var(--size-g);
+    height: var(--size-px-ml)
+}
+.red_button--lg {
+    width: var(--size-lx);
+}
+.red_button--opp {
+    width: var(--size-lg);
+    border-radius: var(--size-sm);
+}
+.white_button {
+    border-radius: var(--size-xxxs);
+    border-width: var(--size-px-mini);
+    width: var(--size-g);
+    height: var(--size-smm);
+}    
+/* Images & Icons */
+#confirmed, #eco {
+    height: var(--size-l);
+    width: var(--size-mega);
+}
+#donate {
+    height: var(--size-l);
+    width: var(--size-px-xxl);
+}
+.icon {
+    width: var(--size-px-sm);
+    height: var(--size-px-sm);
+}
+/* Promo Message */
+
+/* Total Box */

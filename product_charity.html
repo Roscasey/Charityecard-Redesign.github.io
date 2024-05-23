@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity</title>
+    <link rel="stylesheet" href= "C:\Users\rosde\OneDrive\Documents\Casey\A3 HTML\colours.css">
+    <link rel="stylesheet" href="C:\Users\rosde\OneDrive\Documents\Casey\A3 HTML\spacing.css">
+    <link rel="stylesheet" href="C:\Users\rosde\OneDrive\Documents\Casey\A3 HTML\sizing.css">
+    <link rel="stylesheet" href="C:\Users\rosde\OneDrive\Documents\Casey\A3 HTML\typography.css">
+    <link rel="stylesheet" href="C:\Users\rosde\OneDrive\Documents\Casey\A3 HTML\layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav_logo_container">
+            <img id="logo" class="nav_logo_image" src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Icons\logo_frame.png" alt="crown_logo">
+            <h1 class="heading nav_logo_title" id="logo_title">Charityecards</h1>
+        </div>
+        <div class="nav_options">
+            <li><p class="heading"><a class="nav_bar_link" href="C:\Users\rosde\OneDrive\Documents\Casey\A3 HTML\homepage.html">Home</a></p></li>
+            <li><p class="heading"><a class="nav_bar_link" href="C:\Users\rosde\OneDrive\Documents\Casey\A3 HTML\all_products.html">Cards</a></p></li>
+            <li><p class="heading" id="FAQ">FAQs</p></li>
+            <li><p class="heading" >Charities</p></li>
+            <li><p class="heading">About Us</p></li>
+            <li><p class="heading">Contact Us</p></li>
+        </div>
+        <div class="log_in" >
+            <li><p id="log_in" class="heading">Log in / Sign Up</p></li>
+        </div>
+        <div class="nav_icons" >
+            <li><img class="icon" src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Icons\search_svg.svg" alt="search_icon"></li>
+            <li><img class="icon" id="cart" src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Icons\Shopping_Basket_Icon.jpg" alt="shopping_basket_icon"></li>
+        </div>
+    </nav>
+    <hr id="one">
+    <div class="progress_bar">
+        <a class="orange_links" href="">Home</a> 
+        <a class="orange_links" href="">Cards</a>
+        <a class="orange_links" href="">Christmas</a>
+        <p class="current_page_title">Season's Greetings / Charity</p>
+    </div>
+    <div class="product_listing_grid">
+        <h1 class="heading heading--page-title">Season's Greetings</h1>
+        <img src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Images\Cards\seasons_greetings_big.png" alt="seasons_greetings_big">
+        <p class="card_type">Standard Card</p>
+        <button class="product_listing_button">Preview</button>
+        <p class="price">$9.95</p>
+    </div>
+    <form class="charity_select_grid">
+        <div class="charity_select_1">
+            <h3 class="select_charity_title">1. Select your charity</h3>
+            <select name="charity" id="select_charity">
+                <option value="default">--Please Select One--</option>
+                <option value="act">Act For Kids</option>
+                <option value="alz_wa">Alzheimer's WA</option>
+                <option value="aia">Amnesty International Australia</option>
+                <option value="awl">Animal Welfare League (AWL) NSW</option>
+                <option value="acrf">Animal Cancer Research Foundation</option>
+                <option value="arc">Australian Red Cross</option>
+                <option value="asrf">Australian Spinal Research Foundation</option>
+                <option value="aspect">Autism Spectrum Australia (Aspect)</option>
+                <option value="bc">Bear Cottage</option>
+            </select>
+        </div>
+        <div class="charity_select_2">
+            <h3 class="select_charity_title">2. Sender Details</h3>
+            <input type="text" name="first_name" id="sender_fn" placeholder="First Name">
+            <input type="text" name="last_name" id="sender_ln" placeholder="Last Name">
+            <input type="text" name="email_phone" id="sender_email_phone" placeholder="Email Address or Phone Number">
+            <input type="text" name="company" id="sender_company" placeholder="Company Name (Optional)">
+        </div>
+    </form>
+    <div class="continue_button_combo">
+        <a class="orange_links" href="">Continue Browsing</a>
+        <button class="red_button">Done</button>
+    </div>
+    <footer>
+        <div class="footer_section">
+            <h3 class="heading">Useful Links</h3>
+            <hr>
+            <p>> Pricing</p>
+            <p>> Terms and Conditions</p>
+            <p>> Privacy Policy</p>
+        </div>
+        <div class="footer_section">
+            <h3 class="heading">Newsletter</h3>
+            <hr id="mid_hr">
+            <p>Keep up to date on all the latest Charity Ecards news</p>
+            <input type="text" id="enter_your_email" name="enter_your_email" placeholder="Please Enter Your Email">
+            <button id="submit_foot" class="red_button red_button--opp">Submit</button>
+        </div>
+        <div class="footer_section">
+            <h3 class="heading">Secure Payments</h3>
+            <hr>
+            <div>
+                <img class="payment_icon" id="visa_f" src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Icons\Payment Icons JPG\Visa_Cream_JPG.png" alt="visa">
+                <img class="payment_icon" id="masterc_f" src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Icons\Payment Icons JPG\Mastercard_JPG.png" alt="mastercard">
+                <img class="payment_icon" id="amex_f" src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Icons\Payment Icons JPG\AMEX_JPG.jpg" alt="amex">
+                <img class="payment_icon" id="pp_f" src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Icons\Payment Icons JPG\PayPayl_JPG.png" alt="paypal">
+                <img class="payment_icon" id="app_f" src="C:\Users\rosde\OneDrive\Documents\Casey\A3 Icons\Payment Icons SVG\Apple_Pay_Cream_SVG.svg" alt="apple_pay">
+            </div>
+        </div>
+        <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
