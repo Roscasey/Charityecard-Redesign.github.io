@@ -18,10 +18,7 @@
     --space-lx: 4em;
     --space-xxl: 5em;
     --space-xxxl: 8.5em;
-    /* Specific sizing */
-    --heading-line-height: 1.2em;
-    --body-line-height: 1.4em;
-    --space-footer-section: 13em;
+
     /* Pixels */
     --space-px-xxxs: 2px;
     --space-px-xxs: 5px;
@@ -29,15 +26,33 @@
 
     --space-px-s: 15px;
     --space-px-sm: 20px;
+
+    --space-px-md: 30px;
+    --space-px-lg: 45px;
+
+    --space-px-xl: 60px;
+    --space-px-xxl: 80px;
+
+    /* Specific sizing */
+    --heading-line-height: 1.2em;
+    --body-line-height: 1.4em;
+    --space-footer-section: 13em;
+    --space-nav-logo: 6.5em;
 }
 body {
     margin: var(--space-none);
 }
 /* Links */
-
+.progress_bar {
+    margin-left: var(--space-px-xxl);
+    margin-top: var(--space-px-md);
+} 
 /* Titles */
 #display_text, #display_sub {
     margin: var(--space-none);
+}
+.product_header > h1 {
+    margin-bottom: var(--space-px-lg);
 }
 /* Nav Bar */
 nav div {
@@ -58,6 +73,10 @@ nav > div + div {
 }
 #log_in {
     margin-right: var(--space-px-xs);
+}
+.nav_logo_container {
+    gap: var(--space-none);
+    margin-right: var(--space-nav-logo)
 }
 .nav_icons {
     margin-right: var(--space-lx);
@@ -110,7 +129,10 @@ nav > div + div {
 /* Buttons */
 
 /* Images & Icons */
-
+.product_grid {
+    margin-left: var(--space-px-xxl);
+    margin-bottom: var(--space-px-lg);
+}
 /* Promo Message */
 
 /* Total Box */

@@ -2,6 +2,7 @@
     --color-primary: #B31629;
     --color-primary-dark: #661922;
     --color-secondary: #D85F4C;
+    --color-secondary-dark: #984032; 
 
     --color-dark: #000000;
     --color-light: #FFFFFF;
@@ -86,10 +87,13 @@
 .orange_links{
     color: var(--color-link);
 }
+.orange_links:hover {
+    color: var(--color-secondary-dark);
+}
 .homepage_instructions_subtext {
     color: var(--color-sub-dark);
 }
-.cart_product_charity {
+.cart_product_charity, .homepage_instruction_subtext{
     color: var(--color-sub-light)
 }
 .homepage_bottom a {

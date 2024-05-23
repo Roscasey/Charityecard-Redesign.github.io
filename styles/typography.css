@@ -40,6 +40,9 @@ a {
 .progress_bar a {
     text-decoration: underline;
 }
+.homepage_instruction_subheading {
+    font-size: var(--text-md);
+}
 /* Titles*/
 .heading {
     font-family: var(--font-heading);
