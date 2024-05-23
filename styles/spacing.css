@@ -36,6 +36,9 @@ body {
 /* Links */
 
 /* Titles */
+#display_text, #display_sub {
+    margin: var(--space-none);
+}
 /* Nav Bar */
 nav div {
     margin-top: var(--space-s);

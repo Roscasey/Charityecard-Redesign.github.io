@@ -83,7 +83,8 @@ footer hr {
     height: var(--size-px-ml)
 }
 .red_button--lg {
-    width: var(--size-lx);
+    width: var(--size-xl);
+    height: var(--size-smm);
 }
 .red_button--opp {
     width: var(--size-lg);
