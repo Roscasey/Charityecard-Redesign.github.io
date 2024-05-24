@@ -40,6 +40,9 @@ a {
 .progress_bar a {
     text-decoration: underline;
 }
+a:hover {
+    text-decoration: underline;
+}
 .homepage_instruction_subheading {
     font-size: var(--text-md);
 }
@@ -63,7 +66,7 @@ a {
     font-weight: var(--font-weight-sm);
 }
 /* Nav Bar */
-nav {
+nav ul {
     list-style-type: none;
 }
 .nav_logo_container > h1 {
@@ -73,6 +76,7 @@ nav {
 nav > div > li > p , a {
     font-size: var(--text-md);
 }
+
 /* Progress Bar */
 .progress_bar a {
     font-size: var(--text-sm);

@@ -113,3 +113,32 @@ footer > div {
 #bc_heading, #bc_display, #see_all_2 {
     grid-column: 3/4;
 }
+
+
+li ul li {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 5em;
+}
+li ul li + li {
+  padding-left: 4em;
+}
+ul li {
+    transform: translateX(-1em);
+}
+nav ul ul{
+    transform: scale(1,0);
+    transform-origin: top center;
+    position: absolute;
+    top:100%;
+    transition: 0.3s;
+}
+ul li:hover ul{
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    transform: scale(1,1);
+    transition: 0.3s;
+}
