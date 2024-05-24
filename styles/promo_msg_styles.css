@@ -1,0 +1,24 @@
+@import "./colours.css";
+@import "./layout.css";
+@import "./sizing.css";
+@import "./spacing.css";
+@import "./typography.css";
+
+.promo_img_heading {
+    font-size: var(--text-lg);
+}
+.promo_img_subtext {
+    color: var(--color-dark);
+
+    /*Typography*/
+    font-size: var(--text-md);
+    font-weight: var(--font-weight-xs);
+}
+#confirmed, #eco {
+    height: var(--size-l);
+    width: var(--size-mega);
+}
+#donate {
+    height: var(--size-l);
+    width: var(--size-px-xxl);
+}

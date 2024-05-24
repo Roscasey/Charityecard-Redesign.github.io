@@ -1,0 +1,127 @@
+@import "./colours.css";
+@import "./layout.css";
+@import "./sizing.css";
+@import "./spacing.css";
+@import "./typography.css";
+
+/* Colours */
+nav {
+    /* Colours*/
+    color: var(--color-sub-dark);
+
+    /*Layout*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*Spacing*/
+    margin-top: var(--space-s);
+}
+li > p > a {
+    color: var(--color-sub-dark);
+}
+li > p > a:hover {
+    color: var(--color-primary);
+}
+ul li > a {
+    color: var(--color-sub-dark);
+}
+ul li > a:hover {
+    color: var(--color-primary);
+}
+/* Layout */
+.nav_options, .log_in, .nav_icons {
+    display: flex;
+    align-content: baseline;
+    align-items: center;
+}
+.nav_logo_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* Nav Bar: Animations */
+ul li {
+    transform: translateX(-1em);
+}
+nav ul ul{
+    transform: scale(1,0);
+    transform-origin: top center;
+    position: absolute;
+    top:100%;
+    transition: 0.3s;
+}
+ul li:hover ul{
+    display: flex;
+    flex-direction: row;
+    background-color:white;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    transform: scale(1,1);
+    transition: 0.3s;
+}
+nav img {
+    width: var(--size-px-xl);
+    height: var(--size-px-ml);
+
+    /*Sizing*/
+    padding: var(--size-xxxs);
+    margin: var(--size-none);
+
+}
+.nav_icons {
+    margin: var(--space-none);
+    padding: var(--space-none);
+    border: var(--space-none);
+}
+.nav_icons li + li {
+    margin-left: var(--space-px-sm);
+}
+.nav_icons > li > img {
+    width: var(--size-px-sm);
+    height: var(--size-px-sm);
+}
+li ul li {
+    width: var(--size-m);
+}
+.nav_options {
+    margin-left: var(--space-md);
+}
+.nav_options li + li {
+    margin-left: var(--space-px-sm);
+}
+#logo {
+    padding-left: var(--space-none);
+}
+.nav_logo_container > img {
+    margin-left: var(--space-md);
+    margin-bottom: var(--space-px-xs);
+    margin-right: var(--space-none);
+}  
+li ul li {
+    padding-top: var(--space-px-sm);
+    padding-bottom: var(--space-px-sm);
+}
+li ul li + li {
+    padding-left: var(--space-lx);
+}
+/* Typography */
+li ul li {
+    list-style-type: none;
+    font-family: var(--font-heading);
+}
+li ul > li:not(#bday_nav):hover {
+    text-decoration: underline;
+}
+nav ul {
+    list-style-type: none;
+}
+.nav_logo_container > h1 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-sm);
+}
+ul li > p , a { 
+    font-size: var(--text-md);
+}
+ul li > a {
+    font-size: var(--text-sm);
+}

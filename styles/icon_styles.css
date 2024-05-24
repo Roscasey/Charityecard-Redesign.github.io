@@ -1,0 +1,10 @@
+@import "./colours.css";
+@import "./layout.css";
+@import "./sizing.css";
+@import "./spacing.css";
+@import "./typography.css";
+
+.icon {
+    width: var(--size-px-sm);
+    height: var(--size-px-sm);
+}

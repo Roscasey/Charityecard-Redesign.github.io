@@ -33,20 +33,6 @@ body {
     font-size: var(--text-sm);
     font-family: var(--font-body);
 }
-/* Links & Labels*/
-a {
-    text-decoration: none;
-}
-.progress_bar a {
-    text-decoration: underline;
-}
-a:hover {
-    text-decoration: underline;
-}
-.homepage_instruction_subheading {
-    font-size: var(--text-md);
-}
-/* Titles*/
 .heading {
     font-family: var(--font-heading);
 }
@@ -54,72 +40,3 @@ a:hover {
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 }
-.progress_bar > a , p {
-    font-family: var(--font-body);
-}
-#display_text {
-    font-size: var(--text-display);
-    font-weight: var(--font-weight-s);
-}
-#display_sub {
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-sm);
-}
-/* Nav Bar */
-li ul li {
-    list-style-type: none;
-    font-family: var(--font-heading);
-}
-li ul > li:not(#bday_nav):hover {
-    text-decoration: underline;
-}
-nav ul {
-    list-style-type: none;
-}
-.nav_logo_container > h1 {
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-sm);
-}
-ul li > p , a { 
-    font-size: var(--text-md);
-}
-ul li > a {
-    font-size: var(--text-sm);
-}
-/* Progress Bar */
-.progress_bar a {
-    font-size: var(--text-sm);
-}
-/* Footer */
-footer > p {
-    font-size: var(--text-xs);
-}
-footer h3 {
-    font-size: var(--text-md);
-    font-weight: var(--font-weight-s);
-}
-footer, .footer_section > p {
-    font-weight: var(--font-weight-s);
-    font-size: var(--text-xs);
-}
-#enter_your_email {
-    font-size: var(--text-xxl);
-}
-#copyright {
-    font-size: var(--text-xxs);
-}
-/* Buttons */
-.red_button--lg {
-    text-align: center;
-}
-/* Images & Icons */
-
-/* Promo Message */
-.promo_img_heading {
-    font-size: var(--text-lg);
-}
-.promo_img_subtext {
-    font-size: var(--text-md);
-    font-weight: var(--font-weight-xs);
-}
-/* Total Box */

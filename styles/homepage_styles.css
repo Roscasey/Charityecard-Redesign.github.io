@@ -3,3 +3,27 @@
 @import "./sizing.css";
 @import "./spacing.css";
 @import "./typography.css";
+
+#display_text {
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--size-ml);
+
+    /*Typography*/
+    font-size: var(--text-display);
+    font-weight: var(--font-weight-s);
+
+    /*Spacing*/
+    margin: var(--space-none);
+}
+#display_sub {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-sm);
+
+    /*Spacing*/
+    margin: var(--space-none);
+}
+
+.homepage_instruction_subheading {
+    font-size: var(--text-md);
+}

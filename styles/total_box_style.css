@@ -1,0 +1,13 @@
+@import "./colours.css";
+@import "./layout.css";
+@import "./sizing.css";
+@import "./spacing.css";
+@import "./typography.css";
+
+/* Total Box */
+.total_grid {
+    border: solid;
+} 
+#total {
+    color: var(--color-primary);
+}
