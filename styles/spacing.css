@@ -57,41 +57,28 @@ body {
 nav {
     margin-top: var(--space-s);
 }
-.nav_options li + li {
-    margin-left: 1em;;
-}
 .nav_options {
-    margin-left: 4em;
+    margin-left: var(--space-md);
+}
+.nav_options li + li {
+    margin-left: var(--space-px-sm);
 }
 #logo {
+    padding-left: var(--space-none);
+}
+.nav_logo_container > img {
+    margin-left: var(--space-md);
     margin-bottom: var(--space-px-xs);
     margin-right: var(--space-none);
 }  
 .nav_icons {
-    margin: 0%;
-    padding: 0%;
-    border: 0%;
+    margin: var(--space-none);
+    padding: var(--space-none);
+    border: var(--space-none);
 }
 .nav_icons li + li {
-    margin-left: 1em;
+    margin-left: var(--space-px-sm);
 }
-
-/* .nav_icons img {
-    margin: 0%;
-
-}
-#log_in {
-
-    width: 8em;
-}
-.nav_logo_container {
-    gap: var(--space-none);
-    margin-right: var(--space-nav-logo)
-}
-.nav_icons {
-
-    margin-right: var(--space-lx);
-} */ 
 /* Progress Bar */
 .progress_bar a , p {
     margin: var(--space-px-xxs);
