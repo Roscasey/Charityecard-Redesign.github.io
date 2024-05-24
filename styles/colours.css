@@ -110,10 +110,16 @@ h1 {
 nav {
     color: var(--color-sub-dark);
 }
-.nav_options > li > p > a {
+li > p > a {
     color: var(--color-sub-dark);
 }
-.nav_options > li > p > a:hover {
+li > p > a:hover {
+    color: var(--color-primary);
+}
+ul li > a {
+    color: var(--color-sub-dark);
+}
+ul li > a:hover {
     color: var(--color-primary);
 }
 /* Progress Bar */
@@ -144,4 +150,8 @@ footer {
 } 
 #total {
     color: var(--color-primary);
+}
+/* Images & Icons */
+.product_grid > img {
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }

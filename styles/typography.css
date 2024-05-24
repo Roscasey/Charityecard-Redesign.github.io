@@ -68,6 +68,10 @@ a:hover {
 /* Nav Bar */
 li ul li {
     list-style-type: none;
+    font-family: var(--font-heading);
+}
+li ul > li:not(#bday_nav):hover {
+    text-decoration: underline;
 }
 nav ul {
     list-style-type: none;
@@ -76,8 +80,11 @@ nav ul {
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 }
-nav > ul> li > p , a {
+ul li > p , a { 
     font-size: var(--text-md);
+}
+ul li > a {
+    font-size: var(--text-sm);
 }
 /* Progress Bar */
 .progress_bar a {
