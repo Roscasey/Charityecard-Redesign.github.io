@@ -66,6 +66,9 @@ a:hover {
     font-weight: var(--font-weight-sm);
 }
 /* Nav Bar */
+li ul li {
+    list-style-type: none;
+}
 nav ul {
     list-style-type: none;
 }

@@ -9,6 +9,7 @@
     --size-sm: 2em;
     --size-smm: 2.5em;
     --size-md: 4em;
+    --size-m: 5em;
     --size-ml: 6em;
 
     --size-lg: 8em;
@@ -50,12 +51,13 @@
 nav img {
     width: var(--size-px-xl);
     height: var(--size-px-ml);
-    padding: var(--size-xxxs);
-    margin: var(--size-none);
 }
 .nav_icons > li > img {
     width: var(--size-px-sm);
     height: var(--size-px-sm);
+}
+li ul li {
+    width: var(--size-m);
 }
 /* Footer */
 .payment_icon {

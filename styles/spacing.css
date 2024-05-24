@@ -57,6 +57,10 @@ body {
 nav {
     margin-top: var(--space-s);
 }
+nav img {
+    padding: var(--size-xxxs);
+    margin: var(--size-none);
+}
 .nav_options {
     margin-left: var(--space-md);
 }
@@ -79,6 +83,13 @@ nav {
 .nav_icons li + li {
     margin-left: var(--space-px-sm);
 }
+li ul li {
+    padding-top: var(--space-px-sm);
+    padding-bottom: var(--space-px-sm);
+}
+li ul li + li {
+    padding-left: var(--space-lx);
+  }
 /* Progress Bar */
 .progress_bar a , p {
     margin: var(--space-px-xxs);
