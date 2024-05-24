@@ -7,7 +7,6 @@
 
     --space-s: 0.75em;
     --space-sm: 1em;
-    --space-sm: 1.25em;
     --space-md: 1.5em;
     --space-ml: 1.75em;
 
@@ -55,37 +54,44 @@ body {
     margin-bottom: var(--space-px-lg);
 }
 /* Nav Bar */
-nav div {
+nav {
     margin-top: var(--space-s);
 }
-nav > div > li + li {
-    margin-left: var(--space-md);   
+.nav_options li + li {
+    margin-left: 1em;;
 }
-nav > div + div {
-    margin-left: var(--space-md);   
+.nav_options {
+    margin-left: 4em;
 }
-.nav_options, .nav_logo {
-    margin-right: var(--space-xxl);
+#logo {
+    margin-bottom: var(--space-px-xs);
+    margin-right: var(--space-none);
+}  
+.nav_icons {
+    margin: 0%;
+    padding: 0%;
+    border: 0%;
 }
-.nav_icons > li > img {
-    border: var(--space-none);
-    padding: var(--space-none);
+.nav_icons li + li {
+    margin-left: 1em;
+}
+
+/* .nav_icons img {
+    margin: 0%;
+
 }
 #log_in {
-    margin-right: var(--space-px-xs);
+
+    width: 8em;
 }
 .nav_logo_container {
     gap: var(--space-none);
     margin-right: var(--space-nav-logo)
 }
 .nav_icons {
+
     margin-right: var(--space-lx);
-}
-#logo {
-    margin-bottom: var(--space-px-xs);
-    margin-left: var(--space-lx);
-    margin-right: var(--space-none);
-}   
+} */ 
 /* Progress Bar */
 .progress_bar a , p {
     margin: var(--space-px-xxs);

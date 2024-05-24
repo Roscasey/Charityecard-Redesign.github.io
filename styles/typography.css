@@ -73,10 +73,9 @@ nav ul {
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 }
-nav > div > li > p , a {
+nav > ul> li > p , a {
     font-size: var(--text-md);
 }
-
 /* Progress Bar */
 .progress_bar a {
     font-size: var(--text-sm);
