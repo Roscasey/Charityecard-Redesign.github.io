@@ -8,21 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <nav class="navContainer">
+    <nav class="nav_container">
         <ul class="navbar">
-            <li class="hamburgerContainer">
-                <img id="hamburgerIcon" src="icons/hamburger.svg" alt="Description of SVG">
-                <img class="logo_img logo_img_small" src="icons/Logo_Icon_SVG.svg" alt="">
+            <li class="hamburger_container">
+                <img id="hamburger_icon" src="icons/hamburger.svg" alt="Description of SVG">
+                <img class="logo_img logo_img_small" src="icons/Logo_Icon_SVG.svg" alt="small_logo">
             </li>
             <li>
-                <ul class="navHeadingContainer"> 
-                    <li><img class="largeDisplay logo_img" src="icons/Logo_Icon_SVG.svg" alt=""></li>
-                    <li id="heading_title" class="largeDisplay">Charityecards</li>
+                <ul class="nav_heading_container"> 
+                    <li><a href=""><img class="logo_img lg_disp" src="icons/Logo_Icon_SVG.svg" alt="small_logo"></a> </li>
+                    <li class="lg_disp"><a href="#" id="heading_title">Charityecards</a></li>
                 </ul>
             </li>
             <li>
-                <ul class="navItemsContainer largeDisplay">
-                    <li><a href="">Cards</a></li>
+                <ul class="nav_options_container lg_disp">
+                    <li><a href="">Cards</a>
+                        <ul class="drop_down_menu">
+                            <li><a href="">Christmas</a></li>
+                            <li>Birthday</li>
+                            <li><a href="">All Cards</a></li>
+                        </ul>
+                    </li>
                     <li>Charities</li>
                     <li>About</li>
                     <li>Contact</li>
@@ -30,8 +36,8 @@
                 </ul>
             </li> 
             <li>
-                <ul class="navOtherItemsContainer">
-                    <li class="largeDisplay">Log In / Sign Up</li>
+                <ul class="nav_icons_container">
+                    <li class="lg_disp">Log In / Sign Up</li>
                     <li><img class="nav_icon" src="icons/search_svg.svg" alt=""></li>
                     <li><img class="nav_icon" src="icons/Shopping_Basket_Icon.jpg" alt=""></li>
                 </ul>
@@ -39,11 +45,11 @@
         </ul> 
     </nav>
     <hr>
-    <div id="sideNav" class="sideNav">
-        <ul class="navItemsContainerSmallScreen">
-            <li class="hamburgerContainerInside">
+    <div id="side_nav">
+        <ul class="side_nav_sml_disp">
+            <li class="side_nav_burger">
                 <img id="exitIcon" src="icons/close_white.svg" alt="Description of SVG">
-                <img class="logo_img logo_img_small" src="icons/logo_white.svg" alt="">
+                <img class="logo_img logo_img_small" src="icons/logo_white.svg" alt="small_logo">
             </li>
             <li class="side_nav_sml"><a href="">Cards</a></li>
             <li class="side_nav_sml">Charities</li>

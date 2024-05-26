@@ -41,8 +41,9 @@
     --size-px-xxxl: 60px; 
     /* Specific sizing */
     --size-footer: 22.5em;
+    --size-full: 100%;
 }
-@media(max-width: 800px) {
+/* @media(max-width: 800px) {s
     .hideOnMobile {
         display: none;
     }
@@ -51,4 +52,4 @@
         .sidebar {
             width: 100%
         }
-}
+} */
