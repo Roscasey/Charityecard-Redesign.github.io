@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Selecting all the relevant icons
     const hamburgerIcon = document.getElementById('hamburger_icon');
     const side_nav = document.getElementById('side_nav');
-    const exitButton = document.getElementById('exitIcon');
+    const exitButton = document.getElementById('exit_icon');
+    const dropIt = document.getElementById('side_drop_btn');
+    const dropItems = document.getElementsByClassName('side_nav_drop_item');
 
     // clicking hamburger --> open side nav
     hamburgerIcon.addEventListener('click', () => {
@@ -18,21 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
             side_nav.style.width = '250px';
         }
     });
-
     // clicking X icon --> close side nav
     exitButton.addEventListener('click', () => {
         side_nav.style.width = '0';
-
     });
 
+    dropIt.addEventListener('click', (event) => {
+        event.stopPropagation();
+        for (let i = 0; i < dropItems.length; i++) {
+           dropItems[i].style.display = 'flex';
+        }
+    });
 
     // edge case: close side nav when it is currently open but the screen width exceeds 760px.
     function screenTooBig() {
         if (window.innerWidth > 760) {
             side_nav.style.width = '0';
-        }
+        } 
     }
-
     screenTooBig();
     window.addEventListener('resize', screenTooBig);
 });
+

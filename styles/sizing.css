@@ -8,15 +8,17 @@
     --size-s: 1.5em;
     --size-sm: 2em;
     --size-smm: 2.5em;
+    --size-dm: 3em;
     --size-md: 4em;
     --size-m: 5em;
     --size-ml: 6em;
+    --size-mml: 7em;
 
     --size-lg: 8em;
     --size-g: 9em;
     --size-lx: 10em;
     --size-xl: 12em;
-    --size-xxl: 14em;
+    --size-xll: 14em;
     --size-l: 15em;
 
     --size-xxl: 16em;
@@ -39,9 +41,13 @@
     --size-px-xxl: 45px;
     --size-px-xxl: 50px; 
     --size-px-xxxl: 60px; 
+    --size-px-gr: 70px;
+    --size-px-g: 80px;
     /* Specific sizing */
+    --size-side-nav-hr: 12.5px;
     --size-footer: 22.5em;
     --size-full: 100%;
+    --size-nav: 1200px;
 }
 /* @media(max-width: 800px) {s
     .hideOnMobile {
