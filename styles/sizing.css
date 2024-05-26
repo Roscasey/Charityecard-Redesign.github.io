@@ -42,3 +42,13 @@
     /* Specific sizing */
     --size-footer: 22.5em;
 }
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+}
+    @media(max-width: 400px) {
+        .sidebar {
+            width: 100%
+        }
+}
