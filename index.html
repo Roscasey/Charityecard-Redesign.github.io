@@ -13,110 +13,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <nav>
-        <ul class="nav_burger">
-            <li id="li_1">
-                <ul class="nav_box">
-                    <li><img id="logo_img" src="icons/Logo_Icon_SVG.svg" alt=""></li>
+    <nav class="nav_container">
+        <ul class="navbar">
+            <li class="hamburger_container big_screen">
+                <img id="hamburger_icon" src="icons/hamburger.svg" alt="Description of SVG">
+                <img class="logo_img logo_img_small" src="icons/Logo_Icon_SVG.svg" alt="small_logo">
+            </li>
+            <li class="big_screen">
+                <ul class="nav_heading_container"> 
+                    <li><a href="index.html"><img class="logo_img lg_disp" src="icons/Logo_Icon_SVG.svg" alt="small_logo"></a> </li>
+                    <li class="lg_disp"><a href="index.html" id="heading_title">Charityecards</a></li>
                 </ul>
             </li>
-            <li id="li_2">
-                <ul class="nav_box">
-                    <li><a href="">Cards</a></li>
+            <li class="big_screen">
+                <ul class="nav_options_container lg_disp">
+                    <li><a href="">Cards</a>
+                        <ul class="drop_down_menu">
+                            <li><a href="pages/christmas_cards.html">Christmas</a></li>
+                            <li>Birthday</li>
+                            <li><a href="pages/all_products.html">All Cards</a></li>
+                        </ul>
+                    </li>
                     <li>Charities</li>
                     <li>FAQs</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li>About Us</li>  
+                    <li>Contact Us</li>  
                 </ul>
-            </li>
-            <li id="li_3">
-                <ul class="nav_box" >
-                    <li>Log In / Sign Up</li>
+            </li> 
+            <li class="big_screen">
+                <ul class="nav_icons_container">
+                    <li class="lg_disp">Log In / Sign Up</li>
+                    <li><img class="nav_icon" src="icons/search_svg.svg" alt=""></li>
+                    <li><a href=""><img class="nav_icon" src="icons/Shopping_Basket_Icon.jpg" alt=""></a></li>
                 </ul>
-            </li>
-        </ul>
-        <ul class="nav_container">
-            <li onclick = showSidebar()><img src="icons/hambur_icon.svg" alt=""></li>
-            <li id="li_1">
-                <ul class="nav_box">
-                    <li><img id="logo_img" src="icons/Logo_Icon_SVG.svg" alt=""></li>
-                    <li><h1>Charityecards</h1></li>
-                </ul>
-            </li>
-            <li id="li_2">
-                <ul class="nav_box">
-                    <li><a href="">Cards</a></li>
-                    <li>Charities</li>
-                    <li>FAQs</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </li>
-            <li id="li_3">
-                <ul class="nav_box" >
-                    <li>Log In / Sign Up</li>
-                    <li><img class="icon"  src="icons/search_svg.svg" alt="search_icon"></li>
-                    <li><img class="icon" id="cart" src="icons/Shopping_Basket_Icon.jpg" alt="shopping_basket_icon"></li>
-                </ul>
-            </li>
-        </ul>
+            </li> 
+        </ul> 
     </nav>
-    <!-- <nav>   
-        <ul class="sidebar">
-            <li onclick = hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-            <li><a href="#">Cards</a></li>
-            <li><a href="#">Charities</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Cards</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-        <ul>
-            <li>
-                <ul class="logo_combo">
-                    <picture><svg width="395" height="334" viewBox="0 0 395 334" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.2273 101.137C16.2267 101.137 12.316 102.026 8.98961 103.693C5.66325 105.36 3.07067 107.73 1.53972 110.502C0.00876413 113.274 -0.391803 116.324 0.38867 119.267C1.16914 122.21 3.09561 124.913 5.92444 127.034C8.75327 129.156 12.3574 130.601 16.2811 131.186C20.2048 131.771 24.2719 131.471 27.9679 130.323C31.664 129.175 34.823 127.23 37.0456 124.735C39.2682 122.241 40.4545 119.308 40.4545 116.307C40.4545 112.284 38.3235 108.425 34.5301 105.58C30.7368 102.735 25.5919 101.137 20.2273 101.137Z" fill="#B31629"/>
-                        <path d="M374.204 131.478C385.375 131.478 394.431 124.686 394.431 116.307C394.431 107.929 385.375 101.137 374.204 101.137C363.033 101.137 353.977 107.929 353.977 116.307C353.977 124.686 363.033 131.478 374.204 131.478Z" fill="#B31629"/>
-                        <path d="M196.645 32.8778C199.793 32.9012 202.876 31.957 205.503 30.165C208.131 28.3729 210.186 25.8137 211.406 22.812C212.626 19.8103 212.957 16.5013 212.357 13.3047C211.757 10.1081 210.253 7.16784 208.035 4.85695C205.818 2.54605 202.987 0.968595 199.902 0.324644C196.816 -0.319308 193.616 -0.000738321 190.706 1.23995C187.796 2.48063 185.308 4.58753 183.557 7.29343C181.806 9.99933 180.871 13.1823 180.871 16.4387C180.871 20.7782 182.529 24.9417 185.484 28.0213C188.439 31.1008 192.451 32.8466 196.645 32.8778ZM349.931 147.715C335.649 151.111 321.744 156.026 308.438 162.38C292.203 170.439 276.871 180.314 262.715 191.828C252.685 179.078 244.023 165.239 236.881 150.553C225.484 125.364 215.857 99.3562 208.076 72.7337C207.342 70.2196 205.821 68.0298 203.751 66.5094C201.681 64.989 199.181 64.2246 196.645 64.3368C194.109 64.2246 191.609 64.989 189.54 66.5094C187.47 68.0298 185.948 70.2196 185.215 72.7337C177.452 99.363 167.825 125.372 156.409 150.553C149.301 165.222 140.637 179.026 130.576 191.71C116.353 180.328 101.03 170.499 84.8527 162.38C71.8698 156.11 58.3143 151.198 44.3879 147.715C42.3203 147.201 40.1551 147.294 38.1358 147.984C36.1165 148.673 34.3231 149.932 32.9572 151.618C31.5672 153.36 30.6886 155.478 30.4252 157.72C30.1619 159.963 30.5249 162.236 31.4712 164.272C53.1553 215.286 68.5181 268.931 77.1941 323.933C77.6568 326.709 79.0626 329.224 81.1582 331.024C83.2538 332.823 85.9017 333.79 88.6248 333.749H305.809C308.532 333.79 311.18 332.823 313.275 331.024C315.371 329.224 316.777 326.709 317.24 323.933C325.916 268.931 341.278 215.286 362.962 164.272C363.909 162.236 364.272 159.963 364.008 157.72C363.745 155.478 362.866 153.36 361.476 151.618C360.101 149.911 358.288 148.639 356.246 147.949C354.204 147.258 352.016 147.177 349.931 147.715ZM115.03 294.957C112.516 294.981 110.051 294.231 107.95 292.803C105.848 291.374 104.204 289.332 103.226 286.936C102.248 284.539 101.981 281.896 102.457 279.342C102.934 276.788 104.133 274.437 105.903 272.59C107.673 270.742 109.934 269.48 112.398 268.964C114.862 268.447 117.419 268.7 119.744 269.69C122.069 270.68 124.058 272.363 125.457 274.524C126.856 276.685 127.604 279.228 127.604 281.83C127.604 285.291 126.283 288.612 123.928 291.071C121.573 293.529 118.375 294.926 115.03 294.957ZM196.76 294.957C193.617 294.648 190.699 293.137 188.575 290.72C186.451 288.304 185.274 285.155 185.274 281.889C185.274 278.623 186.451 275.474 188.575 273.057C190.699 270.641 193.617 269.13 196.76 268.82C199.902 269.13 202.82 270.641 204.944 273.057C207.068 275.474 208.245 278.623 208.245 281.889C208.245 285.155 207.068 288.304 204.944 290.72C202.82 293.137 199.902 294.648 196.76 294.957ZM278.604 294.957C276.089 294.981 273.625 294.231 271.524 292.803C269.422 291.374 267.778 289.332 266.8 286.936C265.822 284.539 265.555 281.896 266.031 279.342C266.508 276.788 267.707 274.437 269.477 272.59C271.247 270.742 273.507 269.48 275.972 268.964C278.436 268.447 280.993 268.7 283.318 269.69C285.643 270.68 287.632 272.363 289.031 274.524C290.43 276.685 291.177 279.228 291.177 281.83C291.178 285.291 289.857 288.612 287.502 291.071C285.147 293.529 281.949 294.926 278.604 294.957Z" fill="#B31629"/>
-                        </svg></picture>
-                    <li id="main_title"><a href="#">Charityecards</a></li>
+    <hr>
+    <div id="side_nav">
+        <ul class="side_nav_sml_disp">
+            <li class="side_nav_burger">
+                <img id="exit_icon" src="icons/close_white.svg" alt="Description of SVG">
+                <img class="logo_img logo_img_small" src="icons/logo_white.svg" alt="small_logo">
+            </li>
+            <li id="side_drop_btn" class="side_nav_sml">Cards
+                <ul id="side_nav_drop">
+                    <li class="side_nav_drop_item">Christmas</li>
+                    <li class="side_nav_drop_item">Birthday</li> 
+                    <li class="side_nav_drop_item">All Cards</li>
                 </ul>
             </li>
-            <li class="hideOnMobile"><a href="#">Cards</a></li>
-            <li class="hideOnMobile"><a href="#">Charities</a></li>
-            <li class="hideOnMobile"><a href="#">About Us</a></li>
-            <li class="hideOnMobile"><a href="#">Cards</a></li>
-            <li class="hideOnMobile"><a href="#">Contact Us</a></li>
-            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            <li class="side_nav_sml">Charities</li>
+            <li class="side_nav_sml">About</li>
+            <li class="side_nav_sml">Contact</li>
+            <li class="side_nav_sml">FAQs</li>
+            <li><hr></li>
+            <li class="side_nav_log"><p>Log In / Sign Up</p></li>
         </ul>
-    </nav> -->
-    <!-- <nav>
-        <div class="nav_logo_container">
-            <img id="logo" class="nav_logo_image" src="icons/logo_frame.png" alt="crown_logo">
-            <h1 class="heading nav_logo_title" id="logo_title">Charityecards</h1>
-        </div>
-        <ul class="nav_options">
-            <li><p class="heading"><a class="nav_bar_link" href="pages/all_products.html">Cards</a></p>
-                <ul>
-                    <li><a href="pages/christmas_cards.html">Christmas</a></li>
-                    <li id="bday_nav">Birthday</li>
-                    <li><a href="pages/all_products.html">All Cards</a></li>    
-                </ul>
-            </li>
-            <li><p class="heading" id="FAQ">FAQs</p></li>
-            <li><p class="heading" >Charities</p></li>
-            <li><p class="heading">About Us</p></li>
-            <li><p class="heading">Contact Us</p></li>
-        </ul>
-        <ul class="log_in">
-            <li><p id="log_in" class="heading">Log in / Sign Up</p></li>
-        </ul>
-        <ul class="nav_icons">
-            <li><img class="icon" src="icons/search_svg.svg" alt="search_icon"></li>
-            <li><img class="icon" id="cart" src="icons/Shopping_Basket_Icon.jpg" alt="shopping_basket_icon"></li>
-            <li onclick=showSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </ul>
-    </nav> -->
-    <hr id="nav_break">
+    </div>  
+    <script src="nav_bar_script.js"></script>
     <div class="homepage_viewport">
         <div class="homepage_text">
             <h1 id="display_text" class="heading">Give Love Anywhere</h1>
