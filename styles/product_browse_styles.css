@@ -13,8 +13,8 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    gap: var(--size-px-ml);
     padding-bottom: var(--size-px-xxxl);
+    row-gap: var(--size-dm);
 }
 .product_card {
     display: flex;
