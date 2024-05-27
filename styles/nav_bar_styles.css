@@ -1,7 +1,7 @@
-@import "styles/colours.css";
-@import "styles/sizing.css";
-@import "styles/spacing.css";
-@import "styles/typography.css";
+@import "colours.css";
+@import "sizing.css";
+@import "spacing.css";
+@import "typography.css";
 * {
     padding: var(--size-none);  
     margin: var(--size-none);  
@@ -239,6 +239,6 @@ li ul li {
         margin-right: var(--size-px-sm);
     }
     .logo_img_small {
-        margin-bottom: var(--size-px-xs);
+        margin-bottom: var(--size-px-xs);   
     }
 }
