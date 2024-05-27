@@ -9,6 +9,7 @@
     --size-sm: 2em;
     --size-smm: 2.5em;
     --size-dm: 3em;
+    --size-d: 3.5em;
     --size-md: 4em;
     --size-m: 5em;
     --size-ml: 6em;
@@ -17,6 +18,7 @@
     --size-lg: 8em;
     --size-g: 9em;
     --size-lx: 10em;
+    --size-x: 11em;
     --size-xl: 12em;
     --size-xll: 14em;
     --size-l: 15em;
@@ -46,6 +48,7 @@
     --size-px-xxxl: 60px; 
     --size-px-gr: 70px;
     --size-px-g: 80px;
+
     /* Specific sizing */
     --size-side-nav-hr: 12.5px;
     --size-footer-a: 22em;

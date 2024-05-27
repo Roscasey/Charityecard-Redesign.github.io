@@ -3,38 +3,72 @@
 @import "./spacing.css";
 @import "./typography.css";
 
-/* Titles*/
 .product_grid {
     display: grid;
-    grid-template-rows: 1fr 30px 1fr 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 15px; 
-
-    /*Spacing*/
-    margin-left: var(--space-px-xxl);
-    margin-bottom: var(--space-px-lg);
+    grid-template-columns: 15em 15em 15em 15em;
+    gap: var(--size-m);
+    justify-content: center;
 }
-.product_grid > img {
+.product_card {
+    display: grid;
+    width: var(--size-xll);
+}
+.product_card img {
+    width: var(--size-full);
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
 }
-.product_grid_label_1 {
-    grid-row: 2/3
+.product_card label {
+    margin-top: var(--size-px-xs);
 }
-.product_grid_label_2 {
-    grid-row: 4/5;
+@media screen and (max-width: 1250px) {
+    .product_grid {
+        gap: var(--size-dm);
+    }
+    .product_card {
+        display: grid;
+        width: var(--size-xl);
+    }
 }
-#filter {
-    grid-column: 4/5;
+@media screen and (max-width: 1100px) {
+    .product_grid {
+        gap: var(--size-m);
+        grid-template-columns: 11em 11em 11em 11em;
+    }
+    .product_card {
+        width: var(--size-x);
+    }
+    .product_card label {
+        font-size: var(--size-input-small);
+    }
 }
-.product_header {
-    display: grid;
-    grid-template-columns: 80px 30% 700px 40px 40px;
-    align-content: center;
-    align-items: center;
+@media screen and (max-width: 1000px) {
+    .product_grid {
+        gap: var(--size-md);
+        grid-template-columns: 10em 10em 10em 10em;
+    }
+    .product_card {
+        width: var(--size-lx);
+    }
 }
-.product_header > h1 {
-    grid-column: 2/3;
+@media screen and (max-width: 913px) {
+    .product_grid {
+        gap: var(--size-d);
+    }
+}
+@media screen and (max-width: 850px) {
+    .product_grid {
+        gap: var(--size-dm);
+    }
+}
+@media screen and (max-width: 730px) {
+    .product_grid {
+        gap: var(--size-sm);
+    }
+}
+@media screen and (max-width: 700px) {
+    .product_grid {
+        grid-template-columns: 10em 10em;
+    }
+}
 
-    /*Spacing*/
-    margin-bottom: var(--space-px-lg);
-}
+
