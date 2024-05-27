@@ -71,3 +71,13 @@
         font-size: 12px;
     }
 }
+
+/* Test */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_grid {
+    flex: 1;
+}

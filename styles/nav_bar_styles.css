@@ -2,6 +2,7 @@
 @import "sizing.css";
 @import "spacing.css";
 @import "typography.css";
+
 * {
     padding: var(--size-none);  
     margin: var(--size-none);  
@@ -117,7 +118,7 @@ nav hr {
 .nav_container {
     margin-top: var(--size-xs);
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     padding: var(--size-none);  
 }
@@ -167,13 +168,14 @@ li ul li {
 .drop_down_menu li + li {
     margin-left: var(--size-sm);  
 }
-/* Surface pro width = 1368px*/
-@media screen and (max-width: 1250px) { /* Surface Pro */
-.navbar {
-    padding-left: var(--size-sm);
-    padding-right: var(--size-sm);
+@media screen and (max-width: 1250px) {
+    .navbar  {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    
 }
-}
+
 @media screen and (max-width: 1200px) { /* Surface Pro */
     li ul li {
         font-size: 0.85rem;
