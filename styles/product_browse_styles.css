@@ -1,7 +1,8 @@
-@import "./colours.css";
-@import "./sizing.css";
-@import "./spacing.css";
-@import "./typography.css";
+@import "colours.css";
+@import "sizing.css";
+@import "spacing.css";
+@import "typography.css";
+@import "buttons_styles.css";
 
 .product_grid_container {
     display: flex;
