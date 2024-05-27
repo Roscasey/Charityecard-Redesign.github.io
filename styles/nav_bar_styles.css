@@ -107,7 +107,7 @@ li ul ul{
 nav {
     font-family: var(--font-heading);
 }
-hr {
+nav hr {
     width: var(--size-full); 
 }
 #heading_title {

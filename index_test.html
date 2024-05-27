@@ -4,66 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="./styles/nav_bar_styles.css">
+    <link rel="stylesheet" href="styles/footer_styles.css">
+    <link rel="stylesheet" href="styles/buttons_styles.css">
+    <!-- <link rel="stylesheet" href="styles/nav_bar_styles.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body> 
-    <nav class="nav_container">
-        <ul class="navbar">
-            <li class="hamburger_container big_screen">
-                <img id="hamburger_icon" src="../icons/hamburger.svg" alt="Description of SVG">
-                <img class="logo_img logo_img_small" src="../icons/Logo_Icon_SVG.svg" alt="small_logo">
-            </li>
-            <li class="big_screen">
-                <ul class="nav_heading_container"> 
-                    <li><a href="index.html"><img class="logo_img lg_disp" src="../icons/Logo_Icon_SVG.svg" alt="small_logo"></a> </li>
-                    <li class="lg_disp"><a href="../index.html" id="heading_title">Charityecards</a></li>
-                </ul>
-            </li>
-            <li class="big_screen">
-                <ul class="nav_options_container lg_disp">
-                    <li><a href="">Cards</a>
-                        <ul class="drop_down_menu">
-                            <li><a href="pages/christmas_cards.html">Christmas</a></li>
-                            <li>Birthday</li>
-                            <li><a href="pages/all_products.html">All Cards</a></li>
-                        </ul>
-                    </li>
-                    <li>Charities</li>
-                    <li>FAQs</li>
-                    <li>About Us</li>  
-                    <li>Contact Us</li>  
-                </ul>
-            </li> 
-            <li class="big_screen">
-                <ul class="nav_icons_container">
-                    <li class="lg_disp">Log In / Sign Up</li>
-                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt=""></li>
-                    <li><a href=""><img class="nav_icon" src="../icons/Shopping_Basket_Icon.jpg" alt=""></a></li>
-                </ul>
-            </li> 
-        </ul> 
-    </nav>
-    <div id="side_nav">
-        <ul class="side_nav_sml_disp">
-            <li class="side_nav_burger">
-                <img id="exit_icon" src="../icons/close_white.svg" alt="Description of SVG">
-                <img class="logo_img logo_img_small" src="../icons/logo_white.svg" alt="small_logo">
-            </li>
-            <li id="side_drop_btn" class="side_nav_sml">Cards
-                <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item">Christmas</li>
-                    <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item">All Cards</li>
-                </ul>
-            </li>
-            <li class="side_nav_sml">Charities</li>
-            <li class="side_nav_sml">About</li>
-            <li class="side_nav_sml">Contact</li>
-            <li class="side_nav_sml">FAQs</li>
-            <li><hr></li>
-            <li class="side_nav_log"><p>Log In / Sign Up</p></li>
-        </ul>
-    </div>  
-    <script src="nav_bar_script.js"></script>
+    <footer>
+        <div class="footer_section">
+            <h3 class="heading">Useful Links</h3>
+            <hr id="hr_f_1">
+            <p>> Pricing</p>
+            <p>> Terms and Conditions</p>
+            <p>> Privacy Policy</p>
+        </div>
+        <div class="footer_section">
+            <h3 class="heading">Newsletter</h3>
+            <hr id="mid_hr">
+            <p>Keep up to date on all the latest Charity Ecards news</p>
+            <input type="text" id="enter_your_email" name="enter_your_email" placeholder="Please Enter Your Email">
+            <button id="submit_foot" class="red_button red_button--opp">Submit</button>
+        </div>
+        <div class="footer_section">
+            <h3 class="heading">Secure Payments</h3>
+            <hr id="hr_f_3">
+            <div>
+                <img class="payment_icon" id="visa_f" src="icons/Visa_Cream_JPG.png" alt="visa">
+                <img class="payment_icon" id="masterc_f" src="icons/mastercard_cream.svg" alt="mastercard">
+                <img class="payment_icon" id="amex_f" src="icons/AMEX_JPG.jpg" alt="amex">
+                <img class="payment_icon" id="pp_f" src="icons/PayPayl_JPG.png" alt="paypal">
+                <img class="payment_icon" id="app_f" src="icons/Apple_Pay_Cream_SVG.svg" alt="apple_pay">
+            </div>
+        </div>
+        <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
+    </footer> 
 </body>

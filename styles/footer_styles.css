@@ -2,7 +2,6 @@
 @import "./sizing.css";
 @import "./spacing.css";
 @import "./typography.css";
-
 footer {
     /*Colours*/
     background-color: var(--color-primary-dark);
@@ -13,7 +12,8 @@ footer {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-
+    padding-top: var(--size-sm);
+    padding-bottom: var(--size-sm);
 }
 /*Enter your Email*/
 #enter_your_email {
@@ -105,4 +105,102 @@ footer h3 {
 footer, .footer_section > p {
     font-weight: var(--font-weight-s);
     font-size: var(--text-xs);
+}
+@media screen and (max-width: 1400px) { 
+    .footer_section + .footer_section {
+        margin-left: var(--size-lx);
+    }
+}
+@media screen and (max-width: 1280px) { 
+    .footer_section + .footer_section {
+        margin-left: var(--size-ml);
+    }
+    #mid_hr {
+        margin-left: var(--size-px-ultra-mini);
+    }
+}
+@media screen and (max-width: 1200px) { 
+    #copyright {
+        font-size: var(--size-input-small);
+    }
+    footer h3 {
+        font-size: var(--text-sm);
+    }
+    .footer_section + .footer_section {
+        margin-left: var(--size-m);
+    }
+}
+@media screen and (max-width: 1150px) { 
+    .footer_section + .footer_section {
+        margin-left: var(--size-dm);
+    }
+}
+@media screen and (max-width: 1070px) { 
+    .footer_section + .footer_section {
+        margin-left: var(--size-xs);
+    }
+}
+@media screen and (max-width: 1000px) { 
+    .footer_section > p {
+        font-size: var(--size-px-xs);
+    }
+    footer hr {
+        width: var(--size-l);
+    }
+    #enter_your_email {
+        font-size: var(--size-px-xs);
+        width: var( --size-footer-a);
+    }
+    #copyright {
+        font-size: var(--size-px-xs);
+    }
+    .footer_section + .footer_section {
+        margin-left: var(--size-m);
+    }
+    .payment_icon {
+        height: 15px
+    }
+    #hr_f_3 {
+        margin-left: var(--size-px-xxxs);
+    }
+    #mid_hr {
+        width: var(--size-xxl);
+    }
+    .footer_section > div > img + img {
+        margin-left: var(--size-px-xs);
+    }
+}
+@media screen and (max-width: 850px) { 
+    .footer_section + .footer_section {
+        margin-left: var(--size-sm);
+    }
+}
+@media screen and (max-width: 500px) { 
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+        align-content:center ;
+        padding-top: var(--size-xs);
+    }
+    .footer_section p {
+        font-size: var( --size-input-small);
+    }
+    #mid_hr, footer hr {
+        width: var( --size-xmm);
+    }
+    .footer_section {
+        margin-bottom: var(--size-px-ml);
+    }
+    #copyright {
+        font-size: var(--text-xxxs);
+    }
+    #enter_your_email {
+        font-size: var( --size-input-small);
+        width: var(--size-footer);
+    }
+    .payment_icon {
+        height: var(--size-px-sm);
+    }
 }

@@ -10,6 +10,10 @@
     border-color: var(--btn-primary-bg);
     color: var(--btn-primary-label);
     border: solid;
+
+    border-radius: var(--size-xxs);
+    width: var(--size-g);
+    height: var(--size-px-ml)
 }
 .red_button:hover {
     background-color: var(--btn-primary-hover);
@@ -19,6 +23,9 @@
     background-color: var(--btn-primary-opp-bg);
     border-color: var(--color-primary-dark);
     color: var(--btn-primary-opp-label);
+
+    width: var(--size-lg);
+    border-radius: var(--size-sm);
 }
 .red_button--opp:hover {
     background-color: var(--color-primary-dark);
@@ -36,20 +43,12 @@
     border-color: var(--color-light);
     color: var(--color-light);
 }
-
 /* Sizing */
-.red_button {
-    border-radius: var(--size-xxs);
-    width: var(--size-g);
-    height: var(--size-px-ml)
-}
 .red_button--lg {
     width: var(--size-xl);
     height: var(--size-smm);
-}
-.red_button--opp {
-    width: var(--size-lg);
-    border-radius: var(--size-sm);
+
+    text-align: center;
 }
 .white_button {
     border-radius: var(--size-xxxs);
@@ -57,7 +56,18 @@
     width: var(--size-g);
     height: var(--size-smm);
 }    
-/* Typograaphy */
-.red_button--lg {
-    text-align: center;
+
+@media screen and (max-width: 1280px) {
+    .red_button, .red_button--opp {
+        width: var(--size-mml);
+        height: var(--size-px-md);
+    }
+    
+}
+@media screen and (max-width: 1000px) {
+    .red_button, .red_button--opp {
+        width: 8em;
+        height: 20px;
+        font-size: 12px;
+    }
 }

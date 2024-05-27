@@ -23,8 +23,11 @@
 
     --size-xxl: 16em;
     --size-xxxl: 18em;
+    --size-xm: 19em;
+    --size-xmm: 19.5em;
     --size-mega: 20em;
     /* Pixels */
+    --size-px-ultra-mini: 1px;
     --size-px-mini: 1.5px;
     --size-px-xxxs: 2px;
     --size-px-xxs: 5px;
@@ -45,9 +48,11 @@
     --size-px-g: 80px;
     /* Specific sizing */
     --size-side-nav-hr: 12.5px;
+    --size-footer-a: 22em;
     --size-footer: 22.5em;
     --size-full: 100%;
     --size-nav: 1200px;
+    --size-input-small: 12px;
 }
 /* @media(max-width: 800px) {s
     .hideOnMobile {
