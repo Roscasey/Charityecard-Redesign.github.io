@@ -2,7 +2,6 @@
 @import "sizing.css";
 @import "spacing.css";
 @import "typography.css";
-@import "buttons_styles.css";
 
 #display_text {
     display: flex;

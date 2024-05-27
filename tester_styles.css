@@ -3,4 +3,28 @@
 @import "styles/spacing.css";
 @import "styles/typography.css";
 @import "styles/buttons_styles.css";
+@import "styles/links_styles.css";
 
+.progress_bar  {
+    display: flex;
+}
+.progress_bar > * {
+    margin-right: 5px;
+}
+.progress_bar p {
+    color: var(--color-subtext);
+}
+.product_header {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.product_header > img {
+    display: flex;
+    width: 20px;
+    height: 20px
+}
+.header_container {
+    padding-top: 2em;
+}
