@@ -88,20 +88,34 @@
                 <p class="card_type">Standard Card</p>
                 <p class="card_price">$9.95</p>
             </div>
-            <div class="select_option_container">
-                <h3 class="select_opt_title">Select an Option</h3>
-                <div class="select_option_box white_button white_button--lg">
-                    <p class="product_option_head">Preview</p>
-                    <p class="product_option_subtext">Click to see the inside, animations and features</p>
-                    <img class="arrow_icon" src="icons/arrow_icon.png" alt="arrow_icon">
+            <form class="charity_select_grid">
+                <div class="charity_select_1">
+                    <h3 class="form_heading select_charity_title">1. Select your charity</h3>
+                    <select class="info_box" name="charity" id="select_charity">
+                        <option id="default_option" value="default">--Please Select One--</option>
+                        <option value="act">Act For Kids</option>
+                        <option value="alz_wa">Alzheimer's WA</option>
+                        <option value="aia">Amnesty International Australia</option>
+                        <option value="awl">Animal Welfare League (AWL) NSW</option>
+                        <option value="acrf">Animal Cancer Research Foundation</option>
+                        <option value="arc">Australian Red Cross</option>
+                        <option value="asrf">Australian Spinal Research Foundation</option>
+                        <option value="aspect">Autism Spectrum Australia (Aspect)</option>
+                        <option value="bc">Bear Cottage</option>
+                    </select>
                 </div>
-                <div class="select_option_box white_button white_button--lg">
-                    <p class="product_option_head">Add to Cart</p>
-                    <p class="product_option_subtext">Choose your charity, add your recipient and sender details</p>
-                    <img class="arrow_icon" src="icons/arrow_icon.png" alt="arrow_icon">
+                <hr>
+                <div class="charity_select_2">
+                    <h3 class="form_heading select_charity_title">2. Sender Details</h3>
+                    <label for="full_name">Full Name</label>
+                    <input class="info_box" type="text" name="full_name" id="sender_fn">
+                    <label for="sender_email_phone">Email Address or Phone Number</label>
+                    <input class="info_box" type="text" name="email_phone" id="sender_email_phone" >
+                    <label for="company">Company Name (Optional)</label>
+                    <input class="info_box" type="text" name="company" id="sender_company">
+                    <a class="orange_links continue_browsing" href="">Continue Browsing</a>
                 </div>
-                <a class="orange_links continue_browsing" href="">Continue Browsing</a>
-            </div>
+            </form>
         </section>
     </main>
     <footer>
