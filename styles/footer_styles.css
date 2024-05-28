@@ -14,7 +14,7 @@ footer {
     flex-wrap: wrap;
     padding-top: var(--size-sm);
     padding-bottom: var(--size-sm);
-    bottom: 0;
+    bottom: var(--size-none);
 }
 /*Enter your Email*/
 #enter_your_email {
@@ -44,7 +44,7 @@ footer {
     margin-top: var(--size-md);
 
     /* Typography*/
-    font-size: var(--text-xxs);
+    font-size: var(--text-xs);
 } 
 /*Payment Icons*/
 .payment_icon {
@@ -66,7 +66,7 @@ footer hr {
 }
 /* Spacing */
 .footer_section > div > img + img {
-    margin-left: var(--size-px-xs);
+    margin-left: var(--size-px-md);
 }
 .footer_section + .footer_section {
     margin-left: var( --size-footer-section);
@@ -141,19 +141,19 @@ footer, .footer_section > p {
     }
 }
 @media screen and (max-width: 1000px) { 
-    #keep_date {
+    /* #keep_date {
         font-size: var(--size-px-xs);
-    }
+    } */
     footer hr {
         width: var(--size-xxl);
     }
     #enter_your_email {
         font-size: var(--size-px-xs);
-        width: 23em;
+        width: var(--size-footer-b);
     }
-    #copyright {
+    /* #copyright {
         font-size: var(--size-px-xs);
-    }
+    } */
     .footer_section + .footer_section {
         margin-left: var(--size-m);
     }
@@ -176,7 +176,7 @@ footer, .footer_section > p {
         align-items: baseline;
         justify-content: space-between;
         align-content:center ;
-        padding-top: var(--size-xs);
+        padding-top: var(--size-sm); 
     }
     .footer_section p {
         font-size: var( --size-input-small);

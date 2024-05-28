@@ -39,18 +39,4 @@ body {
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 }
-@media screen and (max-width: 1100px) {
-    p:not(.current_page) {
-        font-size: var(--size-input-small);
-    }
-}
-@media screen and (max-width: 1000px) {
-    .heading--page-title {
-        font-size: var(--text-lg);
-    }
-}
-@media screen and (max-width: 913px) {
-    .heading--page-title {
-        font-size: var(--text-lg);
-    }
-}
+

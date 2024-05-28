@@ -53,18 +53,9 @@
     --size-side-nav-hr: 12.5px;
     --size-footer-a: 22em;
     --size-footer: 22.5em;
+    --size-footer-b: 23em;
     --size-footer-section: 13em;
     --size-full: 100%;
     --size-nav: 1200px;
     --size-input-small: 12px;
 }
-/* @media(max-width: 800px) {s
-    .hideOnMobile {
-        display: none;
-    }
-}
-    @media(max-width: 400px) {
-        .sidebar {
-            width: 100%
-        }
-} */
