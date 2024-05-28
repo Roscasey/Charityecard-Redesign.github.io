@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="styles/product_browse_styles.css">
+    <link rel="stylesheet" href="tester_styles.css">
     <link rel="stylesheet" href="styles/nav_bar_styles.css">
     <link rel="stylesheet" href="styles/footer_styles.css">
     <link rel="stylesheet" href= "styles/product_header_styles.css">
@@ -70,53 +70,37 @@
         </ul>
     </div>  
     <hr id="one">
-    <main class="product_grid_container">
+    <main class="product_item_container">
         <header class="product_header_container">
             <div class="progress_bar">
                 <a class="orange_links" href="">Home</a> 
-                <a class="orange_links" href="">Get Started</a>
-                <p class="current_page">All Cards</p>
+                <a class="orange_links" href="">Cards</a>
+                <a class="orange_links" href="">Christmas</a>
+                <p class="current_page">Season's Greetings</p>
             </div>
             <div class="product_header">
-                <h1 class="heading heading--page-title">All Cards</h1>
-                <div class="product_header_icons">
-                    <img class="icon" id="filter" src="icons/Filter_Icon.png" alt="filter_icon">
-                    <img class="icon" id="sort" src="icons/Sort_By_Icon.png" alt="sort_by_icon">
-                </div>
+                <h1 class="heading heading--page-title">Season's Greetings</h1>
             </div>
         </header>
-        <section class="product_grid">
-            <div class="product_card">
-                <img id="seasons_greetings_ap" src="images/seasons_greetings.png" alt="seasons_greetings ">
-                <p class="product_grid_label_1" id="sg_label_ap" for="seasons_greetings">Season's Greetings</p>
+        <section class="product_listing">
+            <div class="product_item_card">
+                <img src="images/seasons_greetings_big.png" alt="seasons_greetings_big">
+                <p class="card_type">Standard Card</p>
+                <p class="card_price">$9.95</p>
             </div>
-            <div class="product_card">
-                <img id="ornament_greetings_ap" src="images/ornament_greetings.png" alt="ornament_greetings">
-                <p class="product_grid_label_1" id="og_label_ap" for="ornament_greetings">Ornament Greetings</p >
-            </div>
-            <div class="product_card">
-                <img id="wreath_greetings_ap" src="images/wreath_greeting.png" alt="wreath_greetings">
-                <p class="product_grid_label_1" id="wg_label_ap" for="wreath_greetings">Wreath Greetings</p >
-            </div>
-            <div class="product_card">
-                <img id="variety_greetings_ap" src="images/variety_greetings.png" alt="variety_greetings">
-                <p class="product_grid_label_1" id="vg_label_ap" for="variety_greetings">Variety Greetings</p>
-            </div>
-            <div class="product_card">
-                <img id="birthday_hats_ap"src="images/birthday_hats.png" alt="birthday_hats">
-                <p class="product_grid_label_2" id="bh_label" for="birthday_hats">Birthday Hats</p>
-            </div>
-            <div class="product_card">
-                <img id="three_wise_men_ap" src="images/three_wise_men.png" alt="three_wise_men">
-                <p class="product_grid_label_2" id="_ap" for="three_wise_men">Three Wise Men</p>
-            </div>
-            <div class="product_card">
-                <img id="confetti_birthday_ap" src="images/confetti_birthday.png" alt="confetti_birthday">
-                <p class="product_grid_label_2" id="cb_label" for="confetti_birthday">Confetti Birthday</p>
-            </div>
-            <div class="product_card">
-                <img id="balloon_birthday_ap" src="images/balloon_birthday.png" alt="balloon_birthday">
-                <p class="product_grid_label_2" id="cb_label" for="balloon_birthday">Balloon Birthday</p>
+            <div class="select_option_container">
+                <h3 class="select_opt_title">Select an Option</h3>
+                <div class="select_option_box white_button white_button--lg">
+                    <p class="product_option_head">Preview</p>
+                    <p class="product_option_subtext">Click to see the inside, animations and features</p>
+                    <img class="arrow_icon" src="icons/arrow_icon.png" alt="arrow_icon">
+                </div>
+                <div class="select_option_box white_button white_button--lg">
+                    <p class="product_option_head">Add to Cart</p>
+                    <p class="product_option_subtext">Choose your charity, add your recipient and sender details</p>
+                    <img class="arrow_icon" src="icons/arrow_icon.png" alt="arrow_icon">
+                </div>
+                <a class="orange_links" href="">Continue Browsing</a>
             </div>
         </section>
     </main>

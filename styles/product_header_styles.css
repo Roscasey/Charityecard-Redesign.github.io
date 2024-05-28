@@ -28,10 +28,10 @@
     margin-left: auto;
 }
 .product_header_container {
-    display: grid;
     padding-bottom: var(--size-px-xl);
     padding-top: var(--size-px-sm);
 }
+
 @media screen and (max-width: 913px) {
     .product_header_container {
         padding-bottom: var(--size-px-sm);

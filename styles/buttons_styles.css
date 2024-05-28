@@ -13,7 +13,7 @@
 
     border-radius: var(--size-xxs);
     width: var(--size-g);
-    height: var(--size-px-ml)
+    height: var(--size-px-ml);
 }
 .red_button:hover {
     background-color: var(--btn-primary-hover);
@@ -37,12 +37,17 @@
     background-color: var(--btn-secondary-bg);
     border-color: var(--btn-secondary-border);
     color: var(--btn-secondary-label);
+
+    border-radius: var(--size-xxxs);
+    border-width: var(--size-px-mini);
+    width: var(--size-g);
+    height: var(--size-smm);
 }
-.white_button:hover {
+/* .white_button:hover {
     background-color: var(--color-primary-dark);
     border-color: var(--color-light);
     color: var(--color-light);
-}
+} */
 /* Sizing */
 .red_button--lg {
     width: var(--size-xl);
@@ -50,12 +55,12 @@
 
     text-align: center;
 }
-.white_button {
+.white_button--lg {
     border-radius: var(--size-xxxs);
     border-width: var(--size-px-mini);
-    width: var(--size-g);
-    height: var(--size-smm);
-}    
+    width: 25em;
+    height: 8em;
+} 
 
 @media screen and (max-width: 1280px) {
     .red_button, .red_button--opp {
@@ -72,12 +77,3 @@
     }
 }
 
-/* Test */
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.product_grid {
-    flex: 1;
-}
