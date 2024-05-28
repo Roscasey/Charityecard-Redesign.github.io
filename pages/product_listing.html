@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Season's Greetings</title>
+    <link rel="stylesheet" href="../styles/tester_styles.css">
     <link rel="stylesheet" href="../styles/nav_bar_styles.css">
-    <link rel="stylesheet" href="../styles/product_listing_styles.css">
     <link rel="stylesheet" href="../styles/footer_styles.css">
+    <link rel="stylesheet" href= "../styles/product_header_styles.css">
+    <link rel="stylesheet" href="../styles/product_listing_styles.css">
     <link rel="stylesheet" href="../styles/buttons_styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
@@ -70,28 +72,40 @@
     </div>  
     <script src="../nav_bar_script.js"></script>
     <hr id="one">
-    <div class="progress_bar">
-        <a class="orange_links" href="">Home</a> 
-        <a class="orange_links" href="">Cards</a>
-        <a class="orange_links" href="">Christmas</a>
-        <p>Season's Greetings</p>
-    </div>
-    <div class="product_listing_grid">
-        <h1 class="heading heading--page-title">Season's Greetings</h1>
-        <img src="../images/seasons_greetings_big.png" alt="seasons_greetings_big">
-        <p class="card_type">Standard Card</p>
-        <p class="price">$9.95</p>
-    </div>
-    <div class="select_option_grid">
-        <h1>Select an Option</h1>
-        <button class="select_option_box">Preview<br><p class="product_option_subtext">Click to see the inside, animations and features</p>
-            <img src="../icons/arrow_icon.png" alt="arrow_icon">
-        </button>
-        <button class="select_option_box">Add to Cart<br><p class="product_option_subtext">Choose your charity, add your recipient and sender details</p>
-            <img src="../icons/arrow_icon.png" alt="arrow_icon">
-        </button>
-    </div>
-    <a class="orange_links" href="">Continue Browsing</a>
+    <main class="product_item_container">
+        <header class="product_header_container">
+            <div class="progress_bar">
+                <a class="orange_links" href="">Home</a> 
+                <a class="orange_links" href="">Cards</a>
+                <a class="orange_links" href="">Christmas</a>
+                <p class="current_page">Season's Greetings</p>
+            </div>
+            <div class="product_header">
+                <h1 class="heading heading--page-title">Season's Greetings</h1>
+            </div>
+        </header>
+        <section class="product_listing">
+            <div class="product_item_card">
+                <img src="../images/seasons_greetings_big.png" alt="seasons_greetings_big">
+                <p class="card_type">Standard Card</p>
+                <p class="card_price">$9.95</p>
+            </div>
+            <div class="select_option_container">
+                <h3 class="select_opt_title">Select an Option</h3>
+                <div class="select_option_box white_button white_button--lg">
+                    <p class="product_option_head">Preview</p>
+                    <p class="product_option_subtext">Click to see the inside, animations and features</p>
+                    <img class="arrow_icon" src="../icons/arrow_icon.png" alt="arrow_icon">
+                </div>
+                <div class="select_option_box white_button white_button--lg">
+                    <p class="product_option_head">Add to Cart</p>
+                    <p class="product_option_subtext">Choose your charity, add your recipient and sender details</p>
+                    <img class="arrow_icon" src="../icons/arrow_icon.png" alt="arrow_icon">
+                </div>
+                <a class="orange_links continue_browsing" href="">Continue Browsing</a>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer_section">
             <h3 class="heading">Useful Links</h3>

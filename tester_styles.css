@@ -7,8 +7,8 @@
 
 .card_type {
     color: var(--color-subtext);
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: var(--size-px-s);
+    padding-bottom: var(--size-px-xs);
 }
 .card_price {
     font-size: var(--text-md);
@@ -16,7 +16,7 @@
 }
 .select_opt_title {
     font-size: 24px;
-    padding-bottom: 30px;
+    padding-bottom: var(--size-px-ml);
     align-self: flex-start;
 }
 .select_option_container {
@@ -25,9 +25,9 @@
     align-items: center;
 }
 .select_option_box {
-    padding-left: 25px;
-    padding-top: 20px;
-    margin-bottom: 25px;
+    padding-left: var(--size-px-md);
+    padding-top: var(--size-px-sm);
+    margin-bottom: var(--size-px-md);
     display: grid;
     grid-template-columns: 2fr 10%;
     grid-template-rows: 35% 65%;
@@ -42,8 +42,8 @@
     align-self: flex-start;
 }
 .select_option_box > img {
-   width: 15px;
-   height: 20px;
+   width: var(--size-px-s);
+   height: var(--size-px-sm);
 }
 .product_listing {
     display: flex;
@@ -55,14 +55,14 @@
     width: 29em;
 }
 .product_item_card > img{
-    width: 100%
+    width: var(--size-full);
 }
 .product_option_head { 
-    font-size: 20px;
-    font-weight: 600;
+    font-size: var(--size-px-sm);
+    font-weight: var(--font-weight-md);
 }
 .product_listing > div + div {
-    margin-left: 8em; 
+    margin-left: var(--size-lg); 
 }
 .select_option_container {
     grid-column: 3/4;
@@ -79,12 +79,12 @@
 
 @media screen and (max-width: 1200px) {
     .product_item_card {
-        width: 23em; 
+        width: var(--size-footer-b); 
     }
     .select_option_box {
         padding-left: 25px;
-        padding-top: 20px;
-        margin-bottom: 20px;
+        padding-top: var(--size-px-sm);
+        margin-bottom: var(--size-px-sm);
     }
     .select_opt_title {
         font-size: 22px;
@@ -94,10 +94,10 @@
     }
     .product_option_subtext {
         font-size: 16px;
-        padding-right: 10px;
+        padding-right: var(--size-px-xs);
     }
     .select_option_box > img {
-        width: 10px;
+        width: var(--size-px-xs);
         height: 18px;
     }
     .continue_browsing {
@@ -136,12 +136,12 @@
     }
     .product_option_subtext {
         font-size: 14px;
-        padding-right: 60px;
+        padding-right: var(--size-px-xxxl);
     }
     .select_option_box {
-        padding-left: 20px;
-        padding-top: 15px;
-        margin-bottom: 20px;
+        padding-left: var(--size-px-sm);
+        padding-top: var(--size-px-s);
+        margin-bottom: var(--size-px-sm);
     }
 }
 @media screen and (max-width: 950px) {
@@ -149,15 +149,12 @@
         width: 19em; 
     }
     .product_item_container {
-        padding-bottom: 60px;
+        padding-bottom: var(--size-px-xxxl);
     }
 }
 @media screen and (max-width: 820px) {
     .product_item_card {
         width: 19em; 
-    }
-    .product_item_container {
-        padding-bottom: 60px;
     }
     .product_item_container {
         display: flex;
@@ -171,7 +168,7 @@
         align-content: center;
     }
     .product_listing > div + div {
-        margin-left: 0em; 
+        margin-left: var(--size-none); 
     }
 }
 @media screen and (max-width: 500px) {
@@ -180,31 +177,22 @@
         flex-direction: column;
         align-items: center;
     }
-    .product_listing {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-    }
     .select_option_box {
-        padding-left: 20px;
-        padding-top: 15px;
-        padding-bottom: 20px;;
-        margin-bottom: 20px;
+        padding-left: var(--size-px-sm);
+        padding-top: var(--size-px-s);
+        padding-bottom: var(--size-px-sm);
+        margin-bottom: var(--size-px-sm);
     }
     .product_option_subtext {
         font-size: 14px;
-        padding-right: 30px;
-    }
-    .product_listing > div + div {
-        margin-left: 0em; 
+        padding-right: var(--size-px-ml);
     }
     .select_opt_title {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: var(--size-px-ml);
+        padding-bottom: var(--size-px-ml);
         align-self: flex-start;
     }
     .product_option_subtext {
-        padding-top: 10px;
+        padding-top: var(--size-px-xs);
     }
 }
