@@ -13,14 +13,14 @@
     font-weight: var(--font-weight-s);
 
     /*Spacing*/
-    margin: var(--space-none);
+    margin: var(--size-none);
 }
 #display_sub {
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 
     /*Spacing*/
-    margin: var(--space-none);
+    margin: var(--size-none);
 }
 
 .homepage_instruction_subheading {

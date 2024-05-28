@@ -33,8 +33,7 @@ footer {
     border-radius: var(--size-px-xs);
 
     /*Spacing*/
-    margin-bottom: var(--space-xs);
-
+    margin-bottom: var(--size-xxxs);
     /*Font Size*/
     font-size: var(--text-xxl);
 }
@@ -42,7 +41,7 @@ footer {
     color: var(--color-light);
 }
 #copyright {
-    margin-top: var(--space-lx);
+    margin-top: var(--size-md);
 
     /* Typography*/
     font-size: var(--text-xxs);
@@ -67,33 +66,33 @@ footer hr {
 }
 /* Spacing */
 .footer_section > div > img + img {
-    margin-left: var(--space-px-s);
+    margin-left: var(--size-px-xs);
 }
 .footer_section + .footer_section {
-    margin-left: var(--space-footer-section);
+    margin-left: var( --size-footer-section);
 }
 .footer_section > h3 + p {
-    margin-top: var(--space-xs);
+    margin-top: var(--size-xxxs);
 }
 .footer_section p {
-    margin-top: var(--space-px-xxs);
-    margin-bottom: var(--space-none);
+    margin-top: var(--size-px-xxs);
+    margin-bottom: var(--size-none);
 }
 .footer_section input {
-    margin-top: var(--space-xs);
+    margin-top: var(--size-xxxs);
 }
 .footer_section > h3 > div > img {
-    margin-top: var(--space-xs);
+    margin-top: var(--size-xxxs);
 }
 .footer_section > h3 + hr {
-    margin-top: var(--space-none);
-    margin-bottom: var(--space-xs);
+    margin-top: var(--size-none);
+    margin-bottom: var(--size-xxxs);
 }
 .footer_section h3 {
-    margin-bottom: var(--space-px-xxxs);
+    margin-bottom: var(--size-px-xxxs);
 }
 #mid_hr {
-    margin-right: var(--space-lg);
+    margin-right: var(--size-sm);
 }
 /* Typography */
 footer > p {

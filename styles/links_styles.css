@@ -6,11 +6,9 @@
 a {
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
-}
 .orange_links{
     color: var(--color-link);
+    text-decoration: underline;
 }
 .orange_links:hover {
     color: var(--color-secondary-dark);

@@ -5,26 +5,37 @@
 @import "styles/buttons_styles.css";
 @import "styles/links_styles.css";
 
-.progress_bar  {
-    display: flex;
-}
 .progress_bar > * {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .progress_bar p {
     color: var(--color-subtext);
 }
+.progress_bar {
+    display: flex;
+    padding-bottom: 30px;
+}
 .product_header {
-    background-color: aqua;
     display: flex;
     align-items: center;
-    width: fit-content;
 }
-.product_header > img {
-    display: flex;
+.product_header_icons > img {
     width: 20px;
-    height: 20px
+    height: 20px;
+    margin-left: 30px;
 }
-.header_container {
-    padding-top: 2em;
+.product_header_icons {
+    display: flex;
+    margin-left: auto;
+}
+.product_header_container {
+    display: grid;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 913px) {
+    .product_header_container {
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
 }

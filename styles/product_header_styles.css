@@ -1,0 +1,40 @@
+@import "./colours.css";
+@import "./sizing.css";
+@import "./spacing.css";
+@import "./typography.css";
+@import "./links_styles.css";
+
+.progress_bar > * {
+    margin-right: var(--size-px-xs);
+}
+.progress_bar p {
+    color: var(--color-subtext);
+}
+.progress_bar {
+    display: flex;
+    padding-bottom: var(--size-px-ml);
+}
+.product_header {
+    display: flex;
+    align-items: center;
+}
+.product_header_icons > img {
+    width: var(--size-px-sm);
+    height: var(--size-px-sm);
+    margin-left: var(--size-px-ml);
+}
+.product_header_icons {
+    display: flex;
+    margin-left: auto;
+}
+.product_header_container {
+    display: grid;
+    padding-bottom: var(--size-px-xl);
+    padding-top: var(--size-px-sm);
+}
+@media screen and (max-width: 913px) {
+    .product_header_container {
+        padding-bottom: var(--size-px-sm);
+        padding-top: var(--size-px-sm);
+    }
+}
