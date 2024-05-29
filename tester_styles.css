@@ -28,7 +28,7 @@
     align-self: center;
 }
 .select_charity_title {
-    margin-top: 20px;
+    margin-top: var(--size-px-sm);
 }
 .form_heading {
     font-size: 24px;
@@ -39,10 +39,10 @@
     border: solid;
     border-width: 1.5px;
     border-color: var(--form-element-border);
-    height: 30px;
+    height: var(--size-px-ml);
     border-radius: 5px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: var(--size-px-sm);
 }
 #default_option {
     text-align: center;
@@ -55,13 +55,13 @@
     grid-column: 2/3;
 }
 .product_listing > div + form {
-    margin-left: 130px
+    margin-left: 130px;
 }
 .product_item_container {
     display: grid;
     grid-template-columns: 1.1fr 2fr 2fr;
     grid-template-rows: 0.25fr 1fr;
-    padding-bottom: 7em;
+    padding-bottom: var(--size-mml);
 }
 .product_item_card {
     width: 29em;
@@ -131,8 +131,7 @@
         align-items: baseline;
     }
     #select_charity {
-        margin-bottom: 30px;
+        margin-bottom: var(--size-px-ml);
     }
-
 }
 
