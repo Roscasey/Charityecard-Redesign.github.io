@@ -93,7 +93,15 @@
                     <p class="cart_product_charity">Charity: Act For Kids</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
-                        <p>Qty box</p>
+                        <div class="qty_box">
+                            <button class="btn" id="btn_minus" type="button">
+                                <img src="icons/minus_btn.svg"alt="minus_btn"/>
+                            </button>
+                            <input type="text" value="1" id="qty_num">
+                            <button class="btn" id="btn_plus">
+                                <img src="icons/plus_icon.svg" type="button" alt="plus_btn"/>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="cart_product_opt">
@@ -101,6 +109,7 @@
                     <button class="white_button edit_changes">Edit Changes</button>
                 </div>
             </div>
+            <hr id="cart_product_hr">
         </section>
         <section class="cart_total">
             <div class="total_grid">

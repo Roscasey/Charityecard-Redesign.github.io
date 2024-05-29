@@ -17,12 +17,16 @@
 .product_item_container section + section {
     margin-left: var(--size-lg);
 }
-
 .cart_total {
-    grid-column: 3/4
+    display: flex;
+    grid-column: 3/4;
 }
 .cart_product_charity {
     margin-bottom: auto;
+}
+#cart_product_hr {
+    width: 30em;
+    margin-top: 20px;
 }
 .cart_products {
     grid-column: 2/3;
@@ -46,6 +50,7 @@
 }
 .cart_product_price_qty {
     display: flex;
+    flex-direction: column;
 }
 .cart_product_info > h3 {
     padding-bottom: 10px;
@@ -67,8 +72,11 @@
     height: 30px;
 }
 #donation_img {
-    width: 25product_item_containerem;
+    width: 25em;
     height: 20em;
 }
+
+
+
 
 

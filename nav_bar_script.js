@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropIt = document.getElementById('side_drop_btn');
     const dropItems = document.getElementsByClassName('side_nav_drop_item');
 
-    // clicking hamburger --> open side nav
+    // Clicking hamburger --> open side nav
     hamburgerIcon.addEventListener('click', () => {
         if (side_nav.style.width === '250px') {
             side_nav.style.width = '0';
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             side_nav.style.width = '250px';
         }
     });
-    // clicking X icon --> close side nav
+    // Clicking X icon --> close side nav
     exitButton.addEventListener('click', () => {
         side_nav.style.width = '0';
     });
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // edge case: close side nav when it is currently open but the screen width exceeds 760px.
+    // Edge case: close side nav when it is currently open but the screen width exceeds 760p 
     function screenTooBig() {
         if (window.innerWidth > 760) {
             side_nav.style.width = '0';
@@ -40,5 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     screenTooBig();
     window.addEventListener('resize', screenTooBig);
+
+    //Increment and decrement buttons on cart product item 
+    let qty = document.getElementById('qty_num');
+    let dec_btn = document.getElementById('btn_minus');
+    let add_btn = document.getElementById('btn_plus');
+
+    dec_btn.addEventListener('click', () => {
+        if (qty.value <= 1) {
+            qty.value = 1; //To go to 0 items or remove, they have option to click the 'remove / X' icon
+        }
+        else {
+            qty.value = parseInt(qty.value) - 1;
+        }
+    });
+
+    add_btn.addEventListener('click', () => {
+        qty.value = parseInt(qty.value) + 1
+    }
+    );
 });
+
+
 

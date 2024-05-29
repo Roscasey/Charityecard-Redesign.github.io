@@ -18,6 +18,7 @@
 .red_button:hover {
     background-color: var(--btn-primary-hover);
     border-color: var(--btn-primary-hover);
+    cursor: pointer;
 }
 .red_button--opp {
     background-color: var(--btn-primary-opp-bg);
@@ -26,11 +27,13 @@
 
     width: var(--size-lg);
     border-radius: var(--size-sm);
+    
 }
 .red_button--opp:hover {
     background-color: var(--color-primary-dark);
     border-color: var(--color-light);
     color: var(--color-light);
+    cursor: pointer;
 }
 .white_button {
     border: solid;
@@ -43,11 +46,13 @@
     width: var(--size-g);
     height: var(--size-smm);
 }
-/* .white_button:hover {
-    background-color: var(--color-primary-dark);
-    border-color: var(--color-light);
-    color: var(--color-light);
-} */
+.white_button:hover {
+    border-color: var(--color-primary-dark);
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    cursor: pointer;
+}
+
 /* Sizing */
 .red_button--lg {
     width: var(--size-xl);
@@ -68,6 +73,40 @@
 .continue_browsing {
     padding-right: 50px;
 }
+/* Qty box */
+.qty_box {
+    display: flex;
+    width: 100px;
+    height: 33.33px;
+    background-color: var(--color-light);
+    padding: 15px;
+    overflow: hidden;
+    align-items: center;
+    border-radius: var(--size-xxxs);
+    border: solid;
+    border-width: var(--size-px-mini);
+    border-color: var(--color-sub-light);
+    margin-top: 10px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: 0 0;
+    cursor: pointer;
+    color: black;
+}
+#qty_num {
+    width: 100%;
+    border: none;
+    text-align: center;
+    background: 0 0;
+}
+
 @media screen and (max-width: 1280px) {
     .red_button--opp {
         width: var(--size-mml);

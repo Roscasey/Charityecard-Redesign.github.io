@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart</title>
+    <link rel="stylesheet" href="../styles/nav_bar_styles.css">
+    <link rel="stylesheet" href="../styles/total_box_style.css">
     <link rel="stylesheet" href="../styles/checkout_payment_styles.css">
     <link rel="stylesheet" href="../styles/my_cart_styles.css">
     <link rel="stylesheet" href="../styles/footer_styles.css">
-    <link rel="stylesheet" href="../styles/buttons_styles.css">
+    <link rel="stylesheet" href="../styles/product_header_styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +21,7 @@
             </li>
             <li class="big_screen">
                 <ul class="nav_heading_container"> 
-                    <li><a href="index.html"><img class="logo_img lg_disp" src="../icons/Logo_Icon_SVG.svg" alt="small_logo"></a> </li>
+                    <li><a href="../index.html"><img class="logo_img lg_disp" src="../icons/Logo_Icon_SVG.svg" alt="small_logo"></a> </li>
                     <li class="lg_disp"><a href="../index.html" id="heading_title">Charityecards</a></li>
                 </ul>
             </li>
@@ -27,9 +29,9 @@
                 <ul class="nav_options_container lg_disp">
                     <li><a href="">Cards</a>
                         <ul class="drop_down_menu">
-                            <li><a href="pages/christmas_cards.html">Christmas</a></li>
+                            <li><a href="../pages/christmas_cards.html">Christmas</a></li>
                             <li>Birthday</li>
-                            <li><a href="pages/all_products.html">All Cards</a></li>
+                            <li><a href="../pages/all_products.html">All Cards</a></li>
                         </ul>
                     </li>
                     <li>Charities</li>
@@ -68,45 +70,69 @@
             <li class="side_nav_log"><p>Log In / Sign Up</p></li>
         </ul>
     </div>  
-    <script src="../nav_bar_script.js"></script>
     <hr id="one">
-    <div class="progress_bar">
-        <a class="orange_links" href="">Home</a> 
-        <a class="orange_links" href="">Cards</a>
-        <a class="orange_links" href="">Season's Greetings</a>
-        <p>My Cart</p>
-    </div>
-    <div class="cart_products">
-        <h1 class="heading heading--page-title">My Cart</h1>
-        <div class="cart_product_item">
-            <img src="../images/seasons_greetings_small.png" alt="seasons_greetings" class="cart_product_image">
-            <div class="cart_product_label">
-                <h3>Season's Greetings</h3>
-                <p class="cart_product_charity">Charity: Act For Kids</p>
-                <div class="cart_product_price_qty">
-                    <p class="cart_product_price">$9.95</p>
+    <main class="product_item_container">
+        <header class="product_header_container">
+            <div class="progress_bar">
+                <a class="orange_links" href="">Home</a> 
+                <a class="orange_links" href="">Cards</a>
+                <a class="orange_links" href="">Season's Greetings</a>
+                <p class="current_page">My Cart</p>
+            </div>
+            <div class="product_header">
+                <h1 class="heading heading--page-title">My Cart</h1>
+            </div>
+        </header>
+        <section class="cart_products">
+            <div class="cart_product_item">
+                <div class="cart_product_img">
+                    <img src="../images/seasons_greetings_small.png" alt="seasons_greetings" class="cart_product_image">
+                </div>
+                <div class="cart_product_info">
+                    <h3>Season's Greetings</h3>
+                    <p class="cart_product_charity">Charity: Act For Kids</p>
+                    <div class="cart_product_price_qty">
+                        <p class="cart_product_price">$9.95</p>
+                        <div class="qty_box">
+                            <button class="btn" id="btn_minus" type="button">
+                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
+                            </button>
+                            <input type="text" value="1" id="qty_num">
+                            <button class="btn" id="btn_plus">
+                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_product_opt">
+                    <img class="delete_icon" src="../icons/close_icon_rgl.svg" alt="delete">
+                    <button class="white_button edit_changes">Edit Changes</button>
                 </div>
             </div>
-            <img src="../icons/delete_icon.png" alt="delete" class="delete_icon">
-            <button class="white_button">Edit Changes</button>
-            <hr class="cart_break">
-        </div>
-    </div>
-    <div class="cart_right_side">
-        <div class="total_grid" id="total_grid_right">
-            <h4 id="subtotal">Subtotal</h4>
-            <p id="gst">GST</p>
-            <h3 id="total">Total</h3>
-            <h4 id="subtotal_price">$9.95</h4>
-            <p id="gst_inc">Inc.</p>
-            <h3 id="total_price">$9.95</h3>
-        </div>
-        <img id="donate" src="../images/Charity_donation.jpg" alt="donation_img" id="donation_img">
-        <div class="continue_button_combo">
-            <a class="orange_links" href="">Continue Browsing</a>
-            <button class="red_button">Checkout Cart</button>
-        </div>
-    </div>
+            <hr id="cart_product_hr">
+        </section>
+        <section class="cart_total">
+            <div class="total_grid">
+                <div>
+                    <h4 id="subtotal">Subtotal</h4>
+                    <h4 id="subtotal_price">$9.95</h4>
+                </div>
+                <div id="gst_box">
+                    <p id="gst">GST</p>
+                    <p id="gst_inc">Inc.</p>
+                </div>
+                <div>
+                    <h3 id="total">Total</h3>
+                    <h3 id="total_price">$9.95</h3>
+                </div>
+            </div>
+            <img src="../images/Charity_donation.jpg" alt="donation_img" id="donation_img">
+            <div class="link_btn_combo">
+                <a class="orange_links continue_browsing" href="">Continue Browsing</a>
+                <button class="red_button">Checkout Cart</button>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer_section">
             <h3 class="heading">Useful Links</h3>
@@ -135,5 +161,6 @@
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer> 
+    <script src="../nav_bar_script.js"></script>
 </body>
 </html>
