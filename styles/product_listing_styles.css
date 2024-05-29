@@ -111,22 +111,12 @@
     .product_item_card {
         width: 21em; 
     }
-    .continue_browsing {
-        font-size: 14px;
-
-    }
-    .card_price {
-        font-size: 16px;
-    }
     .product_option_head {
         font-size: 17px;
     }
     .product_option_subtext {
         font-size: 14px;
         padding-right: 8px;
-    }
-    .progress_bar > a,p {
-        font-size: 14px;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -157,9 +147,7 @@
     }
 }
 @media screen and (max-width: 500px) {
-    .product_item_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .select_opt_title {
+        padding-top: var(--size-px-sm);
     }
 }

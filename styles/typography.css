@@ -39,4 +39,14 @@ body {
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 }
-
+@media screen and (max-width: 1050px) {
+    .continue_browsing {
+        font-size: 14px;
+    }
+    .card_price {
+        font-size: 16px;
+    }
+    .progress_bar > a,p {
+        font-size: 14px;
+    }
+}

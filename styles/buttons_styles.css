@@ -81,7 +81,6 @@
     .white_button--lg {
         border-radius: var(--size-xxxs);
         border-width: var(--size-px-mini);
-        width: 23em;
         height: 7em;
     } 
 }
@@ -104,6 +103,5 @@
     .white_button--lg {
         border-radius: var(--size-xxxs);
         border-width: var(--size-px-mini);
-        width: 19em;
     } 
 }
