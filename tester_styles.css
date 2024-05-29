@@ -8,18 +8,23 @@
 
 .product_item_container {
     display: grid;
-    grid-template-columns: 1.1fr 2fr 2fr;
     grid-template-rows: 0.25fr 1fr;
     padding-bottom: var(--size-mml);
 }
 .product_header_container {
     grid-column: 2/3;
 }
+.product_item_container section + section {
+    margin-left: var(--size-lg);
+}
+
+.cart_total {
+    grid-column: 3/4
+}
 .cart_product_charity {
     margin-bottom: auto;
 }
 .cart_products {
-    grid-row: 2/3;
     grid-column: 2/3;
 }
 .cart_product_item {
@@ -55,9 +60,15 @@
 .cart_product_price {
     font-weight: 700;
 }
+
+
 .delete_icon {
     width: 30px;
     height: 30px;
+}
+#donation_img {
+    width: 25product_item_containerem;
+    height: 20em;
 }
 
 

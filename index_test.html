@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/footer_styles.css">
     <link rel="stylesheet" href= "styles/product_header_styles.css">
     <link rel="stylesheet" href="styles/buttons_styles.css">
+    <link rel="stylesheet" href="styles/total_box_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body> 
@@ -75,9 +76,8 @@
             <div class="progress_bar">
                 <a class="orange_links" href="">Home</a> 
                 <a class="orange_links" href="">Cards</a>
-                <a class="orange_links" href="">Christmas</a>
-                <a class="orange_links" href="">My Cart</a>
-                <p class="current_page">Checkout Cart</p>
+                <a class="orange_links" href="">Season's Greetings</a>
+                <p class="current_page">My Cart</p>
             </div>
             <div class="product_header">
                 <h1 class="heading heading--page-title">My Cart</h1>
@@ -100,6 +100,27 @@
                     <img class="delete_icon" src="icons/close_icon_rgl.svg" alt="delete">
                     <button class="white_button edit_changes">Edit Changes</button>
                 </div>
+            </div>
+        </section>
+        <section class="cart_total">
+            <div class="total_grid">
+                <div>
+                    <h4 id="subtotal">Subtotal</h4>
+                    <h4 id="subtotal_price">$9.95</h4>
+                </div>
+                <div id="gst_box">
+                    <p id="gst">GST</p>
+                    <p id="gst_inc">Inc.</p>
+                </div>
+                <div>
+                    <h3 id="total">Total</h3>
+                    <h3 id="total_price">$9.95</h3>
+                </div>
+            </div>
+            <img src="images/Charity_donation.jpg" alt="donation_img" id="donation_img">
+            <div class="link_btn_combo">
+                <a class="orange_links continue_browsing" href="">Continue Browsing</a>
+                <button class="red_button">Checkout Cart</button>
             </div>
         </section>
     </main>

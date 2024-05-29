@@ -5,8 +5,30 @@
 
 /* Total Box */
 .total_grid {
+    padding: 15px;
+    display: grid;
     border: solid;
+    border-color: var(--color-primary);
+    border-radius: 10px;
+    grid-template-rows: 4fr 10fr 4fr;
+    width: 22em;
 } 
+.total_grid div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#gst_box {
+    align-items: center;
+    color: var(--color-sub-light);
+}
 #total {
     color: var(--color-primary);
+}
+.cart_total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* padding-top: 4em; */
+    width: 22em;
 }
