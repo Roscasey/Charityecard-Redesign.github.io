@@ -25,14 +25,14 @@
     margin-bottom: auto;
 }
 #cart_product_hr {
-    width: 30em;
-    margin-top: 20px;
+    width: var(--size-mega-a);
+    margin-top: var(--size-px-sm);
 }
 .cart_products {
     grid-column: 2/3;
 }
 .cart_product_item {
-    width: 30em;
+    width: var(--size-mega-a);
     display: grid;
     grid-template-columns: 0.5fr 0.75fr 0.5fr;
 }
@@ -40,20 +40,20 @@
     grid-column: 1/2;
 }
 .cart_product_img > img {
-    width: 100%;
+    width: var(--size-full);
 }
 .cart_product_info {
     display: flex;
     flex-direction: column;
     grid-column: 2/3;
-    padding-left: 30px;
+    padding-left: var(--size-px-ml);
 }
 .cart_product_price_qty {
     display: flex;
     flex-direction: column;
 }
 .cart_product_info > h3 {
-    padding-bottom: 10px;
+    padding-bottom: var(--size-px-xs);
 }
 .cart_product_opt {
     display: flex;
@@ -63,17 +63,15 @@
     grid-column: 3/4;
 }
 .cart_product_price {
-    font-weight: 700;
+    font-weight: var(--font-weight-lg);
 }
-
-
 .delete_icon {
-    width: 30px;
-    height: 30px;
+    width: var(--size-px-ml);
+    height: var(--size-px-ml);
 }
 #donation_img {
     width: 25em;
-    height: 20em;
+    height: var(--size-mega);
 }
 
 
