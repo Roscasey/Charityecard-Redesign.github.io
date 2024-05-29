@@ -61,13 +61,18 @@
     width: 25em;
     height: 9em;
 } 
-
+.link_btn_combo {
+    align-self: center;
+    padding-top: 40px;
+}
+.continue_browsing {
+    padding-right: 50px;
+}
 @media screen and (max-width: 1280px) {
-    .red_button, .red_button--opp {
+    .red_button--opp {
         width: var(--size-mml);
         height: var(--size-px-md);
-    }
-    
+    } 
 }
 @media screen and (max-width: 1200px) {
     .white_button--lg {
@@ -85,7 +90,7 @@
     } 
 }
 @media screen and (max-width: 1000px) {
-    .red_button, .red_button--opp {
+    .red_button--opp {
         width: 8em;
         height: 20px;
         font-size: 12px;

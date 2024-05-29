@@ -25,13 +25,6 @@
     flex-direction: column;
     width: 25em;
 }
-.link_btn_combo {
-    align-self: center;
-    padding-top: 40px;
-}
-.continue_browsing {
-    padding-right: 50px;
-}
 .form_heading {
     font-size: 24px;
     padding-bottom: var(--size-px-ml);
