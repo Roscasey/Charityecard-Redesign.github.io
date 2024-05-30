@@ -21,6 +21,14 @@
     width: 35px;
 }
 
+/* Payment Icons Main */
+#visa_m, #masterc_m, #amex_m {
+    width: var(--size-px-lg);
+}
+#amex_m {
+    border-radius: var(--size-px-xxxs);
+}
+
 /* Media Queries */
 @media screen and (max-width: 1000px) { 
     .payment_icon {

@@ -5,3 +5,75 @@
 @import "buttons_styles.css";
 @import "links_styles.css";  
 @import "icon_styles.css";
+@import "cart_product_styles.css";
+
+
+.info_box {
+    border: solid;
+    border-width: 1.5px;
+    border-color: var(--form-element-border);
+    height: var(--size-px-ml);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: var(--size-px-sm);
+}
+.credit_card {
+    height: 12em;
+    padding: 15px;
+}
+.credit_payment {
+    display: flex;
+    flex-direction: column;
+}
+.credit_card > form > div {
+    margin-bottom: 10px;
+}
+#card_name_holder {
+    display: flex;
+    flex-direction: column;
+}
+.card_details {
+    display: flex;
+}
+.card_payments {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+.card_payments img + img {
+    margin-left: 15px;
+}
+.card_details > div + div {
+    margin-left: 20px;
+}
+.payment_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment_options {
+    width: 28em;
+}
+#payment_options_title {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+#name_on_card, #card_no {
+    width: 18em;
+}
+#cc_heading {
+    padding-bottom: 5px;
+    color: var(--color-sub-light);
+}
+#exp_date {
+    width: 6em;
+    text-align: center;
+}
+#cvv {
+    width: 3em;
+    text-align: center;
+}
+.credit_input {
+    padding: 2px;
+    font-style: italic;
+}

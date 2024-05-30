@@ -1,10 +1,7 @@
 @import "colours.css";
 @import "sizing.css";
-@import "spacing.css";
 @import "typography.css";
 @import "buttons_styles.css";
-@import "links_styles.css";  
-@import "icon_styles.css";
 
 /* Total Box */
 .total_grid {
@@ -15,6 +12,8 @@
     border-radius: 10px;
     grid-template-rows: 4fr 10fr 4fr;
     width: 22em;
+} 
+.total_grid--left {
     margin-top: 8em; 
 } 
 .total_grid div {
