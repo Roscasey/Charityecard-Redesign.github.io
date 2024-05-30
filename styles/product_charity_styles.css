@@ -4,6 +4,7 @@
 @import "typography.css";
 @import "buttons_styles.css";
 @import "links_styles.css";  
+@import "icon_styles.css";
 
 .card_type {
     color: var(--color-subtext);

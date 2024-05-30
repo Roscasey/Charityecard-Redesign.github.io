@@ -10,6 +10,7 @@
     <link rel="stylesheet" href= "styles/product_header_styles.css">
     <link rel="stylesheet" href="styles/buttons_styles.css">
     <link rel="stylesheet" href="styles/total_box_style.css">
+    <link rel="stylesheet" href="styles/icon_styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body> 
@@ -127,28 +128,47 @@
         </section>
         <section class="cart_total">
             <div class="payment_options">
-                <h1 class="page_title" id="payment_options_title">Payment Options</h1>
+                <h1 class="heading heading--page-title" id="payment_options_title">Payment Options</h1>
                 <div class="payment_select">
-                    <div class="credit_card">
-                        <form action="">
-                            <input type="text" placeholder="Name on Card">
-                            <div>
-                                <label for="card_number">Card Number</label>
-                                <input id="card_number" type="text" placeholder="Card Number">
-                                <label for="exp_date">Expiry Date</label>
-                                <input id="exp_date" type="text" placeholder="Expiry Date">
-                                <label for="cvv">CVV</label>
-                                <input id="cvv" type="text" placeholder="CVV">
+                    <p id="cc_heading">Credit Card</p>
+                    <div class="credit_card info_box">
+                        <form action="credit_payment">
+                            <div id="card_name_holder">
+                                <label for="name_on_card">Name on Card</label>
+                                <input class="credit_input" type="text" name="card_name" id="name_on_card" placeholder="Enter Name">
+                            </div>
+                            <div class="card_details">
+                                <div>
+                                    <label for="card_no">Card Number</label>
+                                    <input class="credit_input" type="text" name="card_number" id="card_no" placeholder="Enter Your Card Number - 9-Digits">
+                                </div>
+                                <div>
+                                    <label for="exp_date">Exp. Date</label>
+                                    <input class="credit_input" type="text" name="exp_date" id="exp_date" placeholder="MM / YY">
+                                </div>
+                                <div>
+                                    <label for="cvv">CVV</label>
+                                    <input class="credit_input" type="text" name="cvv" id="cvv" placeholder="XXX">
+                                </div>
+                            </div>
+                            <div class= "card_payments">
+                                <img class="payment_icon" src="icons/visa_rgl.svg" alt="visa">
+                                <img class="payment_icon master_c" src="icons/Mastercard_SVG.svg" alt="mastercard">
+                                <img class="payment_icon amex" src="icons/AMEX_JPG.jpg" alt="amex">
                             </div>
                         </form>
                     </div>
-                    <div><img class="payment_icon_main" src="icons/PayPayl_JPG.png" alt="paypal"></div>
-                    <div><img class="payment_icon_main" src="icons/Apple_Pay_Black_JPG.png" alt="apple_pay"></div>
+                    <div class="info_box payment_box">
+                        <img class="payment_icon" src="icons/PayPayl_JPG.png" alt="paypal">
+                    </div>
+                    <div class="info_box payment_box">
+                        <img class="payment_icon" src="icons/Apple_Pay_Black_JPG.png" alt="apple_pay">
+                    </div>
                 </div>
-            </div>
-            <div class="link_btn_combo">
-                <a class="orange_links continue_browsing" href="">Continue Browsing</a>
-                <button class="red_button">Place Order</button>
+                <div class="link_btn_combo">
+                    <a class="orange_links continue_browsing" href="">Continue Browsing</a>
+                    <button class="red_button">Place Order</button>
+                </div>
             </div>
         </section>
     </main>
@@ -171,11 +191,11 @@
             <h3 class="heading">Secure Payments</h3>
             <hr id="hr_f_3">
             <div>
-                <img class="payment_icon" id="visa_f" src="icons/Visa_Cream_JPG.png" alt="visa">
-                <img class="payment_icon" id="masterc_f" src="icons/mastercard_cream.svg" alt="mastercard">
-                <img class="payment_icon" id="amex_f" src="icons/AMEX_JPG.jpg" alt="amex">
-                <img class="payment_icon" id="pp_f" src="icons/PayPayl_JPG.png" alt="paypal">
-                <img class="payment_icon" id="app_f" src="icons/Apple_Pay_Cream_SVG.svg" alt="apple_pay">
+                <img class="payment_icon" src="icons/Visa_Cream_JPG.png" alt="visa">
+                <img class="payment_icon master_c" src="icons/mastercard_cream.svg" alt="mastercard">
+                <img class="payment_icon amex" src="icons/AMEX_JPG.jpg" alt="amex">
+                <img class="payment_icon" src="icons/PayPayl_JPG.png" alt="paypal">
+                <img class="payment_icon" src="icons/Apple_Pay_Cream_SVG.svg" alt="apple_pay">
             </div>
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>

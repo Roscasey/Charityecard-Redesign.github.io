@@ -1,6 +1,36 @@
 @import "./colours.css";
 @import "./sizing.css";
-@import "./spacing.css";
 @import "./typography.css";
 
-/*  */
+/* Payment Icons */
+:root {
+    --icon-height: var(--size-px-sm);
+    --icon-width: var(--size-px-lg);
+}
+.payment_icon {
+    height: var(--icon-height);
+}
+.payment_icon--rgl {
+    width: var(--icon-width);
+}
+.amex {
+    border-radius: var(--size-px-xxxs);
+    width: 30px;
+}
+.master_c {
+    width: 35px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1000px) { 
+    .payment_icon {
+        height: var(--size-px-s);
+    }
+}
+@media screen and (max-width: 500px) { 
+    .payment_icon {
+        height: var(--size-px-sm);
+    }
+}
+
+

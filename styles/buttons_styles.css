@@ -1,6 +1,5 @@
 @import "./colours.css";
 @import "./sizing.css";
-@import "./spacing.css";
 @import "./typography.css";
 
 
@@ -67,7 +66,9 @@
     height: 9em;
 } 
 .link_btn_combo {
-    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 40px;
 }
 .continue_browsing {

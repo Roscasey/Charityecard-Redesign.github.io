@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
            dropItems[i].style.display = 'flex';
         }
     });
-
     // Edge case: close side nav when it is currently open but the screen width exceeds 760p 
     function screenTooBig() {
         if (window.innerWidth > 760) {
@@ -54,11 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
             qty.value = parseInt(qty.value) - 1;
         }
     });
-
     add_btn.addEventListener('click', () => {
         qty.value = parseInt(qty.value) + 1
-    }
-    );
+    });
 });
 
 

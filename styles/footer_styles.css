@@ -1,7 +1,8 @@
 @import "./colours.css";
 @import "./sizing.css";
-@import "./spacing.css";
 @import "./typography.css";
+@import "./icon_styles.css";
+
 footer {
     /*Colours*/
     background-color: var(--color-primary-dark);
@@ -46,16 +47,6 @@ footer {
     /* Typography*/
     font-size: var(--text-xs);
 } 
-/*Payment Icons*/
-.payment_icon {
-    height: var(--size-px-sm);
-}
-#visa, #masterc_f, #amex_f {
-    width: var(--size-px-lg);
-}
-#amex_f {
-    border-radius: var(--size-px-xxxs);
-}
 /* Layout */
 footer > div {
     display: flex;
@@ -196,5 +187,8 @@ footer, .footer_section > p {
     }
     .payment_icon {
         height: var(--size-px-sm);
+    }
+    .footer_section > div > img + img {
+        margin-left: 15px;
     }
 }
