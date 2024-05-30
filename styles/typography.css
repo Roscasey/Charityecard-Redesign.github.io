@@ -9,6 +9,7 @@
 
     --text-sm: 16px;
     --text-md: 20px;
+    --text-m: 22px;
 
     --text-lg: 24px;
     --text-xl: 30px;
@@ -42,6 +43,10 @@ body {
 .heading--title {
     font-size: 26px;
     font-weight: var(--font-weight-sm);
+}
+.promo--msg-p {
+    font-size: var(--text-m);
+    color: var(--color-subtext);
 }
 @media screen and (max-width: 1050px) {
     .continue_browsing {

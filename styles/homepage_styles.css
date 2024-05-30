@@ -23,7 +23,6 @@
     margin-bottom: 2em;
     width: 100%;
 }
-
 .homepage_vp {
     display: grid;
     grid-template-columns: 0.5fr 2fr 2fr;
@@ -71,6 +70,7 @@
 .homepage_card_categories {
     display: flex;
     justify-content: center;
+    padding-bottom: 10em;
 }
 .homepage_card_categories > div + div{
    margin-left: 10em;
@@ -81,7 +81,8 @@
 
 /* Section: Homepage Bottom */
 .homepage_bottom {
-    padding-top: 45px;
+    padding-top: 8em;
+    padding-bottom: 5em;
 }
 .hp_card_box {
     width: 25em;
@@ -91,7 +92,33 @@
 .hp_card_box > img {
     width: 100%;
 }
-
+.hp_card_box > h2 {
+    margin-bottom: 1em;
+}
+.hp_card_box > a {
+    display: grid;
+    margin-top: 0.5em;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+#eco_friendly_img {
+    width: 35em;
+    height: 25em;
+}
+#eco_friendly_img > img{
+    width: 100%;
+}
+.promo_msg_eco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+.promo_msg_eco > h3 {
+    padding-top: 30px;
+}
 @media screen and (max-width: 1500px) {
     #display_text {
         font-size: 80px;
@@ -113,6 +140,9 @@
     }
 }
 @media screen and (max-width: 1200px) {
+    .hp_card_box {
+        width: 23em;
+    }
     #display_text {
         font-size: 60px;
         font-weight: var(--font-weight-s);
@@ -137,6 +167,9 @@
     }
 }
 @media screen and (max-width: 1100px) {
+    .hp_card_box {
+        width: 22em;
+    }
     #display_text {
         font-size: 50px;
         font-weight: var(--font-weight-s);
@@ -144,8 +177,18 @@
     #display_sub {
         font-size: 20px;
     }
-}
+    #eco_friendly_img {
+        width: 30em;
+        height: 20em;
+    }
+    .promo_msg_eco > h3 {
+        padding-top: 45px;
+    }
+};
 @media screen and (max-width: 1000px) {
+    .hp_card_box {
+        width: 20em;
+    }
     #display_text {
         font-size: 60px;
         font-weight: var(--font-weight-s);
@@ -168,8 +211,24 @@
     .homepage_instruction > p { 
        font-size: 16px;
     }
+    .promo_msg_eco > h3 {
+        padding-top: 45px;
+    }
 }
 @media screen and (max-width: 750px) {
+    #eco_friendly_img {
+        width: 20em;
+        height: 15em;
+    }
+    .promo_msg_eco > h3 {
+        font-size: 24px;
+    }
+    .promo_msg_eco > p {
+        font-size: 20px;
+    }
+    .hp_card_box {
+        width: 18em;
+    }
     #display_text {
         font-size: 50px;
         font-weight: var(--font-weight-s);
@@ -221,8 +280,39 @@
         height: 35px;
         margin-bottom: 0px;
     }
+    .homepage_card_categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homepage_card_categories > div + div{
+        margin-left: 0em;
+    }
 }
 @media screen and (max-width: 400px) {
+    .homepage_card_categories {
+        padding-bottom: 5em;
+    }
+     #eco_friendly_img {
+        width: 18em;
+        height: 15em;
+    }
+    .promo_msg_eco > h3 {
+        font-size: 20px;
+    }
+    .promo_msg_eco > p {
+        font-size: 16px;
+    }
+    .homepage_bottom {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    .hp_card_box > h2 {
+        font-size: 24px;
+    }
+    .hp_card_box > a {
+        font-size: 18px;
+    }
     #display_sub {
         font-size: 15px;
     }

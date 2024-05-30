@@ -5,7 +5,7 @@
 a {
     text-decoration: none;
 }
-.orange_links{
+.orange_links {
     color: var(--color-link);
     text-decoration: underline;
 }
