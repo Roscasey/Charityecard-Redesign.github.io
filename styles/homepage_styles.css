@@ -9,7 +9,7 @@
 #display_text {
     display: flex;
     flex-wrap: wrap;
-    width: var(--size-full);
+    width: 100%;
 
     /*Typography*/
     font-size: var(--text-display);
@@ -19,9 +19,9 @@
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 
-    margin-top: var(--size-xxxs);
-    margin-bottom: var(--size-sm);
-    width: var(--size-full);
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    width: 100%;
 }
 .homepage_vp {
     display: grid;
@@ -32,7 +32,7 @@
     align-content: center;
 }
 #elf_girl {
-    width: var(--size-full);
+    width: 100%;
 }
 
 /* Section: Homepage middle banner */
@@ -46,66 +46,66 @@
     align-items: center;
 }
 .homepage_instruction > img {
-    margin-bottom: var(--size-xs);
+    margin-bottom: 1em;
     grid-row: 1/2;
-    width: var(--size-px-xll);
-    height: var(--size-px-xlll);
+    width: 50px;
+    height: 55px
 }
 .homepage_instruction > h3 {
-    margin-bottom: var(--size-xxxs);
+    margin-bottom: 0.5em;
 }
 #send_img {
-    width: var(--size-px-gr);
+    width: 70px
 }
 #customise_img, #select_img {
-    width: var(--size-px-xlll);
+    width: 55px
 }
 .homepage_instruct {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: var(--size-px-xxl);
+    padding: 45px;
 }
 .homepage_card_categories {
     display: flex;
     justify-content: center;
-    padding-bottom: var(--size-lx);
+    padding-bottom: 10em;
 }
-.homepage_card_categories > div + div {
-   margin-left: var(--size-lx);
+.homepage_card_categories > div + div{
+   margin-left: 10em;
 }
 .homepage_instruct > div + div {
-    margin-left: var(--size-lx);
+    margin-left: 10em;
 }
 
 /* Section: Homepage Bottom */
 .homepage_bottom {
-    padding-top: var(--size-lg);
-    padding-bottom: var(--size-m);
+    padding-top: 8em;
+    padding-bottom: 5em;
 }
 .hp_card_box {
-    width: var(--size-mega-m);
+    width: 25em;
     display: flex;
     flex-direction: column;
 }
 .hp_card_box > img {
-    width: var(--size-full);
+    width: 100%;
 }
 .hp_card_box > h2 {
-    margin-bottom: var(--size-xs);
+    margin-bottom: 1em;
 }
 .hp_card_box > a {
     display: grid;
-    margin-top: var(--size-xxxs);
-    font-size: var(--size-px-sm);
+    margin-top: 0.5em;
+    font-size: 20px;
     justify-content: flex-end;
 }
 #eco_friendly_img {
-    width: var(--size-mega-b);
-    height: var(--size-mega-m);
+    width: 35em;
+    height: 25em;
 }
-#eco_friendly_img > img {
-    width: var(--size-full);
+#eco_friendly_img > img{
+    width: 100%;
 }
 .promo_msg_eco {
     display: flex;
@@ -116,26 +116,26 @@
     justify-items: center;
 }
 .promo_msg_eco > h3 {
-    padding-top: var(--size-px-ml);
+    padding-top: 30px;
 }
 @media screen and (max-width: 1500px) {
     #display_text {
-        font-size: var(--size-px-g);
+        font-size: 80px;
         font-weight: var(--font-weight-s);
     }
     #display_sub {
-        font-size: var(--size-px-md);
+        font-size: 25px;
     }
 }
 @media screen and (max-width: 1300px) {
     .homepage_instruction > img {
-        height: var(--size-px-xll);
+        height: 50px;
     }
     #send_img {
-        width: var(--size-px-grr);
+        width: 65px
     }
     #customise_img, #select_img {
-        width: var(--size-px-xll);
+        width: 50px
     }
 }
 @media screen and (max-width: 1200px) {
@@ -143,20 +143,20 @@
         width: 23em;
     }
     #display_text {
-        font-size: var(--size-px-xxxl);
+        font-size: 60px;
         font-weight: var(--font-weight-s);
     }
     #display_sub {
-        font-size: var(--size-px-sm);
+        font-size: 20px;
     }
     .homepage_instruction > img {
-        height: var(--size-px-xxl);
+        height: 45px;
     }
     #send_img {
-        width: var(--size-px-xxxl);
+        width: 60px;
     }
     #customise_img, #select_img {
-        width: var(--size-px-xxl);
+        width: 45px
     }
     .homepage_instruction > h3 {
         font-size: 24px;
@@ -170,39 +170,39 @@
         width: 22em;
     }
     #display_text {
-        font-size: var(--size-px-xll);
+        font-size: 50px;
         font-weight: var(--font-weight-s);
     }
     #display_sub {
-        font-size: var(--size-px-sm);
+        font-size: 20px;
     }
     #eco_friendly_img {
-        width: var(--size-mega-a);
-        height: var(--size-mega);
+        width: 30em;
+        height: 20em;
     }
     .promo_msg_eco > h3 {
-        padding-top: var(--size-px-xxl);
+        padding-top: 45px;
     }
 };
 @media screen and (max-width: 1000px) {
     .hp_card_box {
-        width: var(--size-mega);
+        width: 20em;
     }
     #display_text {
-        font-size: var(--size-px-xxxl);
+        font-size: 60px;
         font-weight: var(--font-weight-s);
     }
     #display_sub {
-        font-size: var(--size-px-sm);
+        font-size: 20px;
     }
     .homepage_instruction > img {
-        height: var(--size-px-xl);
+        height: 40px;
     }
     #send_img {
-        width: var(--size-px-xlll);
+        width: 55px;
     }
     #customise_img, #select_img {
-        width: var(--size-px-xl);
+        width: 40px
     }
     .homepage_instruction > h3 {
         font-size: 24px;
@@ -211,25 +211,25 @@
        font-size: 16px;
     }
     .promo_msg_eco > h3 {
-        padding-top: var(--size-px-xxl);    
+        padding-top: 45px;
     }
 }
 @media screen and (max-width: 750px) {
     #eco_friendly_img {
-        width: var(--size-mega);
-        height: var(--size-l);
+        width: 20em;
+        height: 15em;
     }
     .promo_msg_eco > h3 {
         font-size: 24px;
     }
     .promo_msg_eco > p {
-        font-size: var(--size-px-sm);
+        font-size: 20px;
     }
     .hp_card_box {
         width: 18em;
     }
     #display_text {
-        font-size: var(--size-px-xll);
+        font-size: 50px;
         font-weight: var(--font-weight-s);
     }
     .homepage_vp {
@@ -245,7 +245,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: var(--size-px-ml) var(--size-none) var(--size-none) var(--size-mega-b);
+        padding: 30px 0px 0px 35px;
     }
     .homepage_instruction {
         display: flex;
@@ -254,30 +254,30 @@
         justify-items: center;
     }
     .homepage_instruct > div + div {
-        margin-left: var(--size-none);
+        margin-left: 0;
     }
     .homepage_instruction > h3 {
         font-size: 22px;
-        margin-bottom: var(--size-none);
+        margin-bottom: 0em;
     }
     .homepage_instruction > p {
         font-size: 14px;
     }
     .homepage_instruction > * {
-        margin-right: var(--size-px-xs);
+        margin-right: 10px;
     }
     .homepage_instruct > div {
-        margin-bottom: var(--size-px-lg);
+        margin-bottom: 35px;
     }
     #send_img {
-        width: var(--size-px-lg);
-        height: var(--size-px-md);
-        margin-bottom: var(--size-none);
+        width: 35px;
+        height: 25px;
+        margin-bottom: 0;
     }
     #customise_img, #select_img {
-        width: var(--size-px-lg);
-        height: var(--size-px-lg);
-        margin-bottom: var(--size-none);
+        width: 35px;
+        height: 35px;
+        margin-bottom: 0px;
     }
     .homepage_card_categories {
         display: flex;
@@ -285,26 +285,26 @@
         align-items: center;
     }
     .homepage_card_categories > div + div{
-        margin-left: var(--size-none);
+        margin-left: 0em;
     }
 }
 @media screen and (max-width: 400px) {
     .homepage_card_categories {
-        padding-bottom: var(--size-m);
+        padding-bottom: 5em;
     }
      #eco_friendly_img {
-        width: var(--size-xxxl);
-        height: var(--size-l);
+        width: 18em;
+        height: 15em;
     }
     .promo_msg_eco > h3 {
-        font-size: var(--size-px-sm);
+        font-size: 20px;
     }
     .promo_msg_eco > p {
         font-size: 16px;
     }
     .homepage_bottom {
-        padding-top: var(--size-m);
-        padding-bottom: var(--size-m);
+        padding-top: 5em;
+        padding-bottom: 5em;
     }
     .hp_card_box > h2 {
         font-size: 24px;
@@ -313,6 +313,6 @@
         font-size: 18px;
     }
     #display_sub {
-        font-size: var(--size-px-s);
+        font-size: 15px;
     }
 }
