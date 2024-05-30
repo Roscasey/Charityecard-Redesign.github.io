@@ -39,6 +39,10 @@ body {
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 }
+.heading--title {
+    font-size: 26px;
+    font-weight: var(--font-weight-sm);
+}
 @media screen and (max-width: 1050px) {
     .continue_browsing {
         font-size: 14px;

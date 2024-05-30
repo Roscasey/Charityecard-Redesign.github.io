@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="tester_styles.css">
+    <link rel="stylesheet" href="styles/homepage_styles.css">
     <link rel="stylesheet" href="styles/nav_bar_styles.css">
     <link rel="stylesheet" href="styles/footer_styles.css">
-    <link rel="stylesheet" href= "styles/product_header_styles.css">
+    <link rel="stylesheet" href= "styles/product_header_styles.css"> 
     <link rel="stylesheet" href="styles/buttons_styles.css">
-    <link rel="stylesheet" href="styles/total_box_style.css">
+    <link rel="stylesheet" href="styles/total_box_styles.css">
     <link rel="stylesheet" href="styles/icon_styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
@@ -72,104 +72,52 @@
         </ul>
     </div>  
     <hr id="one">
-    <main class="product_item_container">
-        <header class="product_header_container">
-            <div class="progress_bar">
-                <a class="orange_links" href="">Home</a> 
-                <a class="orange_links" href="">Cards</a>
-                <a class="orange_links" href="">Season's Greetings</a>
-                <p class="current_page">My Cart</p>
+    <main class="homepage_container">
+        <section class="homepage_vp">
+            <div class="homepage_msg">
+                <h1 id="display_text" class="heading">Give Love Anywhere</h1>
+                <h2 id="display_sub">Sending an e-card is as easy as 1-2-3</h2>
+                <button class="red_button red_button--lg">Get Started</button>
             </div>
-            <div class="product_header">
-                <h1 class="heading heading--page-title">My Cart</h1>
+            <div class="homepage_elf_img">
+                <img src="images/elf_home.svg" alt="elf_girl" id="elf_girl">
             </div>
-        </header>
-        <section class="cart_products">
-            <div class="cart_product_item">
-                <div class="cart_product_img">
-                    <img src="images/seasons_greetings_small.png" alt="seasons_greetings" class="cart_product_image">
+        </section>
+        <hr class="section_hr">
+        <section class="homepage_mid">
+            <div class="homepage_instruct">
+                <div class="homepage_instruction">
+                    <img src="icons/select_icon.png" alt="select_img" id="select_img">
+                    <h3 class="heading heading--title">Select</h3>
+                    <p>Your charity & design</p>
                 </div>
-                <div class="cart_product_info">
-                    <h3>Season's Greetings</h3>
-                    <p class="cart_product_charity">Charity: Act For Kids</p>
-                    <div class="cart_product_price_qty">
-                        <p class="cart_product_price">$9.95</p>
-                        <div class="qty_box">
-                            <button class="btn" id="btn_minus" type="button">
-                                <img src="icons/minus_btn.svg"alt="minus_btn"/>
-                            </button>
-                            <input type="text" value="1" id="qty_num">
-                            <button class="btn" id="btn_plus">
-                                <img src="icons/plus_icon.svg" type="button" alt="plus_btn"/>
-                            </button>
-                        </div>
-                    </div>
+                <div class="homepage_instruction">
+                    <img src="icons/customise_icon.png" alt="customise_img" id="customise_img">
+                    <h3 class="heading heading--title">Customise</h3>
+                    <p>The E-card, message & more</p>
                 </div>
-                <div class="cart_product_opt">
-                    <img class="delete_icon" src="icons/close_icon_rgl.svg" alt="delete">
-                    <button class="white_button edit_changes">Edit Changes</button>
-                </div>
-            </div>
-            <hr id="cart_product_hr">
-            <div class="total_grid total_grid--left">
-                <div>
-                    <h4 id="subtotal">Subtotal</h4>
-                    <h4 id="subtotal_price">$9.95</h4>
-                </div>
-                <div id="gst_box">
-                    <p id="gst">GST</p>
-                    <p id="gst_inc">Inc.</p>
-                </div>
-                <div>
-                    <h3 id="total">Total</h3>
-                    <h3 id="total_price">$9.95</h3>
+                <div class="homepage_instruction">
+                    <img src="icons/mail_icon.png" alt="send_img" id="send_img">
+                    <h3 class="heading heading--title">Send</h3>
+                    <p>Via your method of choice</p>
                 </div>
             </div>
         </section>
-        <section class="cart_total">
-            <div class="payment_options">
-                <h1 class="heading heading--page-title" id="payment_options_title">Payment Options</h1>
-                <div class="payment_select">
-                    <p id="cc_heading">Credit Card</p>
-                    <div class="credit_card info_box">
-                        <form action="credit_payment">
-                            <div id="card_name_holder">
-                                <label for="name_on_card">Name on Card</label>
-                                <input class="credit_input" type="text" name="card_name" id="name_on_card" placeholder="Enter Name">
-                            </div>
-                            <div class="card_details">
-                                <div>
-                                    <label for="card_no">Card Number</label>
-                                    <input class="credit_input" type="text" name="card_number" id="card_no" placeholder="Enter Your Card Number - 9-Digits">
-                                </div>
-                                <div>
-                                    <label for="exp_date">Exp. Date</label>
-                                    <input class="credit_input" type="text" name="exp_date" id="exp_date" placeholder="MM / YY">
-                                </div>
-                                <div>
-                                    <label for="cvv">CVV</label>
-                                    <input class="credit_input" type="text" name="cvv" id="cvv" placeholder="XXX">
-                                </div>
-                            </div>
-                            <div class= "card_payments">
-                                <img class="payment_icon" src="icons/visa_rgl.svg" alt="visa">
-                                <img class="payment_icon master_c" src="icons/Mastercard_SVG.svg" alt="mastercard">
-                                <img class="payment_icon amex" src="icons/AMEX_JPG.jpg" alt="amex">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="info_box payment_box">
-                        <img class="payment_icon" src="icons/PayPayl_JPG.png" alt="paypal">
-                    </div>
-                    <div class="info_box payment_box">
-                        <img class="payment_icon" src="icons/Apple_Pay_Black_JPG.png" alt="apple_pay">
-                    </div>
+        <hr class="section_hr">
+        <section class="homepage_bottom">
+            <div class="homepage_card_categories">
+                <div class="hp_card_box">
+                    <h2 class="heading heading--title">Christmas Cards</h2>
+                    <img src="images/santas_wishes_wide.png" alt="cc_homepage">
+                    <a href="">See All</a>
                 </div>
-                <div class="link_btn_combo">
-                    <a class="orange_links continue_browsing" href="">Continue Browsing</a>
-                    <button class="red_button">Place Order</button>
+                <div class="hp_card_box">
+                    <h2 class="heading heading--title">Birthday Cards</h2>
+                    <img src="images/balloon_birthday_wide.png" alt="bday_homepage">
+                    <a href="">See All</a>
                 </div>
             </div>
+            <div></div>
         </section>
     </main>
     <footer>

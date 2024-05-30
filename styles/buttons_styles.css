@@ -58,6 +58,7 @@
     height: var(--size-smm);
 
     text-align: center;
+    font-size: var(--text-sm);
 }
 .white_button--lg {
     border-radius: var(--size-xxxs);
@@ -120,7 +121,10 @@
         border-width: var(--size-px-mini);
         width: 23em;
         height: 8em;
-    } 
+    }
+    .red_button--lg {
+        height: 2.5em
+    }
 }
 @media screen and (max-width: 1100px) {
     .white_button--lg {
