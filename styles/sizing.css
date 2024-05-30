@@ -1,4 +1,5 @@
 :root {
+    --size-full: 100%;
     /* Em */
     --size-none: 0em;
     --size-xxxs: 0.5em;
@@ -20,6 +21,7 @@
     --size-lx: 10em;
     --size-x: 11em;
     --size-xl: 12em;
+    --size-xx: 13em;
     --size-xll: 14em;
     --size-l: 15em;
 
@@ -28,7 +30,9 @@
     --size-xm: 19em;
     --size-xmm: 19.5em;
     --size-mega: 20em;
+    --size-mega-m: 25em;
     --size-mega-a: 30em;
+    --size-mega-b: 35em;
     
     /* Pixels */
     --size-px-ultra-mini: 1px;
@@ -46,18 +50,22 @@
     --size-px-xl: 40px;
 
     --size-px-xxl: 45px;
-    --size-px-xxl: 50px; 
+    --size-px-xll: 50px;
+    --size-px-xlll: 55px; 
     --size-px-xxxl: 60px; 
+    --size-px-grr: 65px;
     --size-px-gr: 70px;
     --size-px-g: 80px;
 
-    /* Specific sizing */
+    /* Size Nav */
     --size-side-nav-hr: 12.5px;
+    --size-nav: 1200px;
+
+    /* Size Footer */
     --size-footer-a: 22em;
     --size-footer: 22.5em;
     --size-footer-b: 23em;
-    --size-footer-section: 13em;
-    --size-full: 100%;
-    --size-nav: 1200px;
+    
+    /* Size specific */
     --size-input-small: 12px;
 }

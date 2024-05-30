@@ -60,7 +60,7 @@ footer hr {
     margin-left: var(--size-px-md);
 }
 .footer_section + .footer_section {
-    margin-left: var( --size-footer-section);
+    margin-left: var(--size-xx);
 }
 .footer_section > h3 + p {
     margin-top: var(--size-xxxs);
