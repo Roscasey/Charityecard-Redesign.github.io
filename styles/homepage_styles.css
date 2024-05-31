@@ -323,8 +323,11 @@
         flex-direction: column;
         align-items: center;
     }
-    .homepage_card_categories > div + div{
+    .homepage_card_categories > div + div {
         margin-left: var(--size-none);
+    }
+    .homepage_instruct {
+        padding-left: var(--size-sm);
     }
 }
 
@@ -360,5 +363,5 @@
     }
     .hp_card_box > a {
         font-size: var(--text-d);
-    }
+    }  
 }
