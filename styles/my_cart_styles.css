@@ -15,12 +15,12 @@
 
 
 #donation_img {
-    width: 25em;
+    width: var(--size-mega-m);
     height: var(--size-mega);
 }
 #donation_img > img {
-    width: 100%
-}
+    width: var(--size-full);
+} 
 
 @media screen and (max-width: 1400px) {
     .product_item_container {
@@ -38,42 +38,42 @@
         grid-template-columns: 0.3fr 0.75fr 0.5fr;
     }
     #donation_img {
-        width: 23em;
+        width: var(--size-footer-b);
     }
     .product_item_container section + section {
-        margin-left: 4em;
+        margin-left: var(--size-md);
     }
 }
 
 @media screen and (max-width: 1100px) {
     .cart_product_item, #cart_product_hr {
-        width: 30em;
+        width: var(--size-mega-a);
         display: grid;
         grid-template-columns: 0.3fr 0.75fr 0.5fr;
     }
     #donation_img {
-        width: 22em;
+        width: var(--size-px-mm);
     }
 }
 
 
 @media screen and (max-width: 930px) {
     .cart_product_item, #cart_product_hr {
-        width: 28em;
+        width: var(--size-payment-opt);
         display: grid;
     }
     #donation_img {
-        width: 20em;
+        width: var(--size-mega);
     }
     .product_item_container section + section {
-        margin-left: 4em;
+        margin-left: var(--size-md);
     }
     .cart_product_img {
         grid-column: 1/2;
-        width: 7em;
+        width: var(--size-mml);
     }
     .cart_product_info {
-        padding-left: 15px;
+        padding-left: var(--size-px-s);
     }
 }
 
@@ -84,31 +84,36 @@
         align-items: center;
     }
 }
+
 @media screen and (max-width: 400px) {
     .product_header_container, .cart_products {
         align-self: flex-start;
-        margin-left: 20px;
+        margin-left: var(--size-px-sm);
     }
     .product_item_container section + section {
-        margin-left: 0em;
+        margin-left: var(--size-none);
     } 
+
+    
     .cart_product_info > h3 {
-        font-size: 14px;
+        font-size: var(--size-px-ss);
     }
     .cart_product_info > p {
-        font-size: 12px;
+        font-size: var(--size-px-x);
     }
     .cart_product_img {
         grid-column: 1/2;
-        width: 6em;
+        width: var(--size-ml);
     }
     .cart_product_item, #cart_product_hr {
-        width: 22em;
+        width: var(--size-footer-a);
     }
+
+
     .total_grid {
         align-self: flex-end;
     }
     #donation_img {
-        margin-top: 60px;
+        margin-top: var(--size-px-xxxl);
     }
 }
