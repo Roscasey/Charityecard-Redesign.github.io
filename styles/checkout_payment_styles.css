@@ -1,6 +1,5 @@
 @import "colours.css";
 @import "sizing.css";
-@import "spacing.css";
 @import "typography.css";
 @import "buttons_styles.css";
 @import "links_styles.css";  
@@ -69,6 +68,9 @@
 }
 .cart_product_price {
     font-weight: var(--font-weight-lg);
+}
+.sml_display {
+    display: none;
 }
 .delete_icon {
     width: var(--size-px-ml);
@@ -147,6 +149,9 @@
 #cc_heading {
     padding-bottom: 5px;
     color: var(--color-sub-light);
+}
+.total_grid--left {
+    margin-left: 13em;
 }
 
 @media screen and (max-width: 1400px) {
@@ -278,6 +283,9 @@
     }
     .total_grid--left {
         margin-left: 2em;
+    }
+    #payment_options_title {
+        font-size: 20px;
     }
     
 }
