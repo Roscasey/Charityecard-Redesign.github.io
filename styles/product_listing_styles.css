@@ -77,6 +77,9 @@
 .product_header_container {
     grid-column: 2/3;
 }
+.product_option_subtext:hover {
+    color: var(--color-primary-dark);
+}
 @media screen and (max-width: 1400px) {
     .product_item_container {
         display: grid;
@@ -84,7 +87,6 @@
         grid-template-rows: 0.25fr 1fr;
         padding-bottom: var(--size-mml);
     }
-
 }
 @media screen and (max-width: 1200px) {
     .product_item_card {

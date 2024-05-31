@@ -86,9 +86,6 @@ footer hr {
     margin-right: var(--size-sm);
 }
 /* Typography */
-footer > p {
-    font-size: var(--text-xs);
-}
 footer h3 {
     font-size: var(--text-md);
     font-weight: var(--font-weight-s);
@@ -110,6 +107,7 @@ footer, .footer_section > p {
         margin-left: var(--size-px-ultra-mini);
     }
 }
+
 @media screen and (max-width: 1200px) { 
     #copyright {
         font-size: var(--size-input-small);
@@ -121,20 +119,20 @@ footer, .footer_section > p {
         margin-left: var(--size-m);
     }
 }
+
 @media screen and (max-width: 1150px) { 
     .footer_section + .footer_section {
         margin-left: var(--size-dm);
     }
 }
+
 @media screen and (max-width: 1070px) { 
     .footer_section + .footer_section {
         margin-left: var(--size-xs);
     }
 }
+
 @media screen and (max-width: 1000px) { 
-    /* #keep_date {
-        font-size: var(--size-px-xs);
-    } */
     footer hr {
         width: var(--size-xxl);
     }
@@ -142,9 +140,6 @@ footer, .footer_section > p {
         font-size: var(--size-px-xs);
         width: var(--size-footer-b);
     }
-    /* #copyright {
-        font-size: var(--size-px-xs);
-    } */
     .footer_section + .footer_section {
         margin-left: var(--size-m);
     }
@@ -155,11 +150,13 @@ footer, .footer_section > p {
         margin-left: var(--size-px-xs);
     }
 }
+
 @media screen and (max-width: 850px) { 
     .footer_section + .footer_section {
         margin-left: var(--size-sm);
     }
 }
+
 @media screen and (max-width: 500px) { 
     footer {
         display: flex;
@@ -189,6 +186,6 @@ footer, .footer_section > p {
         height: var(--size-px-sm);
     }
     .footer_section > div > img + img {
-        margin-left: 15px;
+        margin-left: var(--size-px-s);
     }
 }

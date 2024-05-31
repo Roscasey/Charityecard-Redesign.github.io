@@ -40,8 +40,13 @@
     --size-px-xxxs: 2px;
     --size-px-xxs: 5px;
     --size-px-xs: 10px;
+    --size-px-x: 12px;
 
+
+    --size-px-ss: 14px;
     --size-px-s: 15px;
+    --size-px-smm: 16px;
+    --size-px-m: 18px;
     --size-px-sm: 20px;
     --size-px-md: 25px;
     --size-px-ml: 30px;

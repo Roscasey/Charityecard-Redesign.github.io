@@ -14,6 +14,9 @@
     width: var(--size-g);
     height: var(--size-px-ml);
 }
+.red_button a {
+    color: var(--btn-primary-label);
+}
 .red_button:hover {
     background-color: var(--btn-primary-hover);
     border-color: var(--btn-primary-hover);
@@ -51,7 +54,6 @@
     font-weight: 600;
     cursor: pointer;
 }
-
 /* Sizing */
 .red_button--lg {
     width: var(--size-xl);

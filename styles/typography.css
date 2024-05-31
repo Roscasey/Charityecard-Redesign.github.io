@@ -12,6 +12,7 @@
     --text-m: 22px;
 
     --text-lg: 24px;
+    --text-l: 26px;
     --text-xl: 30px;
 
     --text-display: 100px;
@@ -33,7 +34,7 @@ body {
     font-size: var(--text-sm);
     font-family: var(--font-body);
 }
-.heading {
+.heading,nav {
     font-family: var(--font-heading);
 }
 .heading--page-title {
@@ -41,22 +42,24 @@ body {
     font-weight: var(--font-weight-sm);
 }
 .heading--title {
-    font-size: 26px;
+    font-size: var(--text-l);
     font-weight: var(--font-weight-sm);
 }
 .promo--msg-p {
     font-size: var(--text-m);
     color: var(--color-subtext);
 }
+
+/* Media Queries */
 @media screen and (max-width: 1050px) {
     .continue_browsing {
-        font-size: 14px;
+        font-size: var(--text-xs);
     }
     .card_price {
-        font-size: 16px;
+        font-size: var(--text-sm);
     }
     .progress_bar > a,p {
-        font-size: 14px;
+        font-size: var(--text-xs);
     }
 }
 @media screen and (max-width: 400px) {

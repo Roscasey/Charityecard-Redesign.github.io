@@ -1,6 +1,5 @@
 @import "../styles/colours.css";
 @import "../styles/sizing.css";
-@import "../styles/spacing.css";
 @import "../styles/typography.css";
 @import "../styles/buttons_styles.css";
 @import "../styles/links_styles.css";  
@@ -71,6 +70,9 @@
 .delete_icon {
     width: var(--size-px-ml);
     height: var(--size-px-ml);
+}
+.delete_icon:hover {
+    cursor: pointer;
 }
 #donation_img {
     width: 25em;

@@ -42,6 +42,7 @@
     border-radius: 5px;
     width: 100%;
     margin-bottom: var(--size-px-sm);
+    padding-left: 10px;
 }
 #default_option {
     text-align: center;
