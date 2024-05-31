@@ -1,31 +1,38 @@
 @import "colours.css";
 @import "sizing.css";
-@import "spacing.css";
 @import "typography.css";
 @import "buttons_styles.css";
 @import "links_styles.css";  
 @import "icon_styles.css";
+
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; 
 }
+
+/* Product Grid */
 .product_grid_container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: var(--size-none) auto;
     flex: 1;    
 }
 .product_grid {
-    max-width: 95%;
+    /* Display */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
-    padding-bottom: var(--size-px-xxxl);
+    
     row-gap: var(--size-dm);
     column-gap: var(--size-m);
+
+    max-width: 95%;
+    padding-bottom: var(--size-px-xxxl);
 }
+
+/* Product Card */
 .product_card {
     display: flex;
     flex-direction: column;
@@ -43,6 +50,8 @@ body {
     margin-top: var(--size-px-s);
     color: var(--color-dark);
 }
+
+/* Media Queries */
 @media screen and (max-width: 1250px) {
     .product_grid {
         gap: var(--size-dm);

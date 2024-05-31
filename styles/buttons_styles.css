@@ -3,7 +3,7 @@
 @import "./typography.css";
 
 
-/* Colours */
+/* Red Buttons */
 .red_button {
     background-color: var(--btn-primary-bg);
     border-color: var(--btn-primary-bg);
@@ -37,6 +37,8 @@
     color: var(--color-light);
     cursor: pointer;
 }
+
+/* White Buttons */
 .white_button {
     border: solid;
     background-color: var(--btn-secondary-bg);
@@ -54,7 +56,9 @@
     font-weight: 600;
     cursor: pointer;
 }
-/* Sizing */
+
+
+/* Size Variations */
 .red_button--lg {
     width: var(--size-xl);
     height: var(--size-smm);
@@ -65,103 +69,139 @@
 .white_button--lg {
     border-radius: var(--size-xxxs);
     border-width: var(--size-px-mini);
-    width: 25em;
-    height: 9em;
+    width: var(--size-mega-m);
+    height: var(--size-g);
 } 
+
+/* Continue Browsing & Red Button */
 .link_btn_combo {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 40px;
+    padding-top: var(--size-px-xl);
 }
 .continue_browsing {
-    padding-right: 50px;
+    padding-right: var(--size-px-xll);
 }
+
 /* Qty box */
 .qty_box {
+    /* Display */
     display: flex;
-    width: 100px;
-    height: 35px;
-    background-color: var(--color-light);
-    padding: 15px;
-    overflow: hidden;
     align-items: center;
+    overflow: hidden;
+
+    /* Sizing */
+    width: var(--size-px-full);
+    height: var(--size-px-lg);
+    background-color: var(--color-light);
+    
+    /* Border */
     border-radius: var(--size-xxxs);
     border: solid;
     border-width: var(--size-px-mini);
     border-color: var(--color-sub-light);
-    margin-top: 10px;
+
+    /* Spacing */
+    margin-top: var(--size-px-xs);
+    padding: var(--size-px-s);
 }
 .btn {
+    /* Display */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+
     border: none;
+    cursor: pointer;
+
+    /* Sizing */
     width: 60px;
     height: 60px;
+
+    /* Styles */
     background: 0 0;
-    cursor: pointer;
     color: black;
 }
 .btn > img {
-    width: 100%;
+    width: var(--size-full);
 }
 #qty_num {
-    width: 100%;
+    width: var(--size-full);
     border: none;
     text-align: center;
     background: 0 0;
 }
+#qty_label {
+    margin-right: var(--size-px-xs);
+}
+#qty {   
+    width: var(--size-px-xll);
+    height: var(--size-px-md);
 
+    /* Border */
+    border: solid;
+    border-radius: var(--size-px-xx);
+    border-width: var(--size-px-mini);
+    border-color: var(--color-sub-light);
+}
+
+
+/* Media Queries */
 @media screen and (max-width: 1280px) {
     .red_button--opp {
         width: var(--size-mml);
         height: var(--size-px-md);
     } 
 }
+
 @media screen and (max-width: 1200px) {
     .white_button--lg {
         border-radius: var(--size-xxxs);
         border-width: var(--size-px-mini);
-        width: 23em;
-        height: 8em;
+        width: var(--size-footer-b);
+        height: var(--size-lg);
     }
     .red_button--lg {
-        height: 2.5em
+        height: var(--size-smm);
     }
 }
+
 @media screen and (max-width: 1100px) {
     .white_button--lg {
         border-radius: var(--size-xxxs);
         border-width: var(--size-px-mini);
-        height: 7em;
+        height: var(--size-mml);
     } 
 }
+
 @media screen and (max-width: 1000px) {
     .red_button--opp {
-        width: 8em;
-        height: 20px;
-        font-size: 12px;
+        width: var(--size-lg);
+        height: var(--size-px-sm);
+        font-size: var(--size-input-small);
     }
     .white_button--lg {
         border-radius: var(--size-xxxs);
         border-width: var(--size-px-mini);
-        width: 19em;
+        width: var(--size-xm);
     } 
     .card_type {
-        font-size: 14px;
+        font-size: var(--size-px-ss);
     }
 }
+
 @media screen and (max-width: 900px) {
     .white_button--sml {
         border-radius: var(--size-xxxs);
         border-width: var(--size-px-mini);
-        width: 8em;
-        height: 2.5em;
-        font-size: 12px;
+        width: var(--size-lg);
+        height: var(--size-smm);
+        font-size: var(--size-px-x);
     }   
 }
+
 @media screen and (max-width: 500px) {
     .white_button--lg {
         border-radius: var(--size-xxxs);
@@ -169,15 +209,14 @@
     } 
     .qty_box {
         display: flex;
-        width: 90px;
-        height: 30px;
-        padding: 10px;
+        width: var(--size-px-f);
+        height: var(--size-px-ml);
+        padding: var(--size-px-xs);
         border-radius: var(--size-xxxs);
-        margin-top: 10px;
+        margin-top: var(--size-px-xs);
     }
     .btn {
-        width: 40px;
-        height: 40px;
+        width: var(--size-px-xl);
+        height: var(--size-px-xl);
     }
-    
 }

@@ -6,223 +6,171 @@
 @import "icon_styles.css";
 @import "cart_product_styles.css";
 
-.product_item_container {
-    display: grid;
-    grid-template-rows: 0.25fr 1fr;
-    grid-template-columns: 0.7fr 2fr 2fr;
-    padding-bottom: var(--size-mml);
-}
-.product_header_container {
-    grid-column: 2/3;
-}
-.product_item_container section + section {
-    margin-left: var(--size-lg);
-}
-.cart_total {
-    display: flex;
-    grid-column: 3/4;
-}
-.cart_product_charity {
-    margin-bottom: auto;
-}
-#cart_product_hr {
-    width: 35em;
-    margin-top: var(--size-px-sm);
-    margin-bottom: var(--size-px-sm);
-}
-.cart_products {
-    grid-column: 2/3;
-}
-.cart_product_item {
-    width: 35em;
-    display: grid;
-    grid-template-columns: 0.3fr 0.75fr 0.5fr;
-}
-.cart_product_img {
-    grid-column: 1/2;
-    width: 8em;
-}
-.cart_product_img > img {
-    width: var(--size-full);
-}
-.cart_product_info {
-    display: flex;
-    flex-direction: column;
-    grid-column: 2/3;
-    padding-left: var(--size-px-ml);
-}
-.cart_product_price_qty {
-    display: flex;
-    flex-direction: column;
-}
-.cart_product_info > h3 {
-    padding-bottom: var(--size-px-xs);
-    font-size: 16px;
-}
-.cart_product_opt {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    grid-column: 3/4;
-}
-.cart_product_price {
-    font-weight: var(--font-weight-lg);
-}
+
+/* HR */
 .sml_display {
     display: none;
 }
-.delete_icon {
-    width: var(--size-px-ml);
-    height: var(--size-px-ml);
-}
-#donation_img {
-    width: 25em;
-    height: var(--size-mega);
-}
 
+/* Form Side */
 .info_box {
     border: solid;
-    border-width: 1.5px;
+    border-width: var(--size-px-mini);
     border-color: var(--form-element-border);
     height: var(--size-px-ml);
-    border-radius: 5px;
-    /* width: 100%; */
+    border-radius: var(--size-px-xxs);
     margin-bottom: var(--size-px-sm);
 }
+
+/* Credit Card Box */
 .credit_card {
-    height: 12em;
-    padding: 15px;
+    height: var(--size-xl);
+    padding: var(--size-px-s);
+}
+.credit_card > form > div {
+    margin-bottom: var(--size-px-xs);
 }
 .credit_payment {
     display: flex;
     flex-direction: column;
 }
-.credit_card > form > div {
-    margin-bottom: 10px;
+.credit_input {
+    padding: var(--size-px-xxxs);
+    font-style: italic;
 }
-#card_name_holder {
-    display: flex;
-    flex-direction: column;
-}
+
+
+/* Card details */
 .card_details {
     display: flex;
 }
 .card_payments {
     display: flex;
-    margin-top: 40px;
     justify-content: center;
+    margin-top: var(--size-px-xl);
 }
 .card_payments img + img {
-    margin-left: 15px;
+    margin-left: var(--size-px-s);
 }
 .card_details > div + div {
-    margin-left: 20px;
+    margin-left: var(--size-px-sm);
 }
+#card_name_holder {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .payment_box {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .payment_options {
-    width: 28em;
+    width: var(--size-payment-opt);
 }
 #payment_options_title {
-    font-size: 24px;
-    padding-bottom: 15px;
+    font-size: var(--text-lg);
+    padding-bottom: var(--size-px-s);
 }
+
+
 #name_on_card, #card_no {
-    width: 18em;
+    width: var(--size-xxxl);
 }
 #exp_date {
-    width: 6em;
+    width: var(--size-ml);
     text-align: center;
 }
 #cvv {
-    width: 3em;
+    width: var(--size-dm);
     text-align: center;
 }
-.credit_input {
-    padding: 2px;
-    font-style: italic;
-}
+
+
 #cc_heading {
-    padding-bottom: 5px;
+    padding-bottom: var(--size-px-xxs);
     color: var(--color-sub-light);
 }
 .total_grid--left {
-    margin-left: 13em;
+    margin-left: var(--size-xx);
 }
 
+/* Media Queries */
 @media screen and (max-width: 1400px) {
     .product_item_container section + section {
-    margin-left: 5em;
+    margin-left: var(--size-m);
     
 }
 .product_item_container {
     display: grid;
     grid-template-rows: 0.25fr 1fr;
     grid-template-columns: 0.35fr 2fr 2fr;
+
     padding-bottom: var(--size-mml);
+    }
 }
-}
+
 @media screen and (max-width: 1300px) {
     .payment_options {
-        width: 25em;
+        width: var(--size-mega-m);
     }
-    .card_details  div + div {
-        margin-left: 20px;
-    }
-    .card_details {
-        width: 23em
-    }
-   .credit_input {
-    font-size: 12px;
-   }
     .payment_box {
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+
+    .card_details  div + div {
+        margin-left: var(--size-px-sm);
+    }
+    .card_details {
+        width: var(--size-footer-b);
+    }
+   .credit_input {
+    font-size: var(--text-xxs);
+   }
+   
     #name_on_card, #card_no {
-        width: 18em;
+        width: var(--size-xxxl);
     }
     #exp_date {
-        width: 6em;
+        width: var(--size-ml);
         text-align: center;
     }
     #cvv {
-        width: 3em;
+        width: var(--size-dm);
         text-align: center;
     }
 }
 
 @media screen and (max-width: 1100px) {
     .cart_product_item, #cart_product_hr {
-        width: 30em;
         display: grid;
         grid-template-columns: 0.3fr 0.75fr 0.5fr;
+
+        width: var(--size-mega-a);
     }
     .product_item_container section + section {
-        margin-left: 4em;
+        margin-left: var(--size-md);
     }
 }
 
 @media screen and (max-width: 930px) {
     .cart_product_item, #cart_product_hr {
-        width: 28em;
+        width: var(--size-payment-opt);
         display: grid;
     }
     .product_item_container section + section {
-        margin-left: 4em;
+        margin-left: var(--size-md);
     }
     .cart_product_img {
         grid-column: 1/2;
-        width: 7em;
+        width: var(--size-mml);
     }
     .cart_product_info {
-        padding-left: 15px;
+        padding-left: var(--size-px-s);
     }
 }
 @media screen and (max-width: 800px) {
@@ -233,57 +181,56 @@
     }
     .product_header_container, .cart_products {
         align-self: flex-start;
-        margin-left: 20px;
+        margin-left: var(--size-px-sm);
     }
     .product_item_container section + section {
-        margin-left: 0em;
+        margin-left: var(--size-none);
     } 
+
+
     .cart_product_info > h3 {
-        font-size: 14px;
+        font-size: var(--text-xs);
     }
     .cart_product_info > p {
-        font-size: 12px;
+        font-size: var(--text-xxs);
     }
     .cart_product_img {
         grid-column: 1/2;
-        width: 6em;
+        width: var(--size-ml);
     }
-    .cart_product_item, #cart_product_hr {
-        width: 22em;
-    }
-    .total_grid {
-        align-self: flex-end;
-    }
-    .payment_options {
-        width: 22em;
+    .cart_product_item, #cart_product_hr, .payment_options {
+        width: var(--size-footer-a);
     }
  
     #name_on_card, #card_no {
-        width: 15em;
+        width: var(--size-l);
     }
     #exp_date {
-        width: 6em;
+        width: var(--size-ml);
         text-align: center;
     }
     #cvv {
-        width: 3em;
+        width: var(--size-dm);
         text-align: center;
     }
+
+
     .card_details {
-        width: 16em
+        width: var(--size-xxl);
     }
     .credit_card {
-        padding: 10px;
+        padding: var(--size-px-xs);
     }
+
+
     .total_grid {
         align-self: flex-end;
         justify-self: flex-end;
     }
     .total_grid--left {
-        margin-left: 2em;
+        margin-left: var(--size-sm);
     }
     #payment_options_title {
-        font-size: 20px;
+        font-size: var(--size-px-sm);
     }
-    
 }

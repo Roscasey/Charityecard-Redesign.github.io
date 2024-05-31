@@ -204,6 +204,8 @@ li ul li {
 .drop_down_menu li + li {
     margin-left: var(--size-sm);  
 }
+
+/* Media Queries */
 @media screen and (max-width: 1250px) {
     .navbar  {
         padding-left: var(--size-sm);
@@ -230,6 +232,7 @@ li ul li {
         height: var(--size-px-s);
     }
 }
+
 @media screen and (max-width: 800px) { /* In between size */
     .nav_options_container {
         margin: var(--size-none);  
@@ -245,6 +248,7 @@ li ul li {
         font-size: 0.75rem;
     }
 }
+
 @media screen and (max-width: 790px) { /* Small Size */
     .navbar {
         padding-left: var(--size-none);

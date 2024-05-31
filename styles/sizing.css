@@ -38,6 +38,7 @@
     --size-px-ultra-mini: 1px;
     --size-px-mini: 1.5px;
     --size-px-xxxs: 2px;
+    --size-px-xx: 3px;
     --size-px-xxs: 5px;
     --size-px-xs: 10px;
     --size-px-x: 12px;
@@ -48,6 +49,8 @@
     --size-px-smm: 16px;
     --size-px-m: 18px;
     --size-px-sm: 20px;
+    --size-px-mm: 22px;
+    --size-px-dm: 24px;
     --size-px-md: 25px;
     --size-px-ml: 30px;
 
@@ -61,6 +64,8 @@
     --size-px-grr: 65px;
     --size-px-gr: 70px;
     --size-px-g: 80px;
+    --size-px-f: 90px;
+    --size-px-full: 100px;
 
     /* Size Nav */
     --size-side-nav-hr: 12.5px;
@@ -73,4 +78,8 @@
     
     /* Size specific */
     --size-input-small: 12px;
+    --size-product-items: 21em;
+    --size-product-listing: 130px;
+    --size-product-item-card: 29em;
+    --size-payment-opt: 28em;
 }

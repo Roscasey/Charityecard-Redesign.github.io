@@ -1,6 +1,6 @@
 @import "./colours.css";
-@import "./sizing.css";
 @import "./typography.css";
+
 /* Colours */
 a {
     text-decoration: none;
@@ -12,7 +12,7 @@ a {
 .orange_links:hover {
     color: var(--color-secondary-dark);
 }
-.cart_product_charity, .homepage_instruction_subtext{
+.cart_product_charity, .homepage_instruction_subtext {
     color: var(--color-sub-light);
 }
 

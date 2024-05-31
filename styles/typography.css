@@ -6,14 +6,17 @@
     --text-xxxs: 10px;
     --text-xxs: 12px;
     --text-xs: 14px;
+    --text-x: 15px;
 
     --text-sm: 16px;
+    --text-d: 18px;
     --text-md: 20px;
     --text-m: 22px;
 
     --text-lg: 24px;
     --text-l: 26px;
     --text-xl: 30px;
+    --text-display-sml: 60px;
 
     --text-display: 100px;
     /* Weight */
@@ -34,9 +37,12 @@ body {
     font-size: var(--text-sm);
     font-family: var(--font-body);
 }
+
 .heading,nav {
     font-family: var(--font-heading);
 }
+
+
 .heading--page-title {
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
@@ -44,6 +50,10 @@ body {
 .heading--title {
     font-size: var(--text-l);
     font-weight: var(--font-weight-sm);
+}
+
+.display_text {
+    font-size: var(--text-display-sml);
 }
 .promo--msg-p {
     font-size: var(--text-m);
