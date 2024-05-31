@@ -5,22 +5,24 @@
 
 /* Total Box */
 .total_grid {
-    padding: 15px;
     display: grid;
+    grid-template-rows: 4fr 10fr 4fr;
+
     border: solid;
     border-color: var(--color-primary);
-    border-radius: 10px;
-    grid-template-rows: 4fr 10fr 4fr;
-    width: 22em;
+    border-radius: var(--size-px-xs);
+
+    /* Sizing */
+    width: var(--size-footer-a);
+    padding: var(--size-px-s);
 } 
-/* .total_grid--left {
-    margin-top: 8em; 
-}  */
 .total_grid div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+
 #gst_box {
     align-items: center;
     color: var(--color-sub-light);
@@ -32,22 +34,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 22em;
+    width: var(--size-footer-a);
 }
+
+/* Media Queries */
 @media screen and (max-width: 1100px) {
     .total_grid {
-        padding: 15px;
         display: grid;
+        grid-template-rows: 4fr 10fr 4fr;
+
         border: solid;
         border-color: var(--color-primary);
-        border-radius: 10px;
-        grid-template-rows: 4fr 10fr 4fr;
-        width: 20em;
+        border-radius: var(--size-px-xs);
+
+        padding: var(--size-px-s);
+        width: var(--size-mega);
     } 
 }
 
 @media screen and (max-width: 930px) {
     .total_grid {
-        padding: 10px;
+        padding: var(--size-px-xs);
     } 
 }
