@@ -13,9 +13,9 @@
     grid-template-rows: 4fr 10fr 4fr;
     width: 22em;
 } 
-.total_grid--left {
+/* .total_grid--left {
     margin-top: 8em; 
-} 
+}  */
 .total_grid div {
     display: flex;
     flex-direction: row;

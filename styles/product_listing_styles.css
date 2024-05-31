@@ -70,12 +70,21 @@
 }
 .product_item_container {
     display: grid;
-    grid-template-columns: 1.1fr 2fr 2fr;
+    grid-template-columns: 1.3fr 2fr 2fr;
     grid-template-rows: 0.25fr 1fr;
     padding-bottom: var(--size-mml);
 }
 .product_header_container {
     grid-column: 2/3;
+}
+@media screen and (max-width: 1400px) {
+    .product_item_container {
+        display: grid;
+        grid-template-columns: 0.9fr 2fr 2fr;
+        grid-template-rows: 0.25fr 1fr;
+        padding-bottom: var(--size-mml);
+    }
+
 }
 @media screen and (max-width: 1200px) {
     .product_item_card {
