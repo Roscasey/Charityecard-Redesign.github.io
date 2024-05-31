@@ -147,5 +147,9 @@
     #select_charity {
         margin-bottom: var(--size-px-ml);
     }
+    .product_header_container {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
 }
 

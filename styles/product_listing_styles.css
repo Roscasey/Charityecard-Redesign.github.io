@@ -151,4 +151,8 @@
     .select_opt_title {
         padding-top: var(--size-px-sm);
     }
+    .product_header_container {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
 }

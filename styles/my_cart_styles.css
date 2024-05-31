@@ -25,12 +25,12 @@
 .cart_product_charity {
     margin-bottom: auto;
 }
-#cart_product_hr {
+.cart_product_hr {
     width: 35em;
-    margin-top: var(--size-px-sm);
 }
 .cart_products {
     grid-column: 2/3;
+    margin-bottom: 30px;
 }
 .cart_product_item {
     width: 35em;
@@ -76,6 +76,87 @@
     width: 25em;
     height: var(--size-mega);
 }
+#donation_img > img {
+    width: 100%
+}
 
 
 
+@media screen and (max-width: 1100px) {
+    .cart_product_item, #cart_product_hr {
+        width: 33em;
+        display: grid;
+        grid-template-columns: 0.3fr 0.75fr 0.5fr;
+    }
+    #donation_img {
+        width: 23em;
+    }
+    .product_item_container section + section {
+        margin-left: 4em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cart_product_item, #cart_product_hr {
+        width: 30em;
+        display: grid;
+        grid-template-columns: 0.3fr 0.75fr 0.5fr;
+    }
+    #donation_img {
+        width: 22em;
+    }
+}
+@media screen and (max-width: 930px) {
+    .cart_product_item, #cart_product_hr {
+        width: 28em;
+        display: grid;
+    }
+    #donation_img {
+        width: 20em;
+    }
+    .product_item_container section + section {
+        margin-left: 4em;
+    }
+    .cart_product_img {
+        grid-column: 1/2;
+        width: 7em;
+    }
+    .cart_product_info {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .product_item_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .product_header_container, .cart_products {
+        align-self: flex-start;
+        margin-left: 20px;
+    }
+    .product_item_container section + section {
+        margin-left: 0em;
+    } 
+    .cart_product_info > h3 {
+        font-size: 14px;
+    }
+    .cart_product_info > p {
+        font-size: 12px;
+    }
+    .cart_product_img {
+        grid-column: 1/2;
+        width: 6em;
+    }
+    .cart_product_item, #cart_product_hr {
+        width: 22em;
+    }
+    .total_grid {
+        align-self: flex-end;
+    }
+    #donation_img {
+        margin-top: 60px;
+    }
+}

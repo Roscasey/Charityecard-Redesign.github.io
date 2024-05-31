@@ -59,3 +59,9 @@ body {
         font-size: 14px;
     }
 }
+@media screen and (max-width: 400px) {
+    .heading--page-title {
+        font-size: var(--text-lg);
+    }
+}
+
