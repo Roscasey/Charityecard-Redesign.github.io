@@ -53,7 +53,7 @@
 .white_button:hover {
     border-color: var(--color-primary-dark);
     color: var(--color-primary-dark);
-    font-weight: 600;
+    font-weight: var(--font-weight-md);
     cursor: pointer;
 }
 
@@ -117,12 +117,12 @@
     cursor: pointer;
 
     /* Sizing */
-    width: 60px;
-    height: 60px;
+    width: var(--size-px-xxxl);
+    height: var(--size-px-xxxl);
 
     /* Styles */
     background: 0 0;
-    color: black;
+    color: var(--color-dark);
 }
 .btn > img {
     width: var(--size-full);
