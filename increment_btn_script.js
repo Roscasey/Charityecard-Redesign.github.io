@@ -4,9 +4,17 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const dec_btn = document.getElementById('btn_minus');
     const add_btn = document.getElementById('btn_plus');
     
+    //Product Price adjustment
     let item_price_element = document.querySelector('.cart_product_price'); //get the cart product price
     let item_price = 9.95; //the price of all cards 
-    
+
+    //Remove cart item
+    const remove = document.getElementById('my_cart_delete');
+    const product_item = document.getElementById('cart_item');
+    const cart_hr = document.getElementById('cart_product_hr');
+
+
+    //Update price x qty 
     let update_price = () => {
         let current_qty = parseInt(qty.value); 
         let add_it =  (item_price * current_qty).toFixed(2); //round decimal points 
@@ -26,6 +34,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
     add_btn.addEventListener('click', ()=> {
         qty.value = parseInt(qty.value) + 1; //turn into a number and increase by 1 per click
         update_price();
+    });
+
+    //remove item
+    remove.addEventListener('click', () => {
+        product_item.style.display = 'none';
+        cart_hr.style.display = 'none';
     });
 });
   
