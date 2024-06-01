@@ -56,9 +56,9 @@
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item">Christmas</li>
+                    <li class="side_nav_drop_item"><a href="../pages/christmas_cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item">All Cards</li>
+                    <li class="side_nav_drop_item"><a href="../pages/all_products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -75,16 +75,15 @@
             <div class="progress_bar">
                 <a class="orange_links" href="">Home</a> 
                 <a class="orange_links" href="">Cards</a>
-                <a class="orange_links" href="">Christmas</a>
-                <p class="current_page">Season's Greetings</p>
+                <p class="current_page" id="current_page">Season's Greetings</p>
             </div>
             <div class="product_header">
-                <h1 class="heading heading--page-title">Season's Greetings</h1>
+                <h1 class="heading heading--page-title" id="card_title">Season's Greetings</h1>
             </div>
         </header>
         <section class="product_listing"> 
             <div class="product_item_card">
-                <img src="../images/seasons_greetings_big.png" alt="seasons_greetings_big">
+                <img id="card_img" src="../images/seasons_greetings_big.png" alt="seasons_greetings_big">
                 <p class="card_type">Standard Card</p>
                 <p class="card_price">$9.95</p>
             </div>
@@ -96,7 +95,7 @@
                     <img class="arrow_icon" src="../icons/arrow_icon.png" alt="arrow_icon">
                 </div>
                 <a href="../pages/product_charity.html">
-                    <div class="select_option_box white_button white_button--lg">
+                    <div class="select_option_box white_button white_button--lg" id="add_btn">
                         <p class="product_option_head">Add to Cart</p>
                         <p class="product_option_subtext">Choose your charity, add your recipient and sender details</p>
                         <img class="arrow_icon" src="../icons/arrow_icon.png" alt="arrow_icon">
@@ -134,6 +133,7 @@
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer>
-    <script src="../nav_bar_script.js"></script> 
+    <script src="../nav_bar_script.js"></script>
+    <script src="../add_to_cart_script.js"></script>
 </body>
 </html>

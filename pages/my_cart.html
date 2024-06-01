@@ -57,9 +57,9 @@
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item">Christmas</li>
+                    <li class="side_nav_drop_item"><a href="../pages/christmas_cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item">All Cards</li>
+                    <li class="side_nav_drop_item"><a href="../pages/all_products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -76,7 +76,7 @@
             <div class="progress_bar">
                 <a class="orange_links" href="">Home</a> 
                 <a class="orange_links" href="">Cards</a>
-                <a class="orange_links" href="">Season's Greetings</a>
+                <a class="orange_links" id="current_page" href="">Season's Greetings</a>
                 <p class="current_page">My Cart</p>
             </div>
             <div class="product_header">
@@ -86,13 +86,13 @@
         <section class="cart_products">
             <div class="cart_product_item" id="cart_item">
                 <div class="cart_product_img">
-                    <img src="../images/seasons_greetings_small.png" alt="seasons_greetings" class="cart_product_image">
+                    <img id="card_img" src="../images/seasons_greetings_small.png" alt="seasons_greetings" class="cart_product_image">
                 </div>
                 <div class="cart_product_info">
-                    <h3>Season's Greetings</h3>
-                    <p class="cart_product_charity">Charity: Act For Kids</p>
+                    <h3 id="card_title">Season's Greetings</h3>
+                    <p class="cart_product_charity" id="mini_charity">Charity: Act For Kids</p>
                     <div class="cart_product_price_qty">
-                        <p class="cart_product_price">$9.95</p>
+                        <p class="cart_product_price" id="mini_cart_price">$9.95</p>
                         <div class="qty_box">
                             <button class="btn" id="btn_minus" type="button">
                                 <img src="../icons/minus_btn.svg"alt="minus_btn"/>
@@ -165,6 +165,7 @@
     </footer> 
     <script src="../nav_bar_script.js"></script>
     <script src="../increment_btn_script.js"></script>
-    <script src="../total_box_script.js"></script>
+    <script src="../add_to_cart_script.js"></script>
+    <script src="../tester.js"></script>
 </body>
 </html>

@@ -56,9 +56,9 @@
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item">Christmas</li>
+                    <li class="side_nav_drop_item"><a href="../pages/christmas_cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item">All Cards</li>
+                    <li class="side_nav_drop_item"><a href="../pages/all_products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -76,15 +76,15 @@
                 <a class="orange_links" href="">Home</a> 
                 <a class="orange_links" href="">Cards</a>
                 <a class="orange_links" href="">Christmas</a>
-                <p class="current_page">Season's Greetings / Charity</p>
+                <p class="current_page" id="current_page">Season's Greetings / Charity</p>
             </div>
             <div class="product_header">
-                <h1 class="heading heading--page-title">Season's Greetings</h1>
+                <h1 class="heading heading--page-title" id="card_title">Season's Greetings</h1>
             </div>
         </header>
         <section class="product_listing">
             <div class="product_item_card">
-                <img id="product_item_img" src="../images/seasons_greetings_big.png" alt="seasons_greetings_big">
+                <img id="card_img" src="../images/seasons_greetings_big.png" alt="seasons_greetings_big">
                 <p class="card_type">Standard Card</p>
                 <p class="card_price" id="card_price">$9.95</p>
             </div>
@@ -93,15 +93,15 @@
                     <h3 class="form_heading select_charity_title">1. Select your charity</h3>
                     <select class="info_box" name="charity" id="select_charity">
                         <option id="default_option" value="default">--Please Select One--</option>
-                        <option value="act">Act For Kids</option>
-                        <option value="alz_wa">Alzheimer's WA</option>
-                        <option value="aia">Amnesty International Australia</option>
-                        <option value="awl">Animal Welfare League (AWL) NSW</option>
-                        <option value="acrf">Animal Cancer Research Foundation</option>
-                        <option value="arc">Australian Red Cross</option>
-                        <option value="asrf">Australian Spinal Research Foundation</option>
-                        <option value="aspect">Autism Spectrum Australia (Aspect)</option>
-                        <option value="bc">Bear Cottage</option>
+                        <option value="Act For Kids">Act For Kids</option>
+                        <option value="Alzheimer's WA">Alzheimer's WA</option>
+                        <option value="Amnesty International Australia">Amnesty International Australia</option>
+                        <option value="Animal Welfare League (AWL) NSW">Animal Welfare League (AWL) NSW</option>
+                        <option value="Animal Cancer Research Foundation">Animal Cancer Research Foundation</option>
+                        <option value="Australian Red Cross">Australian Red Cross</option>
+                        <option value="Australian Spinal Research Foundation">Australian Spinal Research Foundation</option>
+                        <option value="Autism Spectrum Australia (Aspect)">Autism Spectrum Australia (Aspect)</option>
+                        <option value="Bear Cottage">Bear Cottage</option>
                     </select>
                 </div>
                 <hr id="form_hr">
@@ -121,7 +121,7 @@
                     </form>
                     <div class="link_btn_combo">
                         <a class="orange_links continue_browsing" href="../pages/all_products.html">Continue Browsing</a>
-                        <button class="red_button"><a href="../pages/my_cart.html">Continue</a></button>
+                        <button class="red_button"><a href="../pages/my_cart.html">Add to Cart</a></button>
                     </div>
                 </div>
             </form>
@@ -157,5 +157,7 @@
     </footer> 
     <script src="../nav_bar_script.js"></script>
     <script src="../update_qty_script.js"></script>
+    <script src="../add_to_cart_script.js"></script>
+    <script src="../charity_change_script.js"></script>
 </body>
 </html>
