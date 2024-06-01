@@ -13,13 +13,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const product_item = document.getElementById('cart_item');
     const cart_hr = document.getElementById('cart_product_hr');
 
-
     //Update price x qty 
     let update_price = () => {
         let current_qty = parseInt(qty.value); 
         let add_it =  (item_price * current_qty).toFixed(2); //round decimal points 
         item_price_element.innerHTML = '$' + add_it; //add the $ symbol back
-        console.log(add_it); // tester output
     } 
 
     dec_btn.addEventListener('click', ()=> {
@@ -43,3 +41,5 @@ document.addEventListener('DOMContentLoaded', ()=> {
     });
 });
   
+
+
