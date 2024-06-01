@@ -40,24 +40,13 @@ document.addEventListener('DOMContentLoaded', () => {
     screenTooBig();
     window.addEventListener('resize', screenTooBig);
 
-    //Increment and decrement buttons on cart product item 
-    const qty = document.getElementById('qty_num');
-    const dec_btn = document.getElementById('btn_minus');
-    const add_btn = document.getElementById('btn_plus');
-
-    dec_btn.addEventListener('click', () => {
-        if (qty.value <= 1) {
-            qty.value = 1; //To go to 0 items or remove, they have option to click the 'remove / X' icon
-        }
-        else {
-            qty.value = parseInt(qty.value) - 1;
-        }
-    });
-    add_btn.addEventListener('click', () => {
-        qty.value = parseInt(qty.value) + 1
-    });
 });
 
+
+
+
+
+ 
 
 
 
