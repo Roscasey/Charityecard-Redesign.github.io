@@ -6,8 +6,7 @@
     <title>My Cart</title>
     <link rel="stylesheet" href="../styles/nav_bar_styles.css">
     <link rel="stylesheet" href="../styles/total_box_styles.css">
-    <link rel="stylesheet" href="../styles/checkout_payment_styles.css">
-    <link rel="stylesheet" href="../styles/my_cart_styles.css">
+    <link rel="stylesheet" href="../main_styles/my_cart_styles.css">
     <link rel="stylesheet" href="../styles/footer_styles.css">
     <link rel="stylesheet" href="../styles/product_header_styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -17,7 +16,7 @@
         <ul class="navbar">
             <li class="hamburger_container big_screen">
                 <img id="hamburger_icon" src="../icons/hamburger.svg" alt="Description of SVG">
-                <img class="logo_img logo_img_small" src="../icons/Logo_Icon_SVG.svg" alt="small_logo">
+                <a href="../index.html"><img class="logo_img logo_img_small" src="../icons/Logo_Icon_SVG.svg" alt="small_logo"></a>
             </li>
             <li class="big_screen">
                 <ul class="nav_heading_container"> 
@@ -53,7 +52,7 @@
         <ul class="side_nav_sml_disp">
             <li class="side_nav_burger">
                 <img id="exit_icon" src="../icons/close_white.svg" alt="Description of SVG">
-                <img class="logo_img logo_img_small" src="../icons/logo_white.svg" alt="small_logo">
+                <a href="../index.html"><img class="logo_img logo_img_small" src="../icons/logo_white.svg" alt="small_logo"></a>
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
@@ -74,8 +73,8 @@
     <main class="product_item_container">
         <header class="product_header_container">
             <div class="progress_bar">
-                <a class="orange_links" href="">Home</a> 
-                <a class="orange_links" href="">Cards</a>
+                <a class="orange_links" href="../index.html">Home</a> 
+                <a class="orange_links" href="../pages/all_products.html">Cards</a>
                 <a class="orange_links" id="current_page" href="">Season's Greetings</a>
                 <p class="current_page">My Cart</p>
             </div>
@@ -163,9 +162,10 @@
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer> 
-    <script src="../nav_bar_script.js"></script>
-    <script src="../increment_btn_script.js"></script>
-    <script src="../add_to_cart_script.js"></script>
-    <script src="../tester.js"></script>
+    <script src="../scripts/nav_bar_script.js"></script>
+    <script src="../scripts/increment_btn_script.js"></script>
+    <script src="../scripts/add_to_cart_script.js"></script>
+    <script src="../scripts/tester.js"></script>
+    <script src="../scripts/product_listing.js"></script>
 </body>
 </html>
