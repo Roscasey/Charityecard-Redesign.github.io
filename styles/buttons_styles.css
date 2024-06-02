@@ -5,13 +5,17 @@
 
 /* Red Buttons */
 .red_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: var(--btn-primary-bg);
     border-color: var(--btn-primary-bg);
     color: var(--btn-primary-label);
     border: solid;
 
     border-radius: var(--size-xxs);
-    width: var(--size-g);
+    width: var(--size-lg);
     height: var(--size-px-ml);
 }
 .red_button a {
@@ -80,7 +84,7 @@
     justify-content: center;
     padding-top: var(--size-px-xl);
 }
-.continue_browsing {
+.continue_browsing_combo {
     padding-right: var(--size-px-xll);
 }
 

@@ -39,6 +39,7 @@ body {
     font-family: var(--font-body);
 }
 
+
 .heading,nav {
     font-family: var(--font-heading);
 }
