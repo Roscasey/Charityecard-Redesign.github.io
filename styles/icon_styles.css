@@ -8,6 +8,14 @@
     --icon-width: var(--size-px-lg);
 }
 
+.icon {
+    width: var(--icon-height);
+    height: var(--icon-width);
+}
+#cart_icon {
+    width: var(--size-px-mm);
+    height: var(--size-px-mm);
+}
 /* Payment */
 .payment_icon {
     height: var(--icon-height);
@@ -17,10 +25,10 @@
 }
 .amex {
     border-radius: var(--size-px-xxxs);
-    width: 30px;
+    width: var(--size-px-ml);
 }
 .master_c {
-    width: 35px;
+    width: var(--size-px-lg);
 }
 
 /* Payment Icons Main */
@@ -31,10 +39,7 @@
     border-radius: var(--size-px-xxxs);
 }
 
-/* Other */
-.delete_icon:hover {
-    cursor: pointer;
-}
+
 
 /* Media Queries */
 @media screen and (max-width: 1000px) { 
@@ -44,6 +49,10 @@
 }
 @media screen and (max-width: 500px) { 
     .payment_icon {
+        height: var(--size-px-sm);
+    }
+    #cart_icon, .delete_icon {
+        width: var(--size-px-sm);
         height: var(--size-px-sm);
     }
 }
