@@ -38,13 +38,12 @@ body {
     flex-direction: column;
     width: var(--size-xll);
 }
-.product_card img:hover {
-    cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
-}
 .product_card img {
     width: var(--size-full);
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+.product_card img:hover {
+    cursor: pointer;
 }
 .product_card p {
     margin-top: var(--size-px-s);

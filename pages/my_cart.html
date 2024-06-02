@@ -43,7 +43,7 @@
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
                     <li><img class="nav_icon" src="../icons/search_svg.svg" alt=""></li>
-                    <li><a href=""><img class="nav_icon" src="../icons/Shopping_Basket_Icon.jpg" alt=""></a></li>
+                    <li><a href="../pages/my_cart.html"><img class="nav_icon" src="../icons/Shopping_Basket_Icon.jpg" alt=""></a></li>
                 </ul>
             </li> 
         </ul> 
@@ -83,15 +83,15 @@
             </div>
         </header>
         <section class="cart_products">
-            <div class="cart_product_item" id="cart_item">
+            <div class="cart_product_item">
                 <div class="cart_product_img">
-                    <img id="card_img" src="../images/seasons_greetings_small.png" alt="seasons_greetings" class="cart_product_image">
+                    <img id="card_img" src="../images/seasons_greet.png" alt="seasons_greetings" class="cart_product_image">
                 </div>
                 <div class="cart_product_info">
                     <h3 id="card_title">Season's Greetings</h3>
-                    <p class="cart_product_charity" id="mini_charity">Charity: Act For Kids</p>
+                    <p class="cart_product_charity">Charity: Act For Kids</p>
                     <div class="cart_product_price_qty">
-                        <p class="cart_product_price" id="mini_cart_price">$9.95</p>
+                        <p class="cart_product_price">$9.95</p>
                         <div class="qty_box">
                             <button class="btn" id="btn_minus" type="button">
                                 <img src="../icons/minus_btn.svg"alt="minus_btn"/>
@@ -109,6 +109,31 @@
                 </div>
             </div>
             <hr id="cart_product_hr">
+            <div class="cart_product_item" id="classic_item">
+                <div class="cart_product_img">
+                    <img id="card_img" src="../images/classic_greet.png" alt="classic_christmas" class="cart_product_image">
+                </div>
+                <div class="cart_product_info">
+                    <h3 id="card_title">Classic Christmas</h3>
+                    <p class="cart_product_charity">Charity: Bear Cottage</p>
+                    <div class="cart_product_price_qty">
+                        <p class="cart_product_price">$9.95</p>
+                        <div class="qty_box">
+                            <button class="btn" id="btn_minus" type="button">
+                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
+                            </button>
+                            <input type="text" value="1" id="qty_num">
+                            <button class="btn" id="btn_plus">
+                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_product_opt">
+                    <img class="delete_icon" id="my_cart_delete" src="../icons/close_icon_rgl.svg" alt="delete">
+                    <button class="white_button white_button--sml">Edit Changes</button>
+                </div>
+            </div>
         </section>
         <section class="cart_total">
             <div class="total_grid">
@@ -129,7 +154,7 @@
                 <img src="../images/Charity_donation.jpg" alt="donation_img">
             </div>
             <div class="link_btn_combo">
-                <a class="orange_links continue_browsing" href="../pages/all_products.html">Continue Browsing</a>
+                <a class="orange_links continue_browsing" href="../pages/christmas_cards.html">Continue Browsing</a>
                 <button class="red_button"><a href="../pages/checkout_payment.html">Checkout Cart</a></button>
             </div>
         </section>
@@ -163,9 +188,7 @@
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer> 
     <script src="../scripts/nav_bar_script.js"></script>
-    <script src="../scripts/increment_btn_script.js"></script>
-    <script src="../scripts/add_to_cart_script.js"></script>
-    <script src="../scripts/tester.js"></script>
-    <script src="../scripts/product_listing.js"></script>
+    <!-- <script src="../scripts/add_to_cart_script.js"></script> -->
+    <script src="../scripts/get_charity_cart.js"></script>
 </body>
 </html>

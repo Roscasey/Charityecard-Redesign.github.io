@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    
+
     //Product charity qty
     const productQty = document.getElementById('qty');
     const productCost = 9.95;
@@ -15,4 +14,4 @@ document.addEventListener('DOMContentLoaded', () => {
         updateQty();
     });
 
-})
+

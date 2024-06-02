@@ -4,6 +4,7 @@
 @import "../styles/buttons_styles.css";
 @import "../styles/links_styles.css";  
 @import "../styles/icon_styles.css";
+@import "../styles/promo_msg_styles.css";
 
 /* Section: Homepage Viewport */
 #display_text {
@@ -19,8 +20,8 @@
     font-size: var(--text-xl);
     font-weight: var(--font-weight-sm);
 
-    margin-top: 0.5em;
-    margin-bottom: 2em;
+    margin-top: var(--size-xxxs);
+    margin-bottom: var(--size-sm);
     width: var(--size-full);
 }
 
@@ -109,16 +110,7 @@
     font-size: var(--text-md);
 }
 
-.promo_msg_eco {
-    display: flex;
-    flex-direction: column;
 
-    align-items: center;
-    align-content: center;
-
-    justify-content: center;
-    justify-items: center;
-}
 #eco_friendly_img {
     width: var(--size-mega-b);
     height: var(--size-mega-m);
@@ -126,9 +118,7 @@
 #eco_friendly_img > img{
     width: var(--size-full);
 }
-.promo_msg_eco > h3 {
-    padding-top: var(--size-px-ml);
-}
+
 
 @media screen and (max-width: 1500px) {
     #display_text {
@@ -229,9 +219,6 @@
     .homepage_instruction > p { 
        font-size: var(--text-sm);
     }
-    .promo_msg_eco > h3 {
-        padding-top: var(--size-px-xxl);
-    }
 
 
     #send_img {
@@ -247,13 +234,6 @@
     #eco_friendly_img {
         width: var(--size-mega);
         height: var(--size-l);
-    }
-
-    .promo_msg_eco > h3 {
-        font-size: var(--text-lg);
-    }
-    .promo_msg_eco > p {
-        font-size: var(--text-md);
     }
 
 
@@ -341,7 +321,6 @@
         padding-bottom: var(--size-m);
     }
 
-
     #eco_friendly_img {
         width: var(--size-xxxl);
         height: var(--size-l);
@@ -350,18 +329,14 @@
         font-size: var(--text-x);
     }
 
-
-    .promo_msg_eco > h3 {
-        font-size: var(---text-md);
-    }
-    .promo_msg_eco > p {
-        font-size: var(--text-sm);
-    }
- 
     .hp_card_box > h2 {
         font-size: var(--text-lg);
     }
     .hp_card_box > a {
         font-size: var(--text-d);
-    }  
+    }
+    
+    .promo__title {
+        font-size: var(--text-sm);
+    }
 }

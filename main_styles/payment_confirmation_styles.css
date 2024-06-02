@@ -1,0 +1,42 @@
+@import "../styles/colours.css";
+@import "../styles/sizing.css";
+@import "../styles/typography.css";
+@import "../styles/buttons_styles.css";
+@import "../styles/links_styles.css";  
+@import "../styles/icon_styles.css";
+@import "../styles/promo_msg_styles.css";
+
+.confirm_img {
+    width: var(--size-mega-a);
+    height: var(--size-mega-a);
+}
+.confirm_img > img {
+    width: var(--size-full);
+}
+.payment_confirm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .confirm_img {
+        width: var(--size-mega-a);
+        height: var(--size-mega);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .confirm_img {
+        width: var(--size-mega);
+        height: var(--size-l);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .confirm_img {
+        width: var(--size-xxxl);
+        height: var(--size-l);
+    }
+}

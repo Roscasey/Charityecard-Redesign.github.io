@@ -44,7 +44,7 @@
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
                     <li><img class="nav_icon" src="../icons/search_svg.svg" alt=""></li>
-                    <li><a href=""><img class="nav_icon" src="../icons/Shopping_Basket_Icon.jpg" alt=""></a></li>
+                    <li><a href="../pages/my_cart.html"><img class="nav_icon" src="../icons/Shopping_Basket_Icon.jpg" alt=""></a></li>
                 </ul>
             </li> 
         </ul> 
@@ -110,10 +110,36 @@
                 </div>
             </div>
             <hr id="cart_product_hr">
+            <div class="cart_product_item" id="classic_item">
+                <div class="cart_product_img">
+                    <img id="card_img" src="../images/classic_greet.png" alt="classic_christmas" class="cart_product_image">
+                </div>
+                <div class="cart_product_info">
+                    <h3 id="card_title">Classic Christmas</h3>
+                    <p class="cart_product_charity">Charity: Bear Cottage</p>
+                    <div class="cart_product_price_qty">
+                        <p class="cart_product_price">$9.95</p>
+                        <div class="qty_box">
+                            <button class="btn" id="btn_minus" type="button">
+                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
+                            </button>
+                            <input type="text" value="1" id="qty_num">
+                            <button class="btn" id="btn_plus">
+                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_product_opt">
+                    <img class="delete_icon" id="my_cart_delete" src="../icons/close_icon_rgl.svg" alt="delete">
+                    <button class="white_button white_button--sml">Edit Changes</button>
+                </div>
+            </div>
+            <hr id="cart_product_hr">
             <div class="total_grid total_grid--left">
                 <div>
                     <h4 id="subtotal">Subtotal</h4>
-                    <h4 id="subtotal_price">$9.95</h4>
+                    <h4 id="subtotal_price">$19.90</h4>
                 </div>
                 <div id="gst_box">
                     <p id="gst">GST</p>
@@ -121,12 +147,11 @@
                 </div>
                 <div>
                     <h3 id="total">Total</h3>
-                    <h3 id="total_price">$9.95</h3>
+                    <h3 id="total_price">$19.90</h3>
                 </div>
             </div>
             <hr id="cart_product_hr" class="sml_display">
         </section>
-
         <section class="cart_total">
             <div class="payment_options">
                 <h1 class="heading heading--page-title" id="payment_options_title">Payment Options</h1>
@@ -167,8 +192,8 @@
                     </div>
                 </div>
                 <div class="link_btn_combo">
-                    <a class="orange_links continue_browsing" href="../pages/all_products.html">Continue Browsing</a>
-                    <button class="red_button">Place Order</button>
+                    <a class="orange_links continue_browsing" href="../pages/christmas_cards.html">Continue Browsing</a>
+                    <a href="../pages/payment_confirmation.html"><button class="red_button">Place Order</button></a>
                 </div>
             </div>
         </section>
@@ -202,6 +227,5 @@
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer>
     <script src="../scripts/nav_bar_script.js"></script>
-    <script src="../increment_btn_script.js"></script>
 </body>
 </html> 

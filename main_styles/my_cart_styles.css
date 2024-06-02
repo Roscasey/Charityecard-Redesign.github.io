@@ -9,11 +9,6 @@
     width: var(--size-px-ml);
     height: var(--size-px-ml);
 }
-.delete_icon:hover {
-    cursor: pointer;
-}
-
-
 #donation_img {
     width: var(--size-mega-m);
     height: var(--size-mega);
