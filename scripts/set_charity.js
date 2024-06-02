@@ -5,17 +5,12 @@ const cardTitle = document.getElementById('card_title');
 
 selectCharity.addEventListener('change', () => {
     const productCharity = selectCharity.value; //the product charity is the one inside the selection box 
-    const titleValue = cardTitle.value;
+    const titleValue = cardTitle.innerHTML;
     
     if (titleValue === 'Classic Christmas') {
-        localStorage.setItem("classicChristmasCharity", productCharity);
+        sessionStorage.setItem("classicChristmasCharity", productCharity); 
+    } //sessionStorage is used because local storage keeps the selected charities, so i found that this refreshes it. 
+    else { //sessionStorage info obtained from https://www.w3schools.com/jsref/prop_win_sessionstorage.asp 
+        sessionStorage.setItem("seasonsCharity", productCharity);
     }
-    else {
-        localStorage.setItem("seasonsCharity", productCharity);
-    }
-
-    //localStorage.setItem("cardCharity", productCharity); //store the charity 
-    //let itemCharity = localStorage.getItem("cardCharity"); //now get the charity 
-
 });
-    

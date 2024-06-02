@@ -1,8 +1,9 @@
 /*
 This code is to handle the side nav collapsing and coming out 
-with the use of an event listener. Used in all pages s
-*/
+with the use of an event listener. Used in all pages 
 
+Const is used as I do not wish to update the elements later on
+*/
 
 // Selecting all the relevant icons
 const hamburgerIcon = document.getElementById('hamburger_icon');
@@ -30,7 +31,7 @@ dropIt.addEventListener('click', (event) => {
         dropItems[i].style.display = 'flex';
     }
 });
-// Edge case: close side nav when it is currently open but the screen width exceeds 760p 
+// Edge case: close side nav when it is currently open but the screen width exceeds 760px
 function screenTooBig() {
     if (window.innerWidth > 760) {
         sideNav.style.width = '0';

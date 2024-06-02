@@ -28,11 +28,11 @@
             </li>
             <li class="big_screen">
                 <ul class="nav_options_container lg_disp">
-                    <li><a href="../pages/all_products.html">Cards</a>
+                    <li><a href="./all_products.html">Cards</a>
                         <ul class="drop_down_menu">
-                            <li><a href="../pages/christmas_cards.html">Christmas</a></li>
+                            <li><a href="./christmas_cards.html">Christmas</a></li>
                             <li>Birthday</li>
-                            <li><a href="../pages/all_products.html">All Cards</a></li>
+                            <li><a href="./all_products.html">All Cards</a></li>
                         </ul>
                     </li>
                     <li>FAQs</li> 
@@ -45,7 +45,12 @@
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
                     <li><img class="nav_icon" src="../icons/search_svg.svg" alt=""></li>
-                    <li><a href="../pages/my_cart.html"><img class="nav_icon" src="../icons/Shopping_Basket_Icon.jpg" alt=""></a></li>
+                    <li><a href="pages/my_cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
+                    <script>
+                        if (sessionStorage.getItem("classicChristmasCharity") || sessionStorage.getItem("seasonsCharity")) {
+                            document.getElementById("cart_icon").src = "../icons/red_bag.svg"
+                        }
+                    </script>
                 </ul>
             </li> 
         </ul> 
@@ -58,9 +63,9 @@
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item">Christmas</li>
+                    <li class="side_nav_drop_item"><a href="./christmas_cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item">All Cards</li>
+                    <li class="side_nav_drop_item"><a href="./all_products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -76,7 +81,7 @@
         <header class="product_header_container">
             <div class="progress_bar">
                 <a class="orange_links" href="../index.html">Home</a> 
-                <a class="orange_links" href="../pages/all_products.html">Cards</a>
+                <a class="orange_links" href="./all_products.html">Cards</a>
                 <a class="orange_links" href="">Season's Greetings</a>
                 <p class="current_page">Checkout Cart</p>
             </div>
@@ -94,20 +99,10 @@
                     <p class="cart_product_charity">Charity: Act For Kids</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
-                        <div class="qty_box">
-                            <button class="btn" id="btn_minus" type="button">
-                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
-                            </button>
-                            <input type="text" value="1" id="qty_num">
-                            <button class="btn" id="btn_plus">
-                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
-                            </button>
-                        </div>
                     </div>
                 </div>
                 <div class="cart_product_opt">
-                    <img class="delete_icon" src="../icons/close_icon_rgl.svg" alt="delete">
-                    <button class="white_button white_button--sml">Edit Changes</button>
+                    <button class="white_button white_button--sml">View</button>
                 </div>
             </div>
             <hr id="cart_product_hr">
@@ -120,20 +115,10 @@
                     <p class="cart_product_charity">Charity: Bear Cottage</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
-                        <div class="qty_box">
-                            <button class="btn" id="btn_minus" type="button">
-                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
-                            </button>
-                            <input type="text" value="1" id="qty_num">
-                            <button class="btn" id="btn_plus">
-                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
-                            </button>
-                        </div>
                     </div>
                 </div>
                 <div class="cart_product_opt">
-                    <img class="delete_icon" id="my_cart_delete" src="../icons/close_icon_rgl.svg" alt="delete">
-                    <button class="white_button white_button--sml">Edit Changes</button>
+                    <button class="white_button white_button--sml">View</button>
                 </div>
             </div>
             <hr id="cart_product_hr">
@@ -162,7 +147,7 @@
                         <img id="confirmed" src="../images/Writing_Letter_JPG.jpg" alt="write_letter">
                     </div>
                 </div>
-                <a class="orange_links" href="../pages/christmas_cards.html">Continue Browsing</a>
+                <a class="orange_links" href="./christmas_cards.html">Continue Browsing</a>
             </div>
         </section>
     </main>

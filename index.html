@@ -43,7 +43,12 @@
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
                     <li><img class="nav_icon" src="icons/search_svg.svg" alt="search_icon"></li>
-                    <li><a href="pages/my_cart.html"><img class="nav_icon" src="icons/Shopping_Basket_Icon.jpg" alt="cart_icon"></a></li>
+                    <li><a href="pages/my_cart.html"><img class="nav_icon" id="cart_icon" src="icons/shop.svg" alt="cart_icon"></a></li>
+                    <script>
+                        if (sessionStorage.getItem("classicChristmasCharity") || sessionStorage.getItem("seasonsCharity")) {
+                            document.getElementById("cart_icon").src = "icons/red_bag.svg"
+                        }
+                    </script>
                 </ul>
             </li> 
         </ul> 
@@ -154,6 +159,5 @@
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer> 
     <script src="scripts/nav_bar_script.js"></script>
-    <script src="scripts/check_cart_script.js"></script>
 </body>
 </html>
