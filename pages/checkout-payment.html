@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Payment</title>
     <link rel="stylesheet" href="../styles/nav-bar-styles.css">
-    <link rel="stylesheet" href="../main-styles/checkout-payment_styles.css">
-    <link rel="stylesheet" href="../main-styles/my-cart_styles.css">
+    <link rel="stylesheet" href="../main-styles/checkout-payment-styles.css">
+    <link rel="stylesheet" href="../main-styles/my-cart-styles.css">
     <link rel="stylesheet" href="../styles/footer-styles.css">  
     <link rel="stylesheet" href="../styles/product-header-styles.css">
     <link rel="stylesheet" href="../styles/total-box-styles.css">
@@ -136,7 +136,7 @@
                     </div>
                 </div>
                 <div class="cart_product_opt">
-                    <img class="delete_icon" id="my-cart_delete" src="../icons/close_icon_rgl.svg" alt="delete">
+                    <img class="delete_icon" id="my_cart_delete" src="../icons/close_icon_rgl.svg" alt="delete">
                     <button class="white_button white_button--sml">Edit Changes</button>
                 </div>
             </div>
@@ -198,7 +198,14 @@
                 </div>
                 <div class="link_btn_combo">
                     <a class="orange_links continue_browsing_combo" href="./christmas-cards.html">Continue Browsing</a>
-                    <a class="red_button" href="./payment-confirmation.html">Place Order</a>
+                    <a class="red_button" href="./payment-confirmation.html" onclick="removeSessionStorageVariable()">Place Order</a>
+                    <script>
+                        //remove the session variables once place order has been made.
+                        function removeSessionStorageVariable() {
+                            sessionStorage.removeItem("classicChristmasCharity");
+                            sessionStorage.removeItem("seasonsCharity");
+                        } 
+                    </script>
                 </div>
             </div>
         </section>

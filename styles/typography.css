@@ -57,10 +57,7 @@ body {
 .display_text {
     font-size: var(--text-display-sml);
 }
-.promo--msg-p {
-    font-size: var(--text-m);
-    color: var(--color-subtext);
-}
+
 
 /* Media Queries */
 @media screen and (max-width: 1050px) {

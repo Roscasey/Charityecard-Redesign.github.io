@@ -13,6 +13,8 @@ footer {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+
+    
     padding-top: var(--size-sm);
     padding-bottom: var(--size-sm);
     bottom: var(--size-none);

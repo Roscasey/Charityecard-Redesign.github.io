@@ -47,6 +47,7 @@
         height: var(--size-px-s);
     }
 }
+
 @media screen and (max-width: 500px) { 
     .payment_icon {
         height: var(--icon-height);

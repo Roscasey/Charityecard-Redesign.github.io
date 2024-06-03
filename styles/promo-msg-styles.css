@@ -10,6 +10,12 @@
 }
 .promo__title {
     padding-top: var(--size-px-ml);
+    font-size: var(--text-l);
+    font-weight: var(--font-weight-sm);
+}
+.promo__p {
+    font-size: var(--text-m);
+    color: var(--color-subtext);
 }
 
 @media screen and (max-width: 1100px) {
@@ -21,7 +27,7 @@
     .promo__title {
         padding-top: var(--size-px-xxl);
     }
-}
+} 
 
 @media screen and (max-width: 750px) {
     .promo__title {
@@ -30,7 +36,7 @@
     .promo__p {
         font-size: var(--text-md);
     }
-}
+} 
 
 @media screen and (max-width: 400px) {
     .promo__title {

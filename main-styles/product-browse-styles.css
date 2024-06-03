@@ -40,7 +40,7 @@ body {
 }
 .product_card img {
     width: var(--size-full);
-    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); /* Code from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
 }
 .product_card img:hover {
     cursor: pointer;

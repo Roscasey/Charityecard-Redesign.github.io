@@ -127,20 +127,19 @@ li ul ul {
     top: var(--size-full); 
     transition: 0.3s;
 }
-.nav_options_container li:hover ul {
+.nav_options_container li:hover ul {  /* Code from lectures */ 
     display: flex; 
     flex-direction: row;
 
     /* Styles */
     background-color: var(--color-light);
-    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1)); /* Code from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
     transform: scale(1,1);
     transition: 0.3s;
 }
 
 /* Main Nav */
-.navbar {
+.navbar { 
     display: flex;
     width: var(--size-full); 
     max-width: var(--size-nav);

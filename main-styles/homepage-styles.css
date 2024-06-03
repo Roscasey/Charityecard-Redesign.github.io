@@ -4,7 +4,7 @@
 @import "../styles/buttons-styles.css";
 @import "../styles/links-styles.css";  
 @import "../styles/icon-styles.css";
-@import "../styles/promo-msg-styles.css";
+@import "../styles/promo-msg-styles.css"; 
 
 /* Section: Homepage Viewport */
 #display_text {
@@ -255,7 +255,7 @@
     }
 
 
-    .homepage_instruct {
+    .homepage_instruct { 
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -268,6 +268,7 @@
         align-items: center;
         justify-items: center;
     }
+
     .homepage_instruct > div + div {
         margin-left: var(--size-none);
     }
@@ -336,7 +337,7 @@
         font-size: var(--text-d);
     }
     
-    .promo__title {
-        font-size: var(--text-sm);
+    #eco_msg_title {
+        font-size: var(--text-d);
     }
 }
