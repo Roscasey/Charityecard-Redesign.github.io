@@ -166,7 +166,7 @@
         display: flex;
         align-items: baseline;
     }
-    #select_charity {
+    #select_charity
         margin-bottom: var(--size-px-ml);
     }
     .product_header_container {

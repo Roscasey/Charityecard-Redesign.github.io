@@ -90,7 +90,7 @@
         <section class="cart_products">
             <div class="cart_product_item">
                 <div class="cart_product_img">
-                    <img id="card_img" src="../images/seasons_greet.png" alt="seasons_greetings" class="cart_product_image">
+                    <img class ="card_img" src="../images/seasons_greet.png" alt="seasons_greetings" class="cart_product_image">
                 </div>
                 <div class="cart_product_info">
                     <h3 id="card_title">Season's Greetings</h3>
@@ -101,7 +101,7 @@
                             <button class="btn" id="btn_minus" type="button">
                                 <img src="../icons/minus_btn.svg"alt="minus_btn"/>
                             </button>
-                            <input type="text" value="1" id="qty_num">
+                            <input type="text" value="1" class="qty_num" name="qty_num" id="qty_num">
                             <button class="btn" id="btn_plus">
                                 <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
                             </button>
@@ -116,18 +116,18 @@
             <hr class="cart_product_hr">
             <div class="cart_product_item" id="classic_item">
                 <div class="cart_product_img">
-                    <img id="card_img" src="../images/classic_greet.png" alt="classic_christmas" class="cart_product_image">
+                    <img class ="card_img" src="../images/classic_greet.png" alt="classic_christmas" class="cart_product_image">
                 </div>
                 <div class="cart_product_info">
                     <h3 id="card_title">Classic Christmas</h3>
-                    <p class="cart_product_charity" id="classic_christmans_charity">Charity: Bear Cottage</p>
+                    <p class="cart_product_charity" id="classic_christmas_charity">Charity: Bear Cottage</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
                         <div class="qty_box">
                             <button class="btn" id="btn_minus" type="button">
                                 <img src="../icons/minus_btn.svg"alt="minus_btn"/>
                             </button>
-                            <input type="text" value="1" id="qty_num">
+                            <input type="text" value="1" class="qty_num" name="qty_num_input" id="qty_num_input">
                             <button class="btn" id="btn_plus">
                                 <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
                             </button>
@@ -139,6 +139,7 @@
                     <button class="white_button white_button--sml">Edit Changes</button>
                 </div>
             </div>
+            <hr class="cart_product_hr" id="classic_item_hr">
         </section>
         <section class="cart_total">
             <div class="total_grid">
@@ -152,7 +153,7 @@
                 </div>
                 <div>
                     <h3 id="total">Total</h3>
-                    <h3 id="total_price">$9.95</h3>
+                    <h3 id="total_price"">$9.95</h3>
                 </div>
             </div>
             <div id="donation_img">

@@ -28,7 +28,7 @@ body {
     row-gap: var(--size-dm);
     column-gap: var(--size-m);
 
-    max-width: 95%;
+    max-width: 95%; /* So that it does not take up all space */
     padding-bottom: var(--size-px-xxxl);
 }
 

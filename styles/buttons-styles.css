@@ -131,7 +131,7 @@
 .btn > img {
     width: var(--size-full);
 }
-#qty_num {
+.qty_num {
     width: var(--size-full);
     border: none;
     text-align: center;
