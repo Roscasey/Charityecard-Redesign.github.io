@@ -19,7 +19,7 @@ if (classicChristmasCharity === null) {
     classicItem.style.display = "none";
 }
 else {
-    classicItem.style.display = ""; //display nothing 
+    classicItem.style.display = "";
     classicChristmasCharityElement.innerHTML = classicChristmasCharity;
     subTotalPriceElement.innerHTML = "$19.90";
     totalPriceElement.innerHTML = "$19.90";

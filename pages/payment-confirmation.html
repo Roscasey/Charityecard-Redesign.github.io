@@ -96,7 +96,7 @@
                 </div>
                 <div class="cart_product_info">
                     <h3>Season's Greetings</h3>
-                    <p class="cart_product_charity">Charity: Act For Kids</p>
+                    <p class="cart_product_charity" id="seasons_greeting_charity">Charity: Act For Kids</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
                     </div>
@@ -105,14 +105,14 @@
                     <button class="white_button white_button--sml">View</button>
                 </div>
             </div>
-            <hr id="cart_product_hr">
+            <hr class="cart_product_hr">
             <div class="cart_product_item" id="classic_item">
                 <div class="cart_product_img">
                     <img id="card_img" src="../images/classic_greet.png" alt="classic_christmas" class="cart_product_image">
                 </div>
                 <div class="cart_product_info">
                     <h3 id="card_title">Classic Christmas</h3>
-                    <p class="cart_product_charity">Charity: Bear Cottage</p>
+                    <p class="cart_product_charity" id="classic_christmans_charity">Charity: Bear Cottage</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
                     </div>
@@ -121,7 +121,7 @@
                     <button class="white_button white_button--sml">View</button>
                 </div>
             </div>
-            <hr id="cart_product_hr">
+            <hr class="cart_product_hr">
             <div class="total_grid total_grid--left">
                 <div>
                     <h4 id="subtotal">Subtotal</h4>
@@ -136,7 +136,7 @@
                     <h3 id="total_price">$19.90</h3>
                 </div>
             </div>
-            <hr id="cart_product_hr" class="sml_display">
+            <hr class="cart_product_hr sml_display" id="bottom_hr">
         </section>
         <section class="cart_total">
             <div class="payment_confirm">
@@ -147,7 +147,14 @@
                         <img id="confirmed" src="../images/Writing_Letter_JPG.jpg" alt="write_letter">
                     </div>
                 </div>
-                <a class="orange_links" href="./christmas-cards.html">Continue Browsing</a>
+                <a class="orange_links" href="./christmas-cards.html" onclick="removeSessionStorageVariable()">Continue Browsing</a>
+                <script>
+                    //remove the session variables once place order has been made.
+                    function removeSessionStorageVariable() {
+                        sessionStorage.removeItem("classicChristmasCharity");
+                        sessionStorage.removeItem("seasonsCharity");
+                    } //to remove red card after checkout process is done
+                </script>
             </div>
         </section>
     </main>
@@ -180,5 +187,6 @@
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer>
     <script src="../scripts/nav-bar-script.js"></script>
+    <script src="../scripts/cart-script.js"></script>
 </body>
 </html> 

@@ -74,7 +74,7 @@
     align-items: flex-end;
     grid-column: 3/4;
 }
-#cart_product_hr {
+.cart_product_hr {
     width: var(--size-mega-b);
     margin-top: var(--size-px-sm);
     margin-bottom: var(--size-px-sm);

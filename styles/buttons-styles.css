@@ -224,3 +224,10 @@
         height: var(--size-px-xl);
     }
 }
+
+@media screen and (max-width: 500px) {
+    .continue_browsing_combo {
+        padding-right: var(--size-px-xl);
+    }
+}
+
