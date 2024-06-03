@@ -1,9 +1,9 @@
 @import "colours.css";
 @import "sizing.css";
 @import "typography.css";
-@import "buttons_styles.css";
+@import "buttons-styles.css";
 
-/* Styles apply to my_cart and checkout_payment */
+/* Styles apply to my-cart and checkout-payment */
 /* Product Item */
 .product_item_container {
     display: grid;

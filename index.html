@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="styles/nav_bar_styles.css">
-    <link rel="stylesheet" href="main_styles/homepage_styles.css">
-    <link rel="stylesheet" href="styles/footer_styles.css">
-    <link rel="stylesheet" href="styles/links_styles.css">
-    <link rel="stylesheet" href="styles/buttons_styles.css">
+    <link rel="stylesheet" href="styles/nav-bar-styles.css">
+    <link rel="stylesheet" href="main-styles/homepage-styles.css">
+    <link rel="stylesheet" href="styles/footer-styles.css">
+    <link rel="stylesheet" href="styles/links-styles.css">
+    <link rel="stylesheet" href="styles/buttons-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body> 
@@ -26,11 +26,11 @@
             </li>
             <li class="big_screen">
                 <ul class="nav_options_container lg_disp">
-                    <li><a href="pages/all_products.html">Cards</a>
+                    <li><a href="pages/all-products.html">Cards</a>
                         <ul class="drop_down_menu">
-                            <li><a href="pages/christmas_cards.html">Christmas</a></li>
+                            <li><a href="pages/christmas-cards.html">Christmas</a></li>
                             <li>Birthday</li>
-                            <li><a href="pages/all_products.html">All Cards</a></li>
+                            <li><a href="pages/all-products.html">All Cards</a></li>
                         </ul>
                     </li>
                     <li>FAQs</li> 
@@ -43,7 +43,7 @@
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
                     <li><img class="nav_icon" src="icons/search_svg.svg" alt="search_icon"></li>
-                    <li><a href="pages/my_cart.html"><img class="nav_icon" id="cart_icon" src="icons/shop.svg" alt="cart_icon"></a></li>
+                    <li><a href="pages/my-cart.html"><img class="nav_icon" id="cart_icon" src="icons/shop.svg" alt="cart_icon"></a></li>
                     <script>
                         if (sessionStorage.getItem("classicChristmasCharity") || sessionStorage.getItem("seasonsCharity")) {
                             document.getElementById("cart_icon").src = "icons/red_bag.svg"
@@ -62,9 +62,9 @@
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item"><a href="pages/christmas_cards.html">Christmas</a></li>
+                    <li class="side_nav_drop_item"><a href="pages/christmas-cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item"><a href="pages/all_products.html">All Cards</a></li>
+                    <li class="side_nav_drop_item"><a href="pages/all-products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -80,7 +80,7 @@
             <div class="homepage_msg">
                 <h1 id="display_text" class="heading">Give Love Anywhere</h1>
                 <h2 id="display_sub">Sending an e-card is as easy as 1-2-3</h2>
-                <button class="red_button red_button--lg"><a href="pages/all_products.html">Get Started</a></button>
+                <a class="red_button red_button--lg" href="pages/all-products.html">Get Started</a>
             </div>
             <div class="homepage_elf_img">
                 <img src="images/elf_home.svg" alt="elf_girl" id="elf_girl">
@@ -112,7 +112,7 @@
                 <div class="hp_card_box">
                     <h2 class="heading heading--title">Christmas Cards</h2>
                     <img src="images/santas_wishes_wide.png" alt="cc_homepage">
-                    <a class="orange_links" href="pages/christmas_cards.html">See All ></a>
+                    <a class="orange_links" href="pages/christmas-cards.html">See All ></a>
                 </div>
                 <div class="hp_card_box">
                     <h2 class="heading heading--title">Birthday Cards</h2>
@@ -158,6 +158,6 @@
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer> 
-    <script src="scripts/nav_bar_script.js"></script>
+    <script src="scripts/nav-bar-script.js"></script>
 </body>
 </html>

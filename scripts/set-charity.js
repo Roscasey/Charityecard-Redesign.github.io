@@ -1,4 +1,4 @@
-//FUNCTION 2: Store the card charity and price: Used in product_charity / my_cart /checkout_payment
+//FUNCTION 2: Store the card charity and price: Used in product_charity / my-cart /checkout-payment
 //retrieve the charity value
 const selectCharity = document.getElementById('select_charity');
 const cardTitle = document.getElementById('card_title');

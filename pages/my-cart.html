@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Confirmation</title>
-    <link rel="stylesheet" href="../styles/nav_bar_styles.css">
-    <link rel="stylesheet" href="../main_styles/checkout_payment_styles.css">
-    <link rel="stylesheet" href="../main_styles/my_cart_styles.css">
-    <link rel="stylesheet" href="../styles/footer_styles.css">  
-    <link rel="stylesheet" href="../styles/product_header_styles.css">
-    <link rel="stylesheet" href="../styles/total_box_styles.css">
-    <link rel="stylesheet" href="../main_styles/payment_confirmation_styles.css">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="../styles/nav-bar-styles.css">
+    <link rel="stylesheet" href="../styles/total-box-styles.css">
+    <link rel="stylesheet" href="../main-styles/my-cart_styles.css">
+    <link rel="stylesheet" href="../styles/footer-styles.css">
+    <link rel="stylesheet" href="../styles/product-header-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav_container">
+    <nav class="nav_container"> 
         <ul class="navbar">
             <li class="hamburger_container big_screen">
                 <img id="hamburger_icon" src="../icons/hamburger.svg" alt="Description of SVG">
@@ -22,17 +20,17 @@
             </li>
             <li class="big_screen">
                 <ul class="nav_heading_container"> 
-                    <li><a href="../index.html"><img class="logo_img lg_disp" src="../icons/Logo_Icon_SVG.svg" alt="small_logo"></a></li>
+                    <li><a href="../index.html"><img class="logo_img lg_disp" src="../icons/Logo_Icon_SVG.svg" alt="small_logo"></a> </li>
                     <li class="lg_disp"><a href="../index.html" id="heading_title">Charityecards</a></li>
                 </ul>
             </li>
             <li class="big_screen">
                 <ul class="nav_options_container lg_disp">
-                    <li><a href="./all_products.html">Cards</a>
+                    <li><a href="./all-products.html">Cards</a>
                         <ul class="drop_down_menu">
-                            <li><a href="./christmas_cards.html">Christmas</a></li>
+                            <li><a href="./christmas-cards.html">Christmas</a></li>
                             <li>Birthday</li>
-                            <li><a href="./all_products.html">All Cards</a></li>
+                            <li><a href="./all-products.html">All Cards</a></li>
                         </ul>
                     </li>
                     <li>FAQs</li> 
@@ -44,8 +42,8 @@
             <li class="big_screen">
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
-                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt=""></li>
-                    <li><a href="pages/my_cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
+                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt="search_icon"></li>
+                    <li><a href="./my-cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
                     <script>
                         if (sessionStorage.getItem("classicChristmasCharity") || sessionStorage.getItem("seasonsCharity")) {
                             document.getElementById("cart_icon").src = "../icons/red_bag.svg"
@@ -63,9 +61,9 @@
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item"><a href="./christmas_cards.html">Christmas</a></li>
+                    <li class="side_nav_drop_item"><a href="./christmas-cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item"><a href="./all_products.html">All Cards</a></li>
+                    <li class="side_nav_drop_item"><a href="./all-products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -81,9 +79,9 @@
         <header class="product_header_container">
             <div class="progress_bar">
                 <a class="orange_links" href="../index.html">Home</a> 
-                <a class="orange_links" href="./all_products.html">Cards</a>
-                <a class="orange_links" href="./my_cart.html">My Cart</a>
-                <p class="current_page">Checkout Cart</p>
+                <a class="orange_links" href="./all-products.html">Cards</a>
+                <a class="orange_links" id="current_page" href="./seasons-charity.html">Season's Greetings</a>
+                <p class="current_page">My Cart</p>
             </div>
             <div class="product_header">
                 <h1 class="heading heading--page-title">My Cart</h1>
@@ -92,17 +90,27 @@
         <section class="cart_products">
             <div class="cart_product_item">
                 <div class="cart_product_img">
-                    <img src="../images/seasons_greetings_small.png" alt="seasons_greetings" class="cart_product_image">
+                    <img id="card_img" src="../images/seasons_greet.png" alt="seasons_greetings" class="cart_product_image">
                 </div>
                 <div class="cart_product_info">
-                    <h3>Season's Greetings</h3>
-                    <p class="cart_product_charity">Charity: Act For Kids</p>
+                    <h3 id="card_title">Season's Greetings</h3>
+                    <p class="cart_product_charity" id="seasons_greeting_charity">Charity: Act For Kids</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
+                        <div class="qty_box">
+                            <button class="btn" id="btn_minus" type="button">
+                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
+                            </button>
+                            <input type="text" value="1" id="qty_num">
+                            <button class="btn" id="btn_plus">
+                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="cart_product_opt">
-                    <button class="white_button white_button--sml">View</button>
+                    <img class="delete_icon" id="my-cart_delete" src="../icons/close_icon_rgl.svg" alt="delete">
+                    <button class="white_button white_button--sml">Edit Changes</button>
                 </div>
             </div>
             <hr id="cart_product_hr">
@@ -112,20 +120,31 @@
                 </div>
                 <div class="cart_product_info">
                     <h3 id="card_title">Classic Christmas</h3>
-                    <p class="cart_product_charity">Charity: Bear Cottage</p>
+                    <p class="cart_product_charity" id="classic_christmans_charity">Charity: Bear Cottage</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
+                        <div class="qty_box">
+                            <button class="btn" id="btn_minus" type="button">
+                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
+                            </button>
+                            <input type="text" value="1" id="qty_num">
+                            <button class="btn" id="btn_plus">
+                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="cart_product_opt">
-                    <button class="white_button white_button--sml">View</button>
+                    <img class="delete_icon" id="my-cart_delete" src="../icons/close_icon_rgl.svg" alt="delete">
+                    <button class="white_button white_button--sml">Edit Changes</button>
                 </div>
             </div>
-            <hr id="cart_product_hr">
-            <div class="total_grid total_grid--left">
+        </section>
+        <section class="cart_total">
+            <div class="total_grid">
                 <div>
                     <h4 id="subtotal">Subtotal</h4>
-                    <h4 id="subtotal_price">$19.90</h4>
+                    <h4 id="subtotal_price">$9.95</h4>
                 </div>
                 <div id="gst_box">
                     <p id="gst">GST</p>
@@ -133,21 +152,15 @@
                 </div>
                 <div>
                     <h3 id="total">Total</h3>
-                    <h3 id="total_price">$19.90</h3>
+                    <h3 id="total_price">$9.95</h3>
                 </div>
             </div>
-            <hr id="cart_product_hr" class="sml_display">
-        </section>
-        <section class="cart_total">
-            <div class="payment_confirm">
-                <div class="promo__msg">
-                    <h3 class="heading heading--title promo__title">Your E-card has been confirmed!</h3>
-                    <p  class="promo--msg-p promo__p">Order number: 1263702</p>
-                    <div class="confirm_img">
-                        <img id="confirmed" src="../images/Writing_Letter_JPG.jpg" alt="write_letter">
-                    </div>
-                </div>
-                <a class="orange_links" href="./christmas_cards.html">Continue Browsing</a>
+            <div id="donation_img">
+                <img src="../images/Charity_donation.jpg" alt="donation_img">
+            </div>
+            <div class="link_btn_combo">
+                <a class="orange_links continue_browsing_combo" href="./christmas-cards.html">Continue Browsing</a>
+                <a class="red_button" href="./checkout-payment.html">Checkout Cart</a>
             </div>
         </section>
     </main>
@@ -178,7 +191,8 @@
             </div>
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
-    </footer>
-    <script src="../scripts/nav_bar_script.js"></script>
+    </footer> 
+    <script src="../scripts/nav-bar-script.js"></script>
+    <script src="../scripts/cart-script.js"></script>
 </body>
-</html> 
+</html>

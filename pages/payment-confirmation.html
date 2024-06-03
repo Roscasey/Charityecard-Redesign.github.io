@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Payment</title>
-    <link rel="stylesheet" href="../styles/nav_bar_styles.css">
-    <link rel="stylesheet" href="../main_styles/checkout_payment_styles.css">
-    <link rel="stylesheet" href="../main_styles/my_cart_styles.css">
-    <link rel="stylesheet" href="../styles/footer_styles.css">  
-    <link rel="stylesheet" href="../styles/product_header_styles.css">
-    <link rel="stylesheet" href="../styles/total_box_styles.css">
+    <title>Payment Confirmation</title>
+    <link rel="stylesheet" href="../styles/nav-bar-styles.css">
+    <link rel="stylesheet" href="../main-styles/checkout-payment_styles.css">
+    <link rel="stylesheet" href="../main-styles/my-cart_styles.css">
+    <link rel="stylesheet" href="../styles/footer-styles.css">  
+    <link rel="stylesheet" href="../styles/product-header-styles.css">
+    <link rel="stylesheet" href="../styles/total-box-styles.css">
+    <link rel="stylesheet" href="../main-styles/payment-confirmation_styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -27,11 +28,11 @@
             </li>
             <li class="big_screen">
                 <ul class="nav_options_container lg_disp">
-                    <li><a href="./all_products.html">Cards</a>
+                    <li><a href="./all-products.html">Cards</a>
                         <ul class="drop_down_menu">
-                            <li><a href="./christmas_cards.html">Christmas</a></li>
+                            <li><a href="./christmas-cards.html">Christmas</a></li>
                             <li>Birthday</li>
-                            <li><a href="./all_products.html">All Cards</a></li>
+                            <li><a href="./all-products.html">All Cards</a></li>
                         </ul>
                     </li>
                     <li>FAQs</li> 
@@ -43,8 +44,8 @@
             <li class="big_screen">
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
-                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt=""></li>
-                    <li><a href="./my_cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
+                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt="search_icon"></li>
+                    <li><a href="pages/my-cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
                     <script>
                         if (sessionStorage.getItem("classicChristmasCharity") || sessionStorage.getItem("seasonsCharity")) {
                             document.getElementById("cart_icon").src = "../icons/red_bag.svg"
@@ -62,9 +63,9 @@
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item">Christmas</li>
+                    <li class="side_nav_drop_item"><a href="./christmas-cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item">All Cards</li>
+                    <li class="side_nav_drop_item"><a href="./all-products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -80,8 +81,8 @@
         <header class="product_header_container">
             <div class="progress_bar">
                 <a class="orange_links" href="../index.html">Home</a> 
-                <a class="orange_links" href="./all_products.html">Cards</a>
-                <a class="orange_links" href="./seasons_charity.html">Season's Greetings</a>
+                <a class="orange_links" href="./all-products.html">Cards</a>
+                <a class="orange_links" href="./my-cart.html">My Cart</a>
                 <p class="current_page">Checkout Cart</p>
             </div>
             <div class="product_header">
@@ -98,20 +99,10 @@
                     <p class="cart_product_charity">Charity: Act For Kids</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
-                        <div class="qty_box">
-                            <button class="btn" id="btn_minus" type="button">
-                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
-                            </button>
-                            <input type="text" value="1" id="qty_num">
-                            <button class="btn" id="btn_plus">
-                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
-                            </button>
-                        </div>
                     </div>
                 </div>
                 <div class="cart_product_opt">
-                    <img class="delete_icon" src="../icons/close_icon_rgl.svg" alt="delete">
-                    <button class="white_button white_button--sml">Edit Changes</button>
+                    <button class="white_button white_button--sml">View</button>
                 </div>
             </div>
             <hr id="cart_product_hr">
@@ -124,20 +115,10 @@
                     <p class="cart_product_charity">Charity: Bear Cottage</p>
                     <div class="cart_product_price_qty">
                         <p class="cart_product_price">$9.95</p>
-                        <div class="qty_box">
-                            <button class="btn" id="btn_minus" type="button">
-                                <img src="../icons/minus_btn.svg"alt="minus_btn"/>
-                            </button>
-                            <input type="text" value="1" id="qty_num">
-                            <button class="btn" id="btn_plus">
-                                <img src="../icons/plus_icon.svg" type="button" alt="plus_btn"/>
-                            </button>
-                        </div>
                     </div>
                 </div>
                 <div class="cart_product_opt">
-                    <img class="delete_icon" id="my_cart_delete" src="../icons/close_icon_rgl.svg" alt="delete">
-                    <button class="white_button white_button--sml">Edit Changes</button>
+                    <button class="white_button white_button--sml">View</button>
                 </div>
             </div>
             <hr id="cart_product_hr">
@@ -158,48 +139,15 @@
             <hr id="cart_product_hr" class="sml_display">
         </section>
         <section class="cart_total">
-            <div class="payment_options">
-                <h1 class="heading heading--page-title" id="payment_options_title">Payment Options</h1>
-                <div class="payment_select">
-                    <p id="cc_heading">Credit Card</p>
-                    <div class="credit_card info_box">
-                        <form action="credit_payment">
-                            <div id="card_name_holder">
-                                <label for="name_on_card">Name on Card</label>
-                                <input class="credit_input" type="text" name="card_name" id="name_on_card" placeholder="Enter Your Name">
-                            </div>
-                            <div class="card_details">
-                                <div>
-                                    <label for="card_no">Card Number</label>
-                                    <input class="credit_input" type="text" name="card_number" id="card_no" placeholder="Enter Your Card Number - 9-Digits">
-                                </div>
-                                <div>
-                                    <label for="exp_date">Exp. Date</label>
-                                    <input class="credit_input" type="text" name="exp_date" id="exp_date" placeholder="MM / YY">
-                                </div>
-                                <div>
-                                    <label for="cvv">CVV</label>
-                                    <input class="credit_input" type="text" name="cvv" id="cvv" placeholder="XXX">
-                                </div>
-                            </div>
-                            <div class= "card_payments">
-                                <img class="payment_icon" src="../icons/visa_rgl.svg" alt="visa">
-                                <img class="payment_icon master_c" src="../icons/Mastercard_SVG.svg" alt="mastercard">
-                                <img class="payment_icon amex" src="../icons/AMEX_JPG.jpg" alt="amex">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="info_box payment_box">
-                        <img class="payment_icon" src="../icons/PayPayl_JPG.png" alt="paypal">
-                    </div>
-                    <div class="info_box payment_box">
-                        <img class="payment_icon" src="../icons/Apple_Pay_Black_JPG.png" alt="apple_pay">
+            <div class="payment_confirm">
+                <div class="promo__msg">
+                    <h3 class="heading heading--title promo__title">Your E-card has been confirmed!</h3>
+                    <p  class="promo--msg-p promo__p">Order number: 1263702</p>
+                    <div class="confirm_img">
+                        <img id="confirmed" src="../images/Writing_Letter_JPG.jpg" alt="write_letter">
                     </div>
                 </div>
-                <div class="link_btn_combo">
-                    <a class="orange_links continue_browsing_combo" href="./christmas_cards.html">Continue Browsing</a>
-                    <a class="red_button" href="./payment_confirmation.html">Place Order</a>
-                </div>
+                <a class="orange_links" href="./christmas-cards.html">Continue Browsing</a>
             </div>
         </section>
     </main>
@@ -231,6 +179,6 @@
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
     </footer>
-    <script src="../scripts/nav_bar_script.js"></script>
+    <script src="../scripts/nav-bar-script.js"></script>
 </body>
 </html> 

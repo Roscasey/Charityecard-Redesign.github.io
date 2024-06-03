@@ -1,10 +1,10 @@
 @import "../styles/colours.css";
 @import "../styles/sizing.css";
 @import "../styles/typography.css";
-@import "../styles/buttons_styles.css";
-@import "../styles/links_styles.css";  
-@import "../styles/icon_styles.css";
-@import "../styles/promo_msg_styles.css";
+@import "../styles/buttons-styles.css";
+@import "../styles/links-styles.css";  
+@import "../styles/icon-styles.css";
+@import "../styles/promo-msg-styles.css";
 
 .confirm_img {
     width: var(--size-mega-a);

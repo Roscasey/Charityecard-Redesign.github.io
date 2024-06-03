@@ -1,9 +1,9 @@
 @import "../styles/colours.css";
 @import "../styles/sizing.css";
 @import "../styles/typography.css";
-@import "../styles/buttons_styles.css";
-@import "../styles/links_styles.css";  
-@import "../styles/icon_styles.css";
+@import "../styles/buttons-styles.css";
+@import "../styles/links-styles.css";  
+@import "../styles/icon-styles.css";
 
 /* Card Styles */
 .card_type {

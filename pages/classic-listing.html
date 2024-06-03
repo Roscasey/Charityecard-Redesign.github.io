@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products</title>
-    <link rel="stylesheet" href="../styles/nav_bar_styles.css">
-    <link rel="stylesheet" href="../main_styles/product_browse_styles.css">
-    <link rel="stylesheet" href="../styles/footer_styles.css">
-    <link rel="stylesheet" href="../styles/buttons_styles.css">
-    <link rel="stylesheet" href="../styles/product_header_styles.css">
+    <title>Season's Greetings</title>
+    <link rel="stylesheet" href="../styles/nav-bar-styles.css">
+    <link rel="stylesheet" href="../styles/footer-styles.css">
+    <link rel="stylesheet" href= "../styles/product-header-styles.css">
+    <link rel="stylesheet" href="../main-styles/product-listing-styles.css">
+    <link rel="stylesheet" href="../styles/buttons-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav_container"> 
+    <nav class="nav_container">
         <ul class="navbar">
             <li class="hamburger_container big_screen">
                 <img id="hamburger_icon" src="../icons/hamburger.svg" alt="Description of SVG">
@@ -20,17 +20,17 @@
             </li>
             <li class="big_screen">
                 <ul class="nav_heading_container"> 
-                    <li><a href="../index.html"><img class="logo_img lg_disp" src="../icons/Logo_Icon_SVG.svg" alt="small_logo"></a></li>
+                    <li><a href="../index.html"><img class="logo_img lg_disp" src="../icons/Logo_Icon_SVG.svg" alt="small_logo"></a> </li>
                     <li class="lg_disp"><a href="../index.html" id="heading_title">Charityecards</a></li>
                 </ul>
             </li>
             <li class="big_screen">
                 <ul class="nav_options_container lg_disp">
-                    <li><a href="./all_products.html">Cards</a>
+                    <li><a href="./all-products.html">Cards</a>
                         <ul class="drop_down_menu">
-                            <li><a href="./christmas_cards.html">Christmas</a></li>
+                            <li><a href="./christmas-cards.html">Christmas</a></li>
                             <li>Birthday</li>
-                            <li><a href="./pages/all_products.html">All Cards</a></li>
+                            <li><a href="./all-products.html">All Cards</a></li>
                         </ul>
                     </li>
                     <li>FAQs</li> 
@@ -42,8 +42,8 @@
             <li class="big_screen">
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
-                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt=""></li>
-                    <li><a href="./my_cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
+                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt="search_icon"></li>
+                    <li><a href="./my-cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
                     <script>
                         if (sessionStorage.getItem("classicChristmasCharity") || sessionStorage.getItem("seasonsCharity")) {
                             document.getElementById("cart_icon").src = "../icons/red_bag.svg"
@@ -57,13 +57,13 @@
         <ul class="side_nav_sml_disp">
             <li class="side_nav_burger">
                 <img id="exit_icon" src="../icons/close_white.svg" alt="Description of SVG">
-                 <a href="../index.html"><img class="logo_img logo_img_small" src="../icons/logo_white.svg" alt="small_logo"></a>
+                <a href="../index.html"><img class="logo_img logo_img_small" src="../icons/logo_white.svg" alt="small_logo"></a>
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item"><a href="./christmas_cards.html">Christmas</a></li>
+                    <li class="side_nav_drop_item"><a href="./christmas-cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item"><a href="./all_products.html">All Cards</a></li>
+                    <li class="side_nav_drop_item"><a href="./all-products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -75,53 +75,36 @@
         </ul>
     </div>  
     <hr>
-    <main class="product_grid_container">
+    <main class="product_item_container">
         <header class="product_header_container">
             <div class="progress_bar">
                 <a class="orange_links" href="../index.html">Home</a> 
-                <a class="orange_links" href="./all_products.html">Get Started</a>
-                <p class="current_page">All Cards</p>
+                <a class="orange_links" href="./all-products.html">Cards</a>
+                <p class="current_page" id="current_page">Classic Christmas</p>
             </div>
             <div class="product_header">
-                <h1 class="heading heading--page-title">All Cards</h1>
-                <div class="product_header_icons">
-                    <img class="icon" id="filter" src="../icons/Filter_Icon.png" alt="filter_icon">
-                    <img class="icon" id="sort" src="../icons/Sort_By_Icon.png" alt="sort_by_icon">
+                <h1 class="heading heading--page-title" id="card_title">Classic Christmas</h1>
+            </div>
+        </header>
+        <section class="product_listing"> 
+            <div class="product_item_card">
+                <img id="card_img" src="../images/classic_greet.png" alt="classic_christmas">
+                <p class="card_type">Standard Card</p>
+                <p class="card_price">$9.95</p>
+            </div>
+            <div class="select_option_container">
+                <h3 class="form_heading select_opt_title">Select an Option</h3>
+                <div class="select_option_box white_button white_button--lg">
+                    <p class="product_option_head">Preview</p>
+                    <p class="product_option_subtext">Click to see the inside, animations and features</p>
+                    <img class="arrow_icon" src="../icons/arrow_icon.png" alt="arrow_icon">
                 </div>
-            </div>
-        </header> 
-        <section class="product_grid">
-            <div class="product_card">
-                <img class="product_grid_img" id="seasons_greetings_ap" src="../images/seasons_greet.png" alt="seasons_greetings ">
-                <p class="product_grid_label" id="sg_label_ap" for="seasons_greetings">Season's Greetings</p>
-            </div>
-                <div class="product_card">
-                    <img class="product_grid_img" id="ornament_greetings_ap" src="../images/ornament_greet.png" alt="ornament_greetings">
-                    <p class="product_grid_label" id="og_label_ap" for="ornament_greetings">Ornament Greetings</p >
-                </div>
-            <div class="product_card">
-                <img class="product_grid_img" id="wreath_greetings_ap" src="../images/wreath_greet.png" alt="wreath_greetings">
-                <p class="product_grid_label" id="wg_label_ap" for="wreath_greetings">Wreath Greetings</p >
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" id="variety_greetings_ap" src="../images/variety_greet.png" alt="variety_greetings">
-                <p class="product_grid_label" id="vg_label_ap" for="variety_greetings">Variety Greetings</p>
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" id="birthday_hats_ap" src="../images/birthday_hat_greet.png" alt="birthday_hats">
-                <p class="product_grid_label" id="bh_label" for="birthday_hats">Birthday Hats</p>
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" id="three_wise_men_ap" src="../images/three_wise_men_greet.png" alt="three_wise_men">
-                <p class="product_grid_label" id="_ap" for="three_wise_men">Three Wise Men</p>
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" id="confetti_birthday_ap" src="../images/confetti_greet.png" alt="confetti_birthday">
-                <p class="product_grid_label" id="cb_label" for="confetti_birthday">Confetti Birthday</p>
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" id="balloon_birthday_ap" src="../images/balloon_greet.png" alt="balloon_birthday">
-                <p class="product_grid_label" id="cb_label" for="balloon_birthday">Balloon Birthday</p>
+                <a href="./classic-charity.html"  class="select_option_box white_button white_button--lg" id="add_btn">
+                    <p class="product_option_head">Add to Cart</p>
+                    <p class="product_option_subtext">Choose your charity, add your recipient and sender details</p>
+                    <img class="arrow_icon" src="../icons/arrow_icon.png" alt="arrow_icon">
+                </a>
+                <a class="orange_links continue_browsing" href="./christmas-cards.html">Continue Browsing</a>
             </div>
         </section>
     </main>
@@ -152,7 +135,7 @@
             </div>
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
-    </footer> 
-    <script src="../scripts/nav_bar_script.js"></script>
+    </footer>
+    <script src="../scripts/nav-bar-script.js"></script>
 </body>
 </html>

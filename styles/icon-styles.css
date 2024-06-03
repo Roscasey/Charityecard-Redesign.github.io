@@ -7,7 +7,6 @@
     --icon-height: var(--size-px-sm);
     --icon-width: var(--size-px-lg);
 }
-
 .icon {
     width: var(--icon-height);
     height: var(--icon-width);
@@ -16,6 +15,7 @@
     width: var(--size-px-mm);
     height: var(--size-px-mm);
 }
+
 /* Payment */
 .payment_icon {
     height: var(--icon-height);
@@ -31,6 +31,7 @@
     width: var(--size-px-lg);
 }
 
+
 /* Payment Icons Main */
 #visa_m, #masterc_m, #amex_m {
     width: var(--size-px-lg);
@@ -38,7 +39,6 @@
 #amex_m {
     border-radius: var(--size-px-xxxs);
 }
-
 
 
 /* Media Queries */
@@ -49,11 +49,11 @@
 }
 @media screen and (max-width: 500px) { 
     .payment_icon {
-        height: var(--size-px-sm);
+        height: var(--icon-height);
     }
     #cart_icon, .delete_icon {
         width: var(--size-px-sm);
-        height: var(--size-px-sm);
+        height: var(--icon-height);
     }
 }
 

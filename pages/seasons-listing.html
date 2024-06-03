@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Cards</title>
-    <link rel="stylesheet" href="../main_styles/product_browse_styles.css">
-    <link rel="stylesheet" href="../styles/footer_styles.css">
-    <link rel="stylesheet" href="../styles/buttons_styles.css">
-    <link rel="stylesheet" href="../styles/nav_bar_styles.css">
-    <link rel="stylesheet" href="../styles/product_header_styles.css">
+    <title>Season's Greetings</title>
+    <link rel="stylesheet" href="../styles/nav-bar-styles.css">
+    <link rel="stylesheet" href="../styles/footer-styles.css">
+    <link rel="stylesheet" href= "../styles/product-header-styles.css">
+    <link rel="stylesheet" href="../main-styles/product-listing-styles.css">
+    <link rel="stylesheet" href="../styles/buttons-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,11 +26,11 @@
             </li>
             <li class="big_screen">
                 <ul class="nav_options_container lg_disp">
-                    <li><a href="./all_products.html">Cards</a>
+                    <li><a href="./all-products.html">Cards</a>
                         <ul class="drop_down_menu">
-                            <li><a href="./christmas_cards.html">Christmas</a></li>
+                            <li><a href="./christmas-cards.html">Christmas</a></li>
                             <li>Birthday</li>
-                            <li><a href="./all_products.html">All Cards</a></li>
+                            <li><a href="./all-products.html">All Cards</a></li>
                         </ul>
                     </li>
                     <li>FAQs</li> 
@@ -42,8 +42,8 @@
             <li class="big_screen">
                 <ul class="nav_icons_container">
                     <li class="lg_disp">Log In / Sign Up</li>
-                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt=""></li>
-                    <li><a href=".//my_cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
+                    <li><img class="nav_icon" src="../icons/search_svg.svg" alt="search_icon"></li>
+                    <li><a href="./my-cart.html"><img class="nav_icon" id="cart_icon" src="../icons/shop.svg" alt="cart_icon"></a></li>
                     <script>
                         if (sessionStorage.getItem("classicChristmasCharity") || sessionStorage.getItem("seasonsCharity")) {
                             document.getElementById("cart_icon").src = "../icons/red_bag.svg"
@@ -61,9 +61,9 @@
             </li>
             <li id="side_drop_btn" class="side_nav_sml">Cards
                 <ul id="side_nav_drop">
-                    <li class="side_nav_drop_item"><a href="./christmas_cards.html">Christmas</a></li>
+                    <li class="side_nav_drop_item"><a href="./christmas-cards.html">Christmas</a></li>
                     <li class="side_nav_drop_item">Birthday</li> 
-                    <li class="side_nav_drop_item"><a href="./all_products.html">All Cards</a></li>
+                    <li class="side_nav_drop_item"><a href="./all-products.html">All Cards</a></li>
                 </ul>
             </li>
             <li class="side_nav_sml">FAQs</li>
@@ -74,58 +74,37 @@
             <li class="side_nav_log"><p>Log In / Sign Up</p></li>
         </ul>
     </div>  
-    <hr id="one">
-    <main class="product_grid_container">
+    <hr>
+    <main class="product_item_container">
         <header class="product_header_container">
             <div class="progress_bar">
                 <a class="orange_links" href="../index.html">Home</a> 
-                <a class="orange_links" href="./all_products.html">Cards</a>
-                <p class="current_page">Christmas</p>
+                <a class="orange_links" href="./all-products.html">Cards</a>
+                <p class="current_page" id="current_page">Season's Greetings</p>
             </div>
             <div class="product_header">
-                <h1 class="heading heading--page-title">Christmas</h1>
-                <div class="product_header_icons">
-                    <img class="icon" id="filter" src="../icons/Filter_Icon.png" alt="filter_icon">
-                    <img class="icon" id="sort" src="../icons/Sort_By_Icon.png" alt="sort_by_icon">
-                </div>
+                <h1 class="heading heading--page-title" id="card_title">Season's Greetings</h1>
             </div>
         </header>
-        <section class="product_grid">
-            <a href="./seasons_listing.html">
-                <div class="product_card" id="seasons_greetings_button">
-                    <img class="product_grid_img" id="season_pic" src="../images/seasons_greet.png" alt="seasons_greetings">
-                    <p class= "product_grid_label" id="sg_label_cc" for="seasons_greetings">Season's Greetings</p>
+        <section class="product_listing"> 
+            <div class="product_item_card">
+                <img id="card_img" src="../images/seasons_greetings_big.png" alt="seasons_greetings_big">
+                <p class="card_type">Standard Card</p>
+                <p class="card_price">$9.95</p>
+            </div>
+            <div class="select_option_container">
+                <h3 class="form_heading select_opt_title">Select an Option</h3>
+                <div class="select_option_box white_button white_button--lg">
+                    <p class="product_option_head">Preview</p>
+                    <p class="product_option_subtext">Click to see the inside, animations and features</p>
+                    <img class="arrow_icon" src="../icons/arrow_icon.png" alt="arrow_icon">
                 </div>
-            </a>
-            <a href="./classic_listing.html">
-                <div class="product_card" id="classic_christmas_button">
-                    <img class="product_grid_img product_grid_img_click" id="classic_pic" src="../images/classic_greet.png" alt="classic_christmas">
-                    <p class="product_grid_label" id="cc_label_cc" for="classic_christmas">Classic Christmas</p>
-                </div>
-            </a>
-            <div class="product_card">
-                <img class="product_grid_img" src="../images/ornament_greet.png" alt="ornament_greetings">
-                <p class="product_grid_label" id="og_label_cc" for="ornament_greetings">Ornament Greetings</p>
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" src="../images/three_wise_men_greet.png" alt="three_wise_men">
-                <p class="product_grid_label" id="twm_label_cc" for="three_wise_men">Three Wise Men</p>
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" src="../images/magical_greet.png" alt="magical_christmas">
-                <p class="product_grid_label" id="mc_label_cc" for="magical_christmas">Magical Christmas</p>
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" src="../images/variety_greet.png" alt="variety_greetings">
-                <p class="product_grid_label" id="vg_label_cc" for="variety_greetings">Variety Greetings</p>
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" src="../images/wreath_greet.png" alt="wreath_greeting">
-                <p class="product_grid_label" id="wg_label_cc" for="wreath_greeting">Wreath Greeting</p>    
-            </div>
-            <div class="product_card">
-                <img class="product_grid_img" src="../images/santas_greet.png" alt="santas_wishes">
-                <p class="product_grid_label" id="sw_label_cc" for="santas_wishes">Santa's Wishes</p>
+                <a href="./seasons-charity.html" class="select_option_box white_button white_button--lg" id="add_btn">
+                    <p class="product_option_head">Add to Cart</p>
+                    <p class="product_option_subtext">Choose your charity, add your recipient and sender details</p>
+                    <img class="arrow_icon" src="../icons/arrow_icon.png" alt="arrow_icon">
+                </a>
+                <a class="orange_links continue_browsing" href="./christmas-cards.html">Continue Browsing</a>
             </div>
         </section>
     </main>
@@ -156,7 +135,7 @@
             </div>
         </div>
         <p id="copyright">&#169 Copyright <u>Charity Greeting Cards</u> PTY LTD. All Rights Reserved.</p>
-    </footer> 
-    <script src="../scripts/nav_bar_script.js"></script>
+    </footer>
+    <script src="../scripts/nav-bar-script.js"></script>
 </body>
 </html>
